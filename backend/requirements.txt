@@ -1,8 +1,0 @@
-fastapi
-uvicorn
-google-generativeai
-pymupdf
-python-docx
-python-multipart
-reportlab
-python-dotenv
