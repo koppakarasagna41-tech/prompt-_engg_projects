@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume & Job Matching Platform</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="card">
+
+        <h1>🤖 AI Resume & Job Matching</h1>
+
+        <p class="subtitle">
+            Upload your Resume and Job Description to analyze your compatibility.
+        </p>
+
+        <div class="upload-box">
+
+            <label>📄 Upload Resume</label>
+
+            <input type="file" id="resumeFile" accept=".pdf">
+
+        </div>
+
+        <div class="upload-box">
+
+            <label>📋 Upload Job Description</label>
+
+            <input type="file" id="jdFile" accept=".pdf,.txt">
+
+        </div>
+
+        <button id="analyzeBtn">
+            Analyze Resume
+        </button>
+
+    </div>
+
+
+    <div class="result-card">
+
+        <h2>📊 Analysis Result</h2>
+
+        <div class="score-box">
+
+            <h3>Match Score</h3>
+
+            <h1 id="score">--%</h1>
+
+        </div>
+
+        <div class="section">
+
+            <h3>✅ Matched Skills</h3>
+
+            <ul id="matchedSkills"></ul>
+
+        </div>
+
+        <div class="section">
+
+            <h3>❌ Missing Skills</h3>
+
+            <ul id="missingSkills"></ul>
+
+        </div>
+
+        <div class="section">
+
+            <h3>💡 Suggestions</h3>
+
+            <ul id="suggestions"></ul>
+
+        </div>
+
+    </div>
+
+</div>
+
+</body>
+</html>
