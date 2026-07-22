@@ -1,4 +1,4 @@
-from services.gemini_service import analyze_resume
+from match_engine.matcher import analyze_resume
 from parsers.jd_parser import extract_jd_text
 from parsers.resume_parser import extract_resume_text
 from fastapi import FastAPI, UploadFile, File
@@ -57,22 +57,7 @@ async def analyze():
             "message": "Please upload both Resume and Job Description first."
         }
 
-    return {
-        "match_score": "88%",
-        "matched_skills": [
-            "Python",
-            "FastAPI",
-            "SQL",
-            "Problem Solving"
-        ],
-        "missing_skills": [
-            "Docker",
-            "AWS",
-            "Kubernetes"
-        ],
-        "suggestions": [
-            "Improve resume summary",
-            "Add more project experience",
-            "Learn Docker and AWS"
-        ]
-    }
+    # Call Gemini
+    result = analyze_resume(resume_text, jd_text)
+
+    return result
