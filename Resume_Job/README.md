@@ -118,8 +118,11 @@ The system compares a resume with a job description and provides:
 
 ## 👥 Team Members
 
-- Reshma Shaik
-- (Add your teammate's name)
+• Shaik Reshma
+• Bayye Hinduja
+• Koppaka Rasagna
+• Kalluri Praneetha
+• Dwarampudi Sahithi
 
 ---
 
