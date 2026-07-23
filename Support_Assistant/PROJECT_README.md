@@ -1,12 +1,12 @@
 # AI Customer Support Assistant
 
-An AI-powered Customer Support Assistant designed to streamline customer interactions through an intuitive web interface. The application enables users to manage chats, support tickets, conversations, and dashboard functionalities efficiently.
+An AI-powered Customer Support Assistant designed to streamline customer interactions through an intuitive web interface. The application enables users to manage customer chats, support tickets, conversations, and dashboard functionalities efficiently.
 
 The frontend is built with **React** and **Vite** and deployed on **Vercel**. The backend is developed using **FastAPI** and deployed on **Render**. The backend communicates with **Supabase** for data storage, while the frontend interacts with the backend through REST APIs.
 
 ---
 
-## 🚀 Live Demo
+# 🚀 Live Demo
 
 ### 🌐 Frontend
 https://ai-customer-assistant-mh0n2i2oa-koppakarasagna41-techs-projects.vercel.app
@@ -16,7 +16,7 @@ https://ai-customer-assistant-backend.onrender.com
 
 ---
 
-## 📂 GitHub Repositories
+# 📂 GitHub Repositories
 
 ### Frontend Repository
 https://github.com/koppakarasagna41-tech/ai-customer-assistant
@@ -26,62 +26,62 @@ https://github.com/koppakarasagna41-tech/ai-customer-assistant-backend
 
 ---
 
-## 🛠️ Tech Stack
+# 🛠️ Tech Stack
 
-### Frontend
+## Frontend
 - React.js
 - Vite
 - HTML5
 - CSS3
 - JavaScript
 
-### Backend
+## Backend
 - FastAPI
 - Python
 
-### Database
+## Database
 - Supabase
 
-### Deployment
+## Deployment
 - Vercel
 - Render
 
 ---
 
-## ✨ Features
+# ✨ Features
 
-- Customer chat interface
-- Ticket management
+- AI-powered customer support interface
+- Customer chat management
+- Support ticket management
 - Conversation history
 - Dashboard for support activities
 - REST API integration between frontend and backend
-- Cloud deployment for frontend and backend
 - Supabase database integration
+- Cloud deployment using Vercel and Render
+- Responsive and user-friendly interface
 
 ---
 
-## 📁 Project Architecture
+# 📁 Project Architecture
 
 ```
-Frontend (React + Vite)
-        │
-        ▼
-REST API Requests
-        │
-        ▼
-Backend (FastAPI)
-        │
-        ▼
-Supabase Database
+                 Frontend (React + Vite)
+                          │
+                          ▼
+                 REST API Requests
+                          │
+                          ▼
+                  Backend (FastAPI)
+                          │
+                          ▼
+                 Supabase Database
 ```
 
 ---
 
-## ⚙️ Installation
+# ⚙️ Installation
 
-### Clone the repositories
-
-#### Frontend
+## Clone the Frontend Repository
 
 ```bash
 git clone https://github.com/koppakarasagna41-tech/ai-customer-assistant.git
@@ -90,7 +90,7 @@ npm install
 npm run dev
 ```
 
-#### Backend
+## Clone the Backend Repository
 
 ```bash
 git clone https://github.com/koppakarasagna41-tech/ai-customer-assistant-backend.git
@@ -101,7 +101,7 @@ uvicorn main:app --reload
 
 ---
 
-## 📌 Deployment
+# 📌 Deployment
 
 | Service | Platform |
 |---------|----------|
@@ -111,23 +111,40 @@ uvicorn main:app --reload
 
 ---
 
-## ⚠️ Current Status
+# 👥 Project Contributors
 
-The application has been successfully deployed on both **Vercel** and **Render**.
+This project was developed as part of the **Prompt Engineering Internship Capstone Project**.
 
-The backend communicates with **Supabase** for data storage, and the frontend consumes REST APIs exposed by the backend for chat, tickets, conversations, and dashboard functionality.
-
-**Known Issue:** A backend API integration/runtime issue is currently affecting some endpoints. This issue is under investigation and future updates will address it.
-
----
-
-## 📄 License
-
-This project was developed as part of an academic internship/capstone project and is intended for educational purposes.
+| Team Member | Contribution |
+|-------------|--------------|
+| **Hindu** | Developed the **AI Customer Support Assistant**, including frontend, backend, REST API integration, deployment, and overall application functionality. |
+| **Praneetha** | Developed the **AI Customer Assistant Desk** module and contributed to project implementation and feature development. |
+| **Rasagna** | Assisted with **backend integration, API testing, GitHub repository management, deployment support, and documentation**. |
+| **Reshma** | Contributed to **UI/UX design, frontend component development, testing, and project documentation**. |
+| **Sahithi** | Contributed to **database integration, quality assurance, bug fixing, and application testing**. |
 
 ---
 
-## ⭐ Acknowledgements
+# ⚠️ Current Status
+
+- ✅ Frontend successfully deployed on **Vercel**
+- ✅ Backend successfully deployed on **Render**
+- ✅ Supabase database integration completed
+- ✅ REST API communication established
+
+**Known Issue:** Some backend API endpoints currently have integration/runtime issues affecting certain functionalities. This issue is under investigation and will be resolved in future updates.
+
+---
+
+# 📄 License
+
+This project was developed as part of the **Prompt Engineering Internship Capstone Project** and is intended for educational and learning purposes.
+
+---
+
+# ⭐ Acknowledgements
+
+Special thanks to the technologies and platforms that made this project possible.
 
 - React
 - Vite
@@ -135,3 +152,12 @@ This project was developed as part of an academic internship/capstone project an
 - Supabase
 - Vercel
 - Render
+- Git & GitHub
+
+---
+
+# 📬 Contact
+
+For any queries, suggestions, or feedback regarding this project, please refer to the GitHub repositories listed above.
+
+Thank you for visiting this repository!
