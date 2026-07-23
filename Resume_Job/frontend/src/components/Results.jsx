@@ -1,29 +1,27 @@
-function Results() {
+function Results({ result }) {
+
   const downloadReport = () => {
+
     const report = `
 AI Resume & Job Matching Report
 
-Candidate Fit Score: 85%
+Candidate Fit Score: ${result.match_score}%
+
+Resume Strength: ${result.resume_strength}
+
+Confidence Level: ${result.confidence_level}
 
 Skills Found:
-- Python
-- SQL
-- React
+${result.matched_skills.map(skill => "- " + skill).join("\n")}
 
 Missing Skills:
-- Docker
-- FastAPI
-- AWS
+${result.missing_skills.map(skill => "- " + skill).join("\n")}
 
 Resume Suggestions:
-- Add more projects
-- Highlight achievements
-- Include certifications
+${result.suggestions.map(item => "- " + item).join("\n")}
 
 Recommended Jobs:
-- Python Developer
-- Backend Developer
-- Software Engineer
+${result.recommended_jobs.map(job => "- " + job).join("\n")}
 `;
 
     const blob = new Blob([report], { type: "text/plain" });
@@ -45,44 +43,55 @@ Recommended Jobs:
     <section className="results">
 
       <div className="card score-card">
-        <h2>Candidate Fit Score</h2>
-        <h1>85%</h1>
-        <p>Excellent Match</p>
+        <h2>🎯 Candidate Fit Score</h2>
+        <h1
+          style={{
+            color:
+              result.match_score >= 80
+                ? "green"
+                : result.match_score >= 50
+                ? "orange"
+                : "red",
+  }}
+>
+  {result.match_score}%
+</h1>
+        <p>{result.resume_strength}</p>
       </div>
 
       <div className="card">
-        <h2>Skills Found</h2>
+        <h2>✅ Skills Found</h2>
         <ul>
-          <li>✔ Python</li>
-          <li>✔ SQL</li>
-          <li>✔ React</li>
+          {result.matched_skills.map((skill, index) => (
+            <li key={index}>✔ {skill}</li>
+          ))}
         </ul>
       </div>
 
       <div className="card">
-        <h2>Missing Skills</h2>
+        <h2>⚠ Missing Skills</h2>
         <ul>
-          <li>❌ Docker</li>
-          <li>❌ FastAPI</li>
-          <li>❌ AWS</li>
+          {result.missing_skills.map((skill, index) => (
+            <li key={index}>❌ {skill}</li>
+          ))}
         </ul>
       </div>
 
       <div className="card">
-        <h2>Resume Suggestions</h2>
+        <h2>💡 Resume Suggestions</h2>
         <ul>
-          <li>💡 Add more projects</li>
-          <li>💡 Highlight achievements</li>
-          <li>💡 Include certifications</li>
+          {result.suggestions.map((item, index) => (
+            <li key={index}>💡 {item}</li>
+          ))}
         </ul>
       </div>
 
       <div className="card">
-        <h2>Recommended Jobs</h2>
+        <h2>💼 Recommended Jobs</h2>
         <ul>
-          <li>💼 Python Developer</li>
-          <li>💼 Backend Developer</li>
-          <li>💼 Software Engineer</li>
+          {result.recommended_jobs.map((job, index) => (
+            <li key={index}>💼 {job}</li>
+          ))}
         </ul>
       </div>
 
@@ -90,7 +99,7 @@ Recommended Jobs:
         className="download-btn"
         onClick={downloadReport}
       >
-        Download Report
+        📄 Download Report
       </button>
 
     </section>

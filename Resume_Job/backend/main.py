@@ -2,10 +2,18 @@ from match_engine.matcher import analyze_resume
 from parsers.jd_parser import extract_jd_text
 from parsers.resume_parser import extract_resume_text
 from fastapi import FastAPI, UploadFile, File
+from fastapi.middleware.cors import CORSMiddleware
 
 app = FastAPI(
     title="AI Resume & Job Matching Platform",
     version="1.0"
+)
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
 resume_text = ""
 jd_text = ""
@@ -57,7 +65,7 @@ async def analyze():
             "message": "Please upload both Resume and Job Description first."
         }
 
-    # Call Gemini
+
     result = analyze_resume(resume_text, jd_text)
 
     return result

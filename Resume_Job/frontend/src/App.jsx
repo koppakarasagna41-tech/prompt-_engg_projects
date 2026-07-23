@@ -9,6 +9,12 @@ import Footer from "./components/Footer";
 
 function App() {
   const [showResults, setShowResults] = useState(false);
+  const [analysisResult, setAnalysisResult] = useState(null);
+
+  const handleAnalysisComplete = (result) => {
+    setAnalysisResult(result);
+    setShowResults(true);
+  };
 
   return (
     <div className="app">
@@ -16,10 +22,12 @@ function App() {
       <Hero />
 
       <UploadSection
-        onAnalysisComplete={() => setShowResults(true)}
+        onAnalysisComplete={handleAnalysisComplete}
       />
 
-      {showResults && <Results />}
+      {showResults && (
+        <Results result={analysisResult} />
+      )}
 
       <Footer />
     </div>
