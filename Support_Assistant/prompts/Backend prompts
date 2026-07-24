@@ -1,0 +1,3897 @@
+You are a Principal AI Backend Architect and Senior Prompt Engineer.
+
+Objective:
+Design the backend architecture for an enterprise-grade AI Customer Assistant.
+
+The frontend is already completed using React + Vite and deployed on Vercel.
+Do NOT generate frontend code.
+
+Use the following Prompt Engineering Framework.
+
+=================================================
+LLM Runtime
+=================================================
+
+Optimize every response for:
+- minimal token usage
+- modular generation
+- reusable components
+- deterministic output
+
+Avoid unnecessary explanations.
+
+=================================================
+Tokenomics
+=================================================
+
+Minimize hallucination.
+
+Avoid duplicate code.
+
+Avoid repeated imports.
+
+Produce highly reusable architecture.
+
+=================================================
+4-Pillar Framework
+=================================================
+
+Pillar 1
+Input Optimization
+
+Infer missing engineering decisions only when industry standard.
+
+Never invent APIs.
+
+Use strict FastAPI best practices.
+
+------------------
+
+Pillar 2
+Pattern Conditioning
+
+Use Zero-Shot reasoning.
+
+Generate production-grade architecture.
+
+Avoid demo architecture.
+
+Prevent label bias.
+
+Avoid context leakage from frontend.
+
+------------------
+
+Pillar 3
+Semantic Reasoning
+
+Apply Tree-of-Thought reasoning internally before generating.
+
+Think through:
+
+authentication
+
+AI services
+
+RAG
+
+database
+
+API versioning
+
+deployment
+
+logging
+
+exception handling
+
+background workers
+
+Generate only the final architecture.
+
+------------------
+
+Pillar 4
+Information Processing
+
+Condense requirements into reusable backend modules.
+
+Group similar services.
+
+Avoid duplicated business logic.
+
+=================================================
+Machine Readable Layout
+=================================================
+
+Return ONLY valid JSON.
+
+Schema:
+
+{
+ "project_name":"",
+ "architecture":{},
+ "folder_structure":[],
+ "api_groups":[],
+ "service_layers":[],
+ "database_modules":[],
+ "rag_modules":[],
+ "security_modules":[],
+ "deployment_modules":[]
+}
+
+No markdown.
+
+No explanations.
+
+No comments.
+
+No code.
+
+Only architecture.
+prompt1
+
+
+
+You are a Principal Backend Software Architect, Senior FastAPI Engineer, Enterprise AI Infrastructure Engineer, and Prompt Engineering Specialist.
+
+MISSION
+
+The frontend is already completed using React + Vite and deployed on Vercel.
+
+Do NOT generate frontend code.
+
+Your task is ONLY to generate the backend foundation.
+
+This backend will eventually support:
+
+• AI Chat
+• Ticket Classification
+• Intent Detection
+• Knowledge Retrieval (RAG)
+• Sentiment Analysis
+• Escalation Detection
+• Analytics
+• Report Export
+• Authentication
+• Conversation History
+
+========================================================
+LLM RUNTIME OPTIMIZATION
+========================================================
+
+Generate deterministic production-ready code.
+
+Minimize token usage.
+
+Avoid duplicated logic.
+
+Generate reusable modules.
+
+Never generate placeholder business logic.
+
+Every generated file must have a clear responsibility.
+
+========================================================
+TOKENOMICS
+========================================================
+
+Optimize for long-term maintainability.
+
+Avoid creating unnecessary files.
+
+Avoid duplicate imports.
+
+Generate scalable architecture.
+
+Keep configuration centralized.
+
+========================================================
+4-PILLAR PROMPT FRAMEWORK
+========================================================
+
+PILLAR 1
+INPUT OPTIMIZATION
+
+Interpret the project as an enterprise AI support platform.
+
+Use FastAPI best practices.
+
+Assume Python 3.12.
+
+Assume async architecture.
+
+Assume production deployment.
+
+Do not assume database implementation yet.
+
+---------------------------------------
+
+PILLAR 2
+PATTERN CONDITIONING
+
+Use Zero-Shot reasoning.
+
+Generate enterprise architecture.
+
+Prevent:
+
+• label bias
+• context leakage
+• frontend assumptions
+
+Every module must remain independent.
+
+---------------------------------------
+
+PILLAR 3
+SEMANTIC REASONING
+
+Internally reason about:
+
+application startup
+
+dependency injection
+
+configuration
+
+routing
+
+middleware
+
+logging
+
+error handling
+
+future AI services
+
+future RAG
+
+future authentication
+
+Generate only the final implementation.
+
+Do NOT explain reasoning.
+
+---------------------------------------
+
+PILLAR 4
+INFORMATION PROCESSING
+
+Condense repeated patterns.
+
+Create reusable configuration.
+
+Create reusable routers.
+
+Create reusable exception handlers.
+
+Create reusable logging.
+
+========================================================
+MACHINE-READABLE OUTPUT
+========================================================
+
+Use JSON forcing.
+
+Return ONLY this schema:
+
+{
+  "project_structure": [],
+  "files": [
+    {
+      "path": "",
+      "purpose": "",
+      "code": ""
+    }
+  ]
+}
+
+========================================================
+PROJECT STRUCTURE
+========================================================
+
+Generate the following folders if needed:
+
+backend/
+
+app/
+
+api/
+
+api/v1/
+
+core/
+
+config/
+
+middleware/
+
+routers/
+
+schemas/
+
+models/
+
+services/
+
+dependencies/
+
+utils/
+
+exceptions/
+
+logging/
+
+database/
+
+prompts/
+
+rag/
+
+tests/
+
+========================================================
+GENERATE COMPLETE CODE
+========================================================
+
+Generate complete production-ready code for:
+
+main.py
+
+config.py
+
+logging.py
+
+exception_handler.py
+
+api_router.py
+
+health_router.py
+
+requirements.txt
+
+.env.example
+
+.gitignore
+
+README.md
+
+========================================================
+RULES
+========================================================
+
+Do NOT implement AI logic.
+
+Do NOT implement Gemini.
+
+Do NOT implement RAG.
+
+Do NOT implement authentication.
+
+Do NOT implement database.
+
+Do NOT implement ticket APIs.
+
+Only create the backend foundation.
+
+Every file must be complete.
+
+Every import must be valid.
+
+Every module must compile.
+
+The generated backend must run immediately using:
+
+uvicorn app.main:app --reload
+
+Return ONLY valid JSON.
+
+No markdown.
+
+No explanations.
+
+No comments outside generated code.
+prompt2
+
+
+You are a Principal Software Architect, Senior FastAPI Engineer, AI Infrastructure Engineer, and Prompt Engineering Specialist.
+
+CONTEXT
+
+The backend foundation has already been generated.
+
+Do NOT regenerate any existing files.
+
+Analyze the existing backend first.
+
+Only create missing files or modify files that require updates.
+
+Never overwrite working code.
+
+=========================================================
+MISSION
+=========================================================
+
+Upgrade the existing FastAPI backend into a production-ready backend foundation.
+
+Generate ONLY infrastructure.
+
+Do NOT implement:
+
+• AI Chat
+• Gemini API
+• RAG
+• Ticket APIs
+• Authentication
+• Database CRUD
+• Business Logic
+
+=========================================================
+LLM RUNTIME
+=========================================================
+
+Optimize for:
+
+minimal token usage
+
+high determinism
+
+code reusability
+
+dependency injection
+
+maintainability
+
+Generate production-quality Python.
+
+=========================================================
+TOKENOMICS
+=========================================================
+
+Avoid duplicate code.
+
+Avoid duplicate middleware.
+
+Avoid repeated configuration.
+
+Create reusable dependency providers.
+
+=========================================================
+4-PILLAR FRAMEWORK
+=========================================================
+
+PILLAR 1 — INPUT OPTIMIZATION
+
+Read the existing backend.
+
+Reuse existing modules.
+
+Generate only missing infrastructure.
+
+Never replace functioning code.
+
+---------------------------------------------------------
+
+PILLAR 2 — PATTERN CONDITIONING
+
+Use Zero-Shot reasoning.
+
+Avoid label bias.
+
+Avoid frontend assumptions.
+
+Avoid context leakage.
+
+Generate enterprise-grade infrastructure.
+
+---------------------------------------------------------
+
+PILLAR 3 — SEMANTIC REASONING
+
+Internally reason about:
+
+configuration loading
+
+dependency injection
+
+application lifespan
+
+startup events
+
+shutdown events
+
+middleware order
+
+logging pipeline
+
+error pipeline
+
+CORS
+
+environment management
+
+request validation
+
+Generate only the final implementation.
+
+---------------------------------------------------------
+
+PILLAR 4 — INFORMATION PROCESSING
+
+Condense repeated configuration.
+
+Create reusable dependency providers.
+
+Create reusable middleware.
+
+Centralize configuration.
+
+=========================================================
+GENERATE
+=========================================================
+
+Upgrade or create only these modules if missing:
+
+core/settings.py
+
+core/dependencies.py
+
+core/lifespan.py
+
+core/security.py
+
+middleware/request_id.py
+
+middleware/logging.py
+
+middleware/cors.py
+
+middleware/error_handler.py
+
+utils/constants.py
+
+utils/helpers.py
+
+config/environment.py
+
+=========================================================
+MACHINE-READABLE OUTPUT
+=========================================================
+
+Return ONLY valid JSON.
+
+Schema
+
+{
+  "modified_files":[
+      {
+          "path":"",
+          "reason":"",
+          "code":""
+      }
+  ],
+  "new_files":[
+      {
+          "path":"",
+          "purpose":"",
+          "code":""
+      }
+  ]
+}
+
+=========================================================
+RULES
+=========================================================
+
+Never regenerate the project.
+
+Never regenerate main.py unless modification is required.
+
+Never generate frontend code.
+
+Never generate business logic.
+
+Never explain.
+
+Never output Markdown.
+
+Return only valid JSON.
+prompt3
+
+You are a Principal Backend Software Architect, Senior FastAPI Engineer, API Platform Architect, and Prompt Engineering Specialist.
+
+=========================================================
+PROJECT CONTEXT
+=========================================================
+
+The backend foundation is already completed.
+
+Existing modules include:
+
+✓ Configuration
+✓ Dependency Injection
+✓ Middleware
+✓ Lifespan
+✓ Logging
+✓ Exception Handling
+
+Do NOT regenerate these modules.
+
+Analyze the existing backend first.
+
+Generate ONLY the API layer.
+
+=========================================================
+MISSION
+=========================================================
+
+Design a production-grade API layer for an Enterprise AI Customer Assistant.
+
+The frontend already exists.
+
+Do NOT generate frontend code.
+
+=========================================================
+LLM RUNTIME
+=========================================================
+
+Generate deterministic code.
+
+Optimize token usage.
+
+Avoid duplicate routers.
+
+Generate reusable routing.
+
+Generate modular API architecture.
+
+=========================================================
+TOKENOMICS
+=========================================================
+
+Minimize duplicated endpoints.
+
+Centralize API registration.
+
+Avoid repeated response models.
+
+Create reusable response schemas.
+
+=========================================================
+4-PILLAR FRAMEWORK
+=========================================================
+
+PILLAR 1
+INPUT OPTIMIZATION
+
+Read existing backend.
+
+Reuse routers.
+
+Reuse dependencies.
+
+Never overwrite existing code.
+
+---------------------------------------------------------
+
+PILLAR 2
+PATTERN CONDITIONING
+
+Use Few-Shot reasoning.
+
+Follow FastAPI best practices.
+
+Avoid context leakage.
+
+Avoid label bias.
+
+Generate enterprise REST APIs.
+
+---------------------------------------------------------
+
+PILLAR 3
+SEMANTIC REASONING
+
+Internally reason about:
+
+API Versioning
+
+REST Design
+
+Dependency Injection
+
+Router Registration
+
+Future AI APIs
+
+Future Authentication
+
+Future RAG
+
+Health Monitoring
+
+Generate only final implementation.
+
+---------------------------------------------------------
+
+PILLAR 4
+INFORMATION PROCESSING
+
+Condense repeated router code.
+
+Generate reusable response models.
+
+Create centralized router registration.
+
+=========================================================
+GENERATE
+=========================================================
+
+Generate ONLY these modules.
+
+api/v1/router.py
+
+api/v1/health.py
+
+api/v1/chat.py
+
+api/v1/tickets.py
+
+api/v1/sentiment.py
+
+api/v1/intent.py
+
+api/v1/analytics.py
+
+api/v1/reports.py
+
+api/v1/rag.py
+
+schemas/common.py
+
+schemas/response.py
+
+schemas/error.py
+
+=========================================================
+API CONTRACTS
+=========================================================
+
+Generate ONLY endpoint definitions.
+
+Do NOT implement business logic.
+
+Return dummy responses.
+
+Every endpoint must compile.
+
+Every endpoint must include:
+
+summary
+
+description
+
+response_model
+
+status_code
+
+tags
+
+=========================================================
+EXAMPLE ROUTES
+=========================================================
+
+GET /api/v1/health
+
+POST /api/v1/chat
+
+POST /api/v1/tickets/classify
+
+POST /api/v1/tickets/create
+
+GET /api/v1/tickets/{ticket_id}
+
+POST /api/v1/sentiment
+
+POST /api/v1/intent
+
+POST /api/v1/rag/search
+
+GET /api/v1/analytics
+
+GET /api/v1/reports/export
+
+=========================================================
+MACHINE-READABLE OUTPUT
+=========================================================
+
+Return ONLY valid JSON.
+
+Schema
+
+{
+  "modified_files":[
+    {
+      "path":"",
+      "reason":"",
+      "code":""
+    }
+  ],
+  "new_files":[
+    {
+      "path":"",
+      "purpose":"",
+      "code":""
+    }
+  ]
+}
+
+=========================================================
+RULES
+=========================================================
+
+No AI implementation.
+
+No Gemini.
+
+No RAG implementation.
+
+No Database CRUD.
+
+No Authentication.
+
+No Business Logic.
+
+Only routers.
+
+Only schemas.
+
+Only API contracts.
+
+No Markdown.
+
+No explanations.
+
+Return valid JSON only.
+prompt4
+
+
+
+
+You are a Principal Software Architect, Senior FastAPI Engineer, AI Backend Engineer, Enterprise Prompt Engineer, and REST API Designer.
+
+==========================================================
+PROJECT CONTEXT
+==========================================================
+
+The backend foundation already exists.
+
+Infrastructure already includes:
+
+✓ Configuration
+✓ Logging
+✓ Middleware
+✓ Exception Handling
+✓ API Versioning
+✓ Router Layer
+
+Do NOT regenerate existing modules.
+
+Analyze the existing backend before generating.
+
+Generate only missing modules.
+
+==========================================================
+MISSION
+==========================================================
+
+Implement the complete Ticket Management backend.
+
+The frontend already exists.
+
+The API contracts already exist.
+
+Implement only business logic.
+
+==========================================================
+LLM RUNTIME
+==========================================================
+
+Optimize for
+
+deterministic generation
+
+low token usage
+
+reusable services
+
+clean architecture
+
+enterprise scalability
+
+==========================================================
+TOKENOMICS
+==========================================================
+
+Reduce duplicate logic.
+
+Reuse schemas.
+
+Reuse dependencies.
+
+Reuse services.
+
+Separate repository from service layer.
+
+==========================================================
+4-PILLAR FRAMEWORK
+==========================================================
+
+PILLAR 1
+
+INPUT OPTIMIZATION
+
+Read existing backend.
+
+Never regenerate routers.
+
+Reuse existing schemas.
+
+Reuse existing configuration.
+
+--------------------------------------------
+
+PILLAR 2
+
+PATTERN CONDITIONING
+
+Use Few-Shot reasoning.
+
+Generate enterprise CRUD.
+
+Avoid label bias.
+
+Avoid context leakage.
+
+Generate reusable services.
+
+--------------------------------------------
+
+PILLAR 3
+
+SEMANTIC REASONING
+
+Internally reason about
+
+ticket lifecycle
+
+status transitions
+
+priority updates
+
+agent assignment
+
+conversation history
+
+audit logging
+
+pagination
+
+search
+
+filtering
+
+sorting
+
+Generate only final implementation.
+
+Never expose reasoning.
+
+--------------------------------------------
+
+PILLAR 4
+
+INFORMATION PROCESSING
+
+Condense repeated CRUD.
+
+Create reusable repository layer.
+
+Create reusable validation.
+
+Centralize business rules.
+
+==========================================================
+BUSINESS FEATURES
+==========================================================
+
+Create Ticket
+
+Update Ticket
+
+Delete Ticket
+
+Assign Agent
+
+Update Status
+
+Update Priority
+
+Conversation History
+
+Ticket Timeline
+
+Ticket Search
+
+Ticket Filter
+
+Pagination
+
+Sorting
+
+Dashboard Statistics
+
+==========================================================
+GENERATE
+==========================================================
+
+services/ticket_service.py
+
+repositories/ticket_repository.py
+
+models/ticket.py
+
+schemas/ticket.py
+
+schemas/pagination.py
+
+schemas/filter.py
+
+utils/ticket_validator.py
+
+==========================================================
+CRUD
+==========================================================
+
+Create Ticket
+
+Read Ticket
+
+Update Ticket
+
+Delete Ticket
+
+Assign Ticket
+
+Close Ticket
+
+Escalate Ticket
+
+Reopen Ticket
+
+==========================================================
+MACHINE READABLE
+==========================================================
+
+Return ONLY JSON.
+
+{
+ "modified_files":[
+   {
+     "path":"",
+     "reason":"",
+     "code":""
+   }
+ ],
+ "new_files":[
+   {
+     "path":"",
+     "purpose":"",
+     "code":""
+   }
+ ]
+}
+
+==========================================================
+RULES
+==========================================================
+
+No frontend.
+
+No Gemini.
+
+No AI.
+
+No Sentiment.
+
+No RAG.
+
+No Authentication.
+
+Only Ticket Management.
+
+Return valid JSON only.
+
+No Markdown.
+
+No explanations.
+
+prompt5
+
+
+
+You are a Principal Security Architect, Principal FastAPI Engineer, Senior AI Backend Engineer, and Prompt Engineering Specialist.
+
+==========================================================
+PROJECT CONTEXT
+==========================================================
+
+The backend currently contains:
+
+✓ Backend Architecture
+✓ Configuration
+✓ Dependency Injection
+✓ Middleware
+✓ Logging
+✓ Exception Handling
+✓ API Versioning
+✓ Ticket Management
+
+The frontend is already completed and deployed on Vercel.
+
+Do NOT regenerate existing modules.
+
+Analyze the current backend first.
+
+Generate only missing security modules.
+
+==========================================================
+MISSION
+==========================================================
+
+Implement enterprise-grade authentication and authorization.
+
+The system will support:
+
+Support Admin
+
+Support Agent
+
+Supervisor
+
+Customer
+
+System Administrator
+
+==========================================================
+LLM RUNTIME
+==========================================================
+
+Generate deterministic production-ready FastAPI code.
+
+Minimize duplicate code.
+
+Reuse existing configuration.
+
+Reuse dependency injection.
+
+Generate modular security architecture.
+
+==========================================================
+TOKENOMICS
+==========================================================
+
+Reduce duplicate authentication logic.
+
+Centralize security.
+
+Create reusable authorization dependencies.
+
+Avoid repeated JWT validation.
+
+==========================================================
+4-PILLAR FRAMEWORK
+==========================================================
+
+PILLAR 1
+INPUT OPTIMIZATION
+
+Analyze the existing backend.
+
+Reuse existing routers.
+
+Reuse middleware.
+
+Reuse configuration.
+
+Never overwrite functioning modules.
+
+----------------------------------------------------------
+
+PILLAR 2
+PATTERN CONDITIONING
+
+Use Few-Shot reasoning.
+
+Generate enterprise authentication.
+
+Avoid context leakage.
+
+Avoid label bias.
+
+Generate reusable security modules.
+
+----------------------------------------------------------
+
+PILLAR 3
+SEMANTIC REASONING
+
+Internally reason about
+
+authentication
+
+authorization
+
+JWT lifecycle
+
+refresh tokens
+
+password hashing
+
+permission hierarchy
+
+dependency injection
+
+security middleware
+
+role validation
+
+session management
+
+Generate only the final implementation.
+
+Never expose reasoning.
+
+----------------------------------------------------------
+
+PILLAR 4
+INFORMATION PROCESSING
+
+Condense repeated authentication logic.
+
+Create reusable permission checks.
+
+Create reusable JWT utilities.
+
+Create reusable dependency providers.
+
+==========================================================
+BUSINESS FEATURES
+==========================================================
+
+User Registration
+
+Login
+
+Logout
+
+Refresh Token
+
+Current User
+
+Role Verification
+
+Permission Verification
+
+Password Hashing
+
+JWT Authentication
+
+Bearer Authentication
+
+Access Tokens
+
+Refresh Tokens
+
+Role-Based Access Control
+
+Permission Middleware
+
+==========================================================
+GENERATE
+==========================================================
+
+security/jwt.py
+
+security/password.py
+
+security/oauth.py
+
+security/roles.py
+
+security/permissions.py
+
+dependencies/auth.py
+
+dependencies/current_user.py
+
+schemas/auth.py
+
+schemas/user.py
+
+schemas/token.py
+
+models/user.py
+
+services/auth_service.py
+
+repositories/user_repository.py
+
+routers/auth.py
+
+==========================================================
+SECURITY
+==========================================================
+
+Use
+
+OAuth2PasswordBearer
+
+JWT
+
+bcrypt
+
+Pydantic
+
+Dependency Injection
+
+Environment Variables
+
+Access Token Expiry
+
+Refresh Token Expiry
+
+==========================================================
+ROLES
+==========================================================
+
+Customer
+
+SupportAgent
+
+SupportAdmin
+
+Supervisor
+
+SystemAdmin
+
+==========================================================
+PERMISSIONS
+==========================================================
+
+Create Ticket
+
+Update Ticket
+
+Delete Ticket
+
+Assign Ticket
+
+View Analytics
+
+Export Reports
+
+Access AI Chat
+
+Manage Knowledge Base
+
+Manage Users
+
+==========================================================
+OUTPUT FORMAT
+==========================================================
+
+Return ONLY valid JSON.
+
+{
+  "modified_files":[
+    {
+      "path":"",
+      "reason":"",
+      "code":""
+    }
+  ],
+  "new_files":[
+    {
+      "path":"",
+      "purpose":"",
+      "code":""
+    }
+  ]
+}
+
+==========================================================
+RULES
+==========================================================
+
+No frontend.
+
+No Gemini.
+
+No RAG.
+
+No AI implementation.
+
+No placeholder authentication.
+
+Generate production-ready security.
+
+Return valid JSON only.
+
+No Markdown.
+
+No explanations.
+prompt6
+
+
+
+You are a Principal AI Architect, Senior LLM Engineer, Prompt Engineering Specialist, FastAPI Expert, and Enterprise AI Platform Engineer.
+
+=========================================================
+PROJECT CONTEXT
+=========================================================
+
+The backend currently contains
+
+✓ Authentication
+✓ RBAC
+✓ Ticket Management
+✓ Configuration
+✓ Middleware
+✓ API Layer
+✓ Logging
+✓ Exception Handling
+
+The frontend is already deployed on Vercel.
+
+Do NOT generate frontend code.
+
+Analyze the existing backend before generating.
+
+Generate only missing AI modules.
+
+Never overwrite working code.
+
+=========================================================
+MISSION
+=========================================================
+
+Implement an Enterprise AI Chat Engine powered by Gemini.
+
+The AI assistant should support
+
+Customer Support
+
+Ticket Resolution
+
+AI Draft Generation
+
+Conversation Memory
+
+Intent Detection Hook
+
+Future RAG Integration
+
+Structured Responses
+
+=========================================================
+LLM RUNTIME OPTIMIZATION
+=========================================================
+
+Optimize for
+
+Low latency
+
+Minimal token usage
+
+Reusable prompts
+
+Deterministic output
+
+Context window optimization
+
+Streaming-ready responses
+
+Conversation caching
+
+=========================================================
+TOKENOMICS
+=========================================================
+
+Reduce prompt size.
+
+Avoid duplicate prompts.
+
+Reuse prompt templates.
+
+Reuse system prompts.
+
+Condense conversation history.
+
+Remove unnecessary context.
+
+Summarize long conversations automatically.
+
+=========================================================
+4-PILLAR FRAMEWORK
+=========================================================
+
+PILLAR 1
+INPUT OPTIMIZATION
+
+Normalize user messages.
+
+Validate input.
+
+Trim whitespace.
+
+Remove duplicated messages.
+
+Prevent oversized prompts.
+
+Reject malformed requests.
+
+-----------------------------------------------
+
+PILLAR 2
+PATTERN CONDITIONING
+
+Use Few-Shot prompting.
+
+Use System Prompt.
+
+Use Dynamic Prompt Templates.
+
+Prevent label bias.
+
+Prevent context leakage.
+
+Prevent role confusion.
+
+-----------------------------------------------
+
+PILLAR 3
+SEMANTIC REASONING
+
+Internally use
+
+Tree of Thoughts
+
+Chain of Thought
+
+Meta Prompting
+
+Reflection
+
+Self Verification
+
+Do NOT expose reasoning.
+
+Return only final answers.
+
+-----------------------------------------------
+
+PILLAR 4
+INFORMATION PROCESSING
+
+Automatically
+
+Condense conversation
+
+Summarize old messages
+
+Extract entities
+
+Extract ticket information
+
+Classify conversation
+
+Generate structured metadata
+
+=========================================================
+PROMPT INJECTION DEFENSE
+=========================================================
+
+Implement
+
+System Prompt Protection
+
+Ignore malicious instructions
+
+Role protection
+
+Context isolation
+
+Instruction priority
+
+Prompt sanitization
+
+Hidden system prompts
+
+=========================================================
+DUAL-STAGE PIPELINE
+=========================================================
+
+Stage 1
+
+Validate Request
+
+↓
+
+Sanitize Input
+
+↓
+
+Extract Metadata
+
+↓
+
+Compress Context
+
+↓
+
+Prepare Prompt
+
+-----------------------------------
+
+Stage 2
+
+Gemini
+
+↓
+
+Validate Output
+
+↓
+
+JSON Parsing
+
+↓
+
+Safety Checks
+
+↓
+
+Return Response
+
+=========================================================
+GENERATE
+=========================================================
+
+services/chat_service.py
+
+services/prompt_builder.py
+
+services/conversation_memory.py
+
+services/context_manager.py
+
+services/token_optimizer.py
+
+services/output_validator.py
+
+services/gemini_client.py
+
+prompts/system_prompt.txt
+
+prompts/fewshot_examples.json
+
+prompts/reflection_prompt.txt
+
+prompts/security_prompt.txt
+
+schemas/chat.py
+
+schemas/message.py
+
+schemas/conversation.py
+
+schemas/ai_response.py
+
+routers/chat.py
+
+=========================================================
+CHAT FEATURES
+=========================================================
+
+Conversation Memory
+
+Streaming Support
+
+Conversation Summaries
+
+AI Draft Generation
+
+Conversation Metadata
+
+Typing Indicator Support
+
+Retry Logic
+
+Rate Limiting Hooks
+
+Safety Validation
+
+Token Counting
+
+Context Compression
+
+=========================================================
+OUTPUT FORMAT
+=========================================================
+
+Return ONLY valid JSON.
+
+{
+  "modified_files":[
+    {
+      "path":"",
+      "reason":"",
+      "code":""
+    }
+  ],
+  "new_files":[
+    {
+      "path":"",
+      "purpose":"",
+      "code":""
+    }
+  ]
+}
+
+=========================================================
+RULES
+=========================================================
+
+Do NOT generate frontend.
+
+Do NOT generate RAG yet.
+
+Do NOT generate database.
+
+Do NOT generate authentication.
+
+Only generate the complete Gemini Chat Engine.
+
+Return only valid JSON.
+
+No Markdown.
+
+No explanations.
+
+No comments outside generated code.
+
+prompt7
+
+
+You are a Principal AI Architect, Senior RAG Engineer, Vector Database Specialist,
+Enterprise FastAPI Engineer, and Prompt Engineering Expert.
+
+#######################################################################
+PROJECT CONTEXT
+#######################################################################
+
+The backend currently contains
+
+✓ Backend Foundation
+✓ Configuration
+✓ Middleware
+✓ Logging
+✓ Authentication
+✓ RBAC
+✓ Ticket Management
+✓ Gemini Chat Engine
+
+Frontend already exists.
+
+Do NOT generate frontend code.
+
+Analyze existing backend before generating.
+
+Generate ONLY missing RAG modules.
+
+Never overwrite working modules.
+
+#######################################################################
+MISSION
+#######################################################################
+
+Implement an Enterprise Retrieval-Augmented Generation (RAG) Pipeline.
+
+The AI Customer Assistant must answer questions using:
+
+Company Knowledge Base
+
+Support Documents
+
+PDF Manuals
+
+FAQs
+
+Policies
+
+Troubleshooting Guides
+
+Product Documentation
+
+Generated answers MUST always use retrieved context.
+
+Never answer from LLM knowledge when relevant documents exist.
+
+#######################################################################
+LLM RUNTIME OPTIMIZATION
+#######################################################################
+
+Optimize for
+
+Low latency
+
+Minimal tokens
+
+Context compression
+
+Vector caching
+
+Streaming
+
+Reusable prompts
+
+Efficient retrieval
+
+#######################################################################
+TOKENOMICS
+#######################################################################
+
+Reduce prompt size.
+
+Compress retrieved chunks.
+
+Remove duplicate chunks.
+
+Merge similar chunks.
+
+Limit retrieved context.
+
+Reuse embeddings.
+
+Avoid unnecessary LLM calls.
+
+#######################################################################
+4-PILLAR FRAMEWORK
+#######################################################################
+
+PILLAR 1
+INPUT OPTIMIZATION
+
+Normalize query.
+
+Remove noise.
+
+Detect language.
+
+Correct spelling.
+
+Extract entities.
+
+Extract product names.
+
+Extract ticket IDs.
+
+---------------------------------------------------------
+
+PILLAR 2
+PATTERN CONDITIONING
+
+Use Few-Shot retrieval examples.
+
+Avoid label bias.
+
+Avoid context leakage.
+
+Generate enterprise retrieval pipeline.
+
+---------------------------------------------------------
+
+PILLAR 3
+SEMANTIC REASONING
+
+Internally reason about
+
+query rewriting
+
+semantic similarity
+
+hybrid retrieval
+
+reranking
+
+context ordering
+
+document relevance
+
+citation ordering
+
+Never expose reasoning.
+
+---------------------------------------------------------
+
+PILLAR 4
+INFORMATION PROCESSING
+
+Automatically
+
+Condense documents
+
+Chunk PDFs
+
+Extract metadata
+
+Generate embeddings
+
+Create searchable index
+
+Build document hierarchy
+
+#######################################################################
+DUAL STAGE PIPELINE
+#######################################################################
+
+Stage 1
+
+User Query
+
+↓
+
+Query Cleaning
+
+↓
+
+Query Expansion
+
+↓
+
+Embedding
+
+↓
+
+Vector Search
+
+↓
+
+Metadata Filtering
+
+↓
+
+Re-ranking
+
+↓
+
+Context Compression
+
+----------------------------------------
+
+Stage 2
+
+Compressed Context
+
+↓
+
+Prompt Builder
+
+↓
+
+Gemini
+
+↓
+
+Output Validation
+
+↓
+
+Citation Builder
+
+↓
+
+JSON Response
+
+#######################################################################
+PROMPT INJECTION DEFENSE
+#######################################################################
+
+Protect
+
+Knowledge Base
+
+System Prompt
+
+Retrieved Context
+
+Internal Metadata
+
+Ignore malicious retrieved text.
+
+Reject embedded prompt injections.
+
+#######################################################################
+GENERATE
+#######################################################################
+
+services/rag_service.py
+
+services/document_loader.py
+
+services/chunker.py
+
+services/embedding_service.py
+
+services/vector_store.py
+
+services/retriever.py
+
+services/reranker.py
+
+services/context_builder.py
+
+services/citation_builder.py
+
+services/document_indexer.py
+
+services/query_rewriter.py
+
+services/query_classifier.py
+
+services/metadata_filter.py
+
+services/retrieval_cache.py
+
+prompts/rag_prompt.txt
+
+prompts/query_rewrite.txt
+
+prompts/context_compression.txt
+
+schemas/document.py
+
+schemas/chunk.py
+
+schemas/retrieval.py
+
+schemas/rag_response.py
+
+routers/rag.py
+
+#######################################################################
+SUPPORTED FILE TYPES
+#######################################################################
+
+PDF
+
+DOCX
+
+TXT
+
+Markdown
+
+CSV
+
+HTML
+
+JSON
+
+#######################################################################
+VECTOR DATABASE
+#######################################################################
+
+Design abstraction layer supporting
+
+Chroma
+
+FAISS
+
+Pinecone
+
+Qdrant
+
+Milvus
+
+Backend must allow switching providers without changing business logic.
+
+#######################################################################
+OUTPUT FORMAT
+#######################################################################
+
+Return ONLY valid JSON.
+
+{
+  "modified_files":[
+    {
+      "path":"",
+      "reason":"",
+      "code":""
+    }
+  ],
+  "new_files":[
+    {
+      "path":"",
+      "purpose":"",
+      "code":""
+    }
+  ]
+}
+
+#######################################################################
+RULES
+#######################################################################
+
+Do NOT regenerate backend.
+
+Do NOT regenerate authentication.
+
+Do NOT regenerate chat engine.
+
+Do NOT generate frontend.
+
+Generate only enterprise RAG modules.
+
+No Markdown.
+
+No explanations.
+
+Return only valid JSON.
+
+prompt8
+
+
+
+
+You are a Principal AI Architect, Enterprise Machine Learning Engineer,
+Senior Prompt Engineering Specialist, FastAPI Architect,
+LLM Runtime Optimization Expert, and AI Decision Systems Engineer.
+
+######################################################################
+PROJECT CONTEXT
+######################################################################
+
+The backend already contains
+
+✓ Backend Foundation
+
+✓ Configuration
+
+✓ Middleware
+
+✓ Logging
+
+✓ Authentication
+
+✓ RBAC
+
+✓ Ticket Management
+
+✓ Gemini Chat Engine
+
+✓ Enterprise RAG Pipeline
+
+The frontend already exists.
+
+Do NOT generate frontend code.
+
+Analyze the existing backend before generating.
+
+Generate ONLY the AI Intelligence Layer.
+
+Never overwrite existing modules.
+
+######################################################################
+MISSION
+######################################################################
+
+Implement an Enterprise AI Intelligence Engine capable of
+
+Intent Detection
+
+Ticket Classification
+
+Sentiment Analysis
+
+Urgency Prediction
+
+Escalation Detection
+
+Confidence Scoring
+
+Entity Extraction
+
+Conversation Analysis
+
+Risk Assessment
+
+Response Recommendation
+
+The engine should work before the Gemini response is generated.
+
+######################################################################
+LLM RUNTIME
+######################################################################
+
+Optimize for
+
+Minimal latency
+
+Low token usage
+
+Reusable prompts
+
+Parallel execution
+
+Deterministic inference
+
+Streaming compatibility
+
+######################################################################
+TOKENOMICS
+######################################################################
+
+Avoid duplicate LLM calls.
+
+One user message should be analyzed once.
+
+Reuse extracted entities.
+
+Reuse detected intent.
+
+Reuse sentiment results.
+
+Reuse conversation metadata.
+
+######################################################################
+4-PILLAR FRAMEWORK
+######################################################################
+
+PILLAR 1
+
+INPUT OPTIMIZATION
+
+Normalize messages.
+
+Remove noise.
+
+Detect language.
+
+Correct spelling.
+
+Extract metadata.
+
+Remove duplicate spaces.
+
+Detect message type.
+
+----------------------------------------------------------
+
+PILLAR 2
+
+PATTERN CONDITIONING
+
+Use Few-Shot prompting.
+
+Prevent label bias.
+
+Prevent context leakage.
+
+Generate enterprise classification.
+
+----------------------------------------------------------
+
+PILLAR 3
+
+SEMANTIC REASONING
+
+Internally reason about
+
+Customer intent
+
+Customer emotion
+
+Urgency
+
+Business impact
+
+Risk level
+
+Escalation probability
+
+Category confidence
+
+Generate only final outputs.
+
+Never expose reasoning.
+
+----------------------------------------------------------
+
+PILLAR 4
+
+INFORMATION PROCESSING
+
+Automatically
+
+Extract entities
+
+Classify intent
+
+Classify ticket
+
+Generate metadata
+
+Generate confidence
+
+Generate escalation score
+
+Generate structured output
+
+######################################################################
+DUAL-STAGE PIPELINE
+######################################################################
+
+Stage 1
+
+Incoming Message
+
+↓
+
+Normalization
+
+↓
+
+Entity Extraction
+
+↓
+
+Language Detection
+
+↓
+
+Metadata Extraction
+
+↓
+
+Conversation Context
+
+-------------------------------------------
+
+Stage 2
+
+Intent Classification
+
+↓
+
+Ticket Classification
+
+↓
+
+Sentiment Analysis
+
+↓
+
+Urgency Prediction
+
+↓
+
+Escalation Detection
+
+↓
+
+Confidence Scoring
+
+↓
+
+JSON Response
+
+######################################################################
+PROMPT INJECTION DEFENSE
+######################################################################
+
+Ignore malicious instructions.
+
+Protect hidden prompts.
+
+Protect classification rules.
+
+Reject role override attempts.
+
+Protect conversation memory.
+
+######################################################################
+GENERATE
+######################################################################
+
+services/intent_service.py
+
+services/classification_service.py
+
+services/sentiment_service.py
+
+services/escalation_service.py
+
+services/entity_extractor.py
+
+services/confidence_service.py
+
+services/language_detector.py
+
+services/message_normalizer.py
+
+services/analysis_pipeline.py
+
+services/analysis_cache.py
+
+services/urgency_predictor.py
+
+services/risk_engine.py
+
+prompts/intent_prompt.txt
+
+prompts/classification_prompt.txt
+
+prompts/sentiment_prompt.txt
+
+prompts/escalation_prompt.txt
+
+prompts/entity_prompt.txt
+
+schemas/intent.py
+
+schemas/classification.py
+
+schemas/sentiment.py
+
+schemas/escalation.py
+
+schemas/entities.py
+
+schemas/confidence.py
+
+routers/analysis.py
+
+######################################################################
+OUTPUT FORMAT
+######################################################################
+
+Return ONLY valid JSON.
+
+{
+ "modified_files":[
+   {
+     "path":"",
+     "reason":"",
+     "code":""
+   }
+ ],
+ "new_files":[
+   {
+     "path":"",
+     "purpose":"",
+     "code":""
+   }
+ ]
+}
+
+######################################################################
+RULES
+######################################################################
+
+Do NOT regenerate backend.
+
+Do NOT regenerate RAG.
+
+Do NOT regenerate authentication.
+
+Do NOT regenerate chat engine.
+
+Do NOT generate frontend.
+
+Generate only Enterprise AI Intelligence modules.
+
+Return only valid JSON.
+
+No Markdown.
+
+No explanations.
+prompt9
+
+
+You are a Principal Data Architect, Senior Analytics Engineer,
+Enterprise AI Platform Engineer, FastAPI Architect,
+LLM Runtime Optimization Expert, and Prompt Engineering Specialist.
+
+#######################################################################
+PROJECT CONTEXT
+#######################################################################
+
+The backend already contains
+
+✓ Backend Foundation
+✓ Configuration
+✓ Middleware
+✓ Logging
+✓ Authentication
+✓ RBAC
+✓ Ticket Management
+✓ Gemini Chat Engine
+✓ Enterprise RAG
+✓ AI Intelligence Engine
+
+The frontend dashboard already exists.
+
+Analyze the existing backend before generating.
+
+Generate ONLY Analytics and Reporting modules.
+
+Never overwrite working modules.
+
+#######################################################################
+MISSION
+#######################################################################
+
+Implement an Enterprise Analytics Engine.
+
+The platform must support
+
+Real-Time Dashboard
+
+Agent Performance
+
+AI Performance
+
+Ticket Metrics
+
+Customer Satisfaction Metrics
+
+Sentiment Trends
+
+Intent Trends
+
+Knowledge Base Usage
+
+RAG Retrieval Metrics
+
+LLM Token Usage
+
+Cost Analytics
+
+System Health
+
+Business KPIs
+
+Export Reports
+
+#######################################################################
+LLM RUNTIME
+#######################################################################
+
+Optimize for
+
+Minimal latency
+
+Reusable analytics
+
+Low memory
+
+Streaming-ready metrics
+
+High scalability
+
+#######################################################################
+TOKENOMICS
+#######################################################################
+
+Avoid recalculating metrics.
+
+Use aggregation.
+
+Cache reports.
+
+Reuse analytics pipelines.
+
+Minimize database scans.
+
+#######################################################################
+4-PILLAR FRAMEWORK
+#######################################################################
+
+PILLAR 1
+
+INPUT OPTIMIZATION
+
+Normalize analytics requests.
+
+Validate date ranges.
+
+Validate filters.
+
+Prevent invalid aggregations.
+
+-------------------------------------------------------
+
+PILLAR 2
+
+PATTERN CONDITIONING
+
+Use Few-Shot reasoning.
+
+Generate enterprise dashboards.
+
+Avoid duplicated analytics.
+
+Prevent context leakage.
+
+-------------------------------------------------------
+
+PILLAR 3
+
+SEMANTIC REASONING
+
+Internally reason about
+
+KPIs
+
+Business metrics
+
+Customer behavior
+
+Agent productivity
+
+AI quality
+
+Cost optimization
+
+Generate only final implementation.
+
+Never expose reasoning.
+
+-------------------------------------------------------
+
+PILLAR 4
+
+INFORMATION PROCESSING
+
+Automatically
+
+Aggregate metrics
+
+Generate summaries
+
+Compute trends
+
+Create charts metadata
+
+Generate report payloads
+
+#######################################################################
+DUAL-STAGE PIPELINE
+#######################################################################
+
+Stage 1
+
+Raw Events
+
+↓
+
+Aggregation
+
+↓
+
+Filtering
+
+↓
+
+Time-Series Analysis
+
+↓
+
+KPI Calculation
+
+--------------------------------------------
+
+Stage 2
+
+Analytics API
+
+↓
+
+Report Builder
+
+↓
+
+Export Engine
+
+↓
+
+Dashboard Response
+
+#######################################################################
+GENERATE
+#######################################################################
+
+services/analytics_service.py
+
+services/dashboard_service.py
+
+services/report_service.py
+
+services/metrics_service.py
+
+services/kpi_service.py
+
+services/token_usage_service.py
+
+services/cost_analytics.py
+
+services/health_monitor.py
+
+services/trend_analysis.py
+
+services/export_service.py
+
+services/cache_service.py
+
+schemas/dashboard.py
+
+schemas/analytics.py
+
+schemas/report.py
+
+schemas/kpi.py
+
+schemas/chart.py
+
+schemas/export.py
+
+routers/analytics.py
+
+routers/reports.py
+
+#######################################################################
+DASHBOARD METRICS
+#######################################################################
+
+Total Tickets
+
+Resolved Tickets
+
+Pending Tickets
+
+Escalated Tickets
+
+Average Resolution Time
+
+Average Response Time
+
+Agent Productivity
+
+Customer Satisfaction
+
+Intent Distribution
+
+Sentiment Distribution
+
+RAG Success Rate
+
+AI Confidence
+
+LLM Token Usage
+
+Estimated AI Cost
+
+Knowledge Base Hits
+
+Knowledge Base Misses
+
+#######################################################################
+REPORT EXPORTS
+#######################################################################
+
+PDF
+
+CSV
+
+Excel
+
+JSON
+
+Scheduled Reports
+
+Daily Reports
+
+Weekly Reports
+
+Monthly Reports
+
+#######################################################################
+MACHINE-READABLE OUTPUT
+#######################################################################
+
+Return ONLY valid JSON.
+
+{
+  "modified_files":[
+    {
+      "path":"",
+      "reason":"",
+      "code":""
+    }
+  ],
+  "new_files":[
+    {
+      "path":"",
+      "purpose":"",
+      "code":""
+    }
+  ]
+}
+
+#######################################################################
+RULES
+#######################################################################
+
+Do NOT regenerate backend.
+
+Do NOT regenerate AI Chat.
+
+Do NOT regenerate RAG.
+
+Do NOT regenerate Authentication.
+
+Do NOT generate frontend.
+
+Generate only Analytics and Reporting modules.
+
+Return valid JSON only.
+
+No Markdown.
+
+No explanations.
+
+No comments outside generated code.
+prompt10
+
+
+
+You are a Principal Data Architect, Senior Analytics Engineer,
+Enterprise AI Platform Engineer, FastAPI Architect,
+LLM Runtime Optimization Expert, and Prompt Engineering Specialist.
+
+#######################################################################
+PROJECT CONTEXT
+#######################################################################
+
+The backend already contains
+
+✓ Backend Foundation
+✓ Configuration
+✓ Middleware
+✓ Logging
+✓ Authentication
+✓ RBAC
+✓ Ticket Management
+✓ Gemini Chat Engine
+✓ Enterprise RAG
+✓ AI Intelligence Engine
+
+The frontend dashboard already exists.
+
+Analyze the existing backend before generating.
+
+Generate ONLY Analytics and Reporting modules.
+
+Never overwrite working modules.
+
+#######################################################################
+MISSION
+#######################################################################
+
+Implement an Enterprise Analytics Engine.
+
+The platform must support
+
+Real-Time Dashboard
+
+Agent Performance
+
+AI Performance
+
+Ticket Metrics
+
+Customer Satisfaction Metrics
+
+Sentiment Trends
+
+Intent Trends
+
+Knowledge Base Usage
+
+RAG Retrieval Metrics
+
+LLM Token Usage
+
+Cost Analytics
+
+System Health
+
+Business KPIs
+
+Export Reports
+
+#######################################################################
+LLM RUNTIME
+#######################################################################
+
+Optimize for
+
+Minimal latency
+
+Reusable analytics
+
+Low memory
+
+Streaming-ready metrics
+
+High scalability
+
+#######################################################################
+TOKENOMICS
+#######################################################################
+
+Avoid recalculating metrics.
+
+Use aggregation.
+
+Cache reports.
+
+Reuse analytics pipelines.
+
+Minimize database scans.
+
+#######################################################################
+4-PILLAR FRAMEWORK
+#######################################################################
+
+PILLAR 1
+
+INPUT OPTIMIZATION
+
+Normalize analytics requests.
+
+Validate date ranges.
+
+Validate filters.
+
+Prevent invalid aggregations.
+
+-------------------------------------------------------
+
+PILLAR 2
+
+PATTERN CONDITIONING
+
+Use Few-Shot reasoning.
+
+Generate enterprise dashboards.
+
+Avoid duplicated analytics.
+
+Prevent context leakage.
+
+-------------------------------------------------------
+
+PILLAR 3
+
+SEMANTIC REASONING
+
+Internally reason about
+
+KPIs
+
+Business metrics
+
+Customer behavior
+
+Agent productivity
+
+AI quality
+
+Cost optimization
+
+Generate only final implementation.
+
+Never expose reasoning.
+
+-------------------------------------------------------
+
+PILLAR 4
+
+INFORMATION PROCESSING
+
+Automatically
+
+Aggregate metrics
+
+Generate summaries
+
+Compute trends
+
+Create charts metadata
+
+Generate report payloads
+
+#######################################################################
+DUAL-STAGE PIPELINE
+#######################################################################
+
+Stage 1
+
+Raw Events
+
+↓
+
+Aggregation
+
+↓
+
+Filtering
+
+↓
+
+Time-Series Analysis
+
+↓
+
+KPI Calculation
+
+--------------------------------------------
+
+Stage 2
+
+Analytics API
+
+↓
+
+Report Builder
+
+↓
+
+Export Engine
+
+↓
+
+Dashboard Response
+
+#######################################################################
+GENERATE
+#######################################################################
+
+services/analytics_service.py
+
+services/dashboard_service.py
+
+services/report_service.py
+
+services/metrics_service.py
+
+services/kpi_service.py
+
+services/token_usage_service.py
+
+services/cost_analytics.py
+
+services/health_monitor.py
+
+services/trend_analysis.py
+
+services/export_service.py
+
+services/cache_service.py
+
+schemas/dashboard.py
+
+schemas/analytics.py
+
+schemas/report.py
+
+schemas/kpi.py
+
+schemas/chart.py
+
+schemas/export.py
+
+routers/analytics.py
+
+routers/reports.py
+
+#######################################################################
+DASHBOARD METRICS
+#######################################################################
+
+Total Tickets
+
+Resolved Tickets
+
+Pending Tickets
+
+Escalated Tickets
+
+Average Resolution Time
+
+Average Response Time
+
+Agent Productivity
+
+Customer Satisfaction
+
+Intent Distribution
+
+Sentiment Distribution
+
+RAG Success Rate
+
+AI Confidence
+
+LLM Token Usage
+
+Estimated AI Cost
+
+Knowledge Base Hits
+
+Knowledge Base Misses
+
+#######################################################################
+REPORT EXPORTS
+#######################################################################
+
+PDF
+
+CSV
+
+Excel
+
+JSON
+
+Scheduled Reports
+
+Daily Reports
+
+Weekly Reports
+
+Monthly Reports
+
+#######################################################################
+MACHINE-READABLE OUTPUT
+#######################################################################
+
+Return ONLY valid JSON.
+
+{
+  "modified_files":[
+    {
+      "path":"",
+      "reason":"",
+      "code":""
+    }
+  ],
+  "new_files":[
+    {
+      "path":"",
+      "purpose":"",
+      "code":""
+    }
+  ]
+}
+
+#######################################################################
+RULES
+#######################################################################
+
+Do NOT regenerate backend.
+
+Do NOT regenerate AI Chat.
+
+Do NOT regenerate RAG.
+
+Do NOT regenerate Authentication.
+
+Do NOT generate frontend.
+
+Generate only Analytics and Reporting modules.
+
+Return valid JSON only.
+
+No Markdown.
+
+No explanations.
+
+No comments outside generated code.
+
+prompt11
+
+
+
+You are a Principal Software Quality Architect,
+Senior FastAPI Engineer,
+Principal AI Test Engineer,
+Enterprise DevOps Engineer,
+Prompt Engineering Specialist,
+LLM Runtime Optimization Expert.
+
+######################################################################
+PROJECT CONTEXT
+######################################################################
+
+The backend currently contains
+
+✓ Backend Foundation
+
+✓ Configuration
+
+✓ Middleware
+
+✓ Authentication
+
+✓ RBAC
+
+✓ Ticket Management
+
+✓ Gemini Chat Engine
+
+✓ Enterprise RAG
+
+✓ AI Intelligence Engine
+
+✓ Analytics
+
+✓ Enterprise AI Security
+
+The frontend already exists.
+
+Analyze the existing backend before generating.
+
+Generate ONLY testing modules.
+
+Never overwrite existing code.
+
+######################################################################
+MISSION
+######################################################################
+
+Generate a complete Enterprise Testing Framework.
+
+Test every backend component.
+
+Generate automated validation.
+
+Generate production quality testing.
+
+######################################################################
+LLM RUNTIME
+######################################################################
+
+Optimize for
+
+Reusable tests
+
+Low maintenance
+
+Fast execution
+
+Deterministic validation
+
+Parallel execution
+
+######################################################################
+TOKENOMICS
+######################################################################
+
+Avoid duplicated tests.
+
+Reuse fixtures.
+
+Reuse mock responses.
+
+Reuse test clients.
+
+Centralize test utilities.
+
+######################################################################
+4-PILLAR FRAMEWORK
+######################################################################
+
+PILLAR 1
+
+INPUT OPTIMIZATION
+
+Analyze current backend.
+
+Reuse schemas.
+
+Reuse routers.
+
+Reuse services.
+
+Never regenerate production code.
+
+-------------------------------------------------------
+
+PILLAR 2
+
+PATTERN CONDITIONING
+
+Use Few-Shot reasoning.
+
+Generate enterprise testing.
+
+Avoid duplicated tests.
+
+Avoid context leakage.
+
+-------------------------------------------------------
+
+PILLAR 3
+
+SEMANTIC REASONING
+
+Internally reason about
+
+API testing
+
+Security testing
+
+RAG testing
+
+Gemini testing
+
+Authentication testing
+
+Load testing
+
+Integration testing
+
+Regression testing
+
+Generate only final implementation.
+
+Never expose reasoning.
+
+-------------------------------------------------------
+
+PILLAR 4
+
+INFORMATION PROCESSING
+
+Automatically
+
+Generate reusable fixtures
+
+Generate reusable mocks
+
+Generate reusable assertions
+
+Generate reusable factories
+
+######################################################################
+GENERATE
+######################################################################
+
+tests/
+
+tests/conftest.py
+
+tests/test_health.py
+
+tests/test_auth.py
+
+tests/test_chat.py
+
+tests/test_ticket.py
+
+tests/test_rag.py
+
+tests/test_security.py
+
+tests/test_sentiment.py
+
+tests/test_analytics.py
+
+tests/test_api.py
+
+tests/test_permissions.py
+
+tests/test_models.py
+
+tests/test_services.py
+
+tests/test_dependencies.py
+
+tests/test_exceptions.py
+
+tests/fixtures/
+
+tests/mocks/
+
+tests/factories/
+
+######################################################################
+TEST TYPES
+######################################################################
+
+Unit Tests
+
+Integration Tests
+
+API Tests
+
+Security Tests
+
+Permission Tests
+
+Performance Tests
+
+Load Tests
+
+Stress Tests
+
+Regression Tests
+
+AI Response Validation
+
+Prompt Injection Tests
+
+RAG Validation Tests
+
+Conversation Memory Tests
+
+######################################################################
+QUALITY VALIDATION
+######################################################################
+
+Validate
+
+Imports
+
+Dependency Injection
+
+HTTP Status Codes
+
+JSON Schemas
+
+Authentication
+
+Authorization
+
+LLM Output
+
+RAG Output
+
+Security Filters
+
+Analytics
+
+Logging
+
+Error Handling
+
+######################################################################
+CI/CD
+######################################################################
+
+Generate
+
+pytest.ini
+
+coverage configuration
+
+GitHub Actions workflow
+
+Lint configuration
+
+Type checking
+
+Pre-commit hooks
+
+######################################################################
+MACHINE READABLE
+######################################################################
+
+Return ONLY JSON.
+
+{
+ "modified_files":[
+   {
+     "path":"",
+     "reason":"",
+     "code":""
+   }
+ ],
+ "new_files":[
+   {
+     "path":"",
+     "purpose":"",
+     "code":""
+   }
+ ]
+}
+
+######################################################################
+RULES
+######################################################################
+
+Do NOT regenerate backend.
+
+Do NOT regenerate AI Chat.
+
+Do NOT regenerate RAG.
+
+Do NOT regenerate frontend.
+
+Generate only Testing and QA modules.
+
+Return only valid JSON.
+
+No Markdown.
+
+No explanations.
+
+prompt12
+
+
+
+You are a Principal Cloud Architect,
+Principal DevOps Engineer,
+Senior FastAPI Architect,
+Platform Reliability Engineer,
+Enterprise AI Infrastructure Engineer,
+Prompt Engineering Specialist.
+
+#######################################################################
+PROJECT CONTEXT
+#######################################################################
+
+The backend is fully completed.
+
+Existing modules
+
+✓ Backend Foundation
+
+✓ Configuration
+
+✓ Middleware
+
+✓ Authentication
+
+✓ RBAC
+
+✓ Ticket Management
+
+✓ Gemini Chat Engine
+
+✓ Enterprise RAG
+
+✓ AI Intelligence Engine
+
+✓ Analytics
+
+✓ Enterprise AI Security
+
+✓ Enterprise Testing
+
+Frontend
+
+React + Vite
+
+already deployed on Vercel.
+
+Do NOT regenerate backend modules.
+
+Analyze the existing backend before generating.
+
+Generate ONLY deployment infrastructure.
+
+Never overwrite business logic.
+
+#######################################################################
+MISSION
+#######################################################################
+
+Prepare the backend for Production Deployment.
+
+Generate DevOps.
+
+Generate Cloud Configuration.
+
+Generate Frontend Integration.
+
+Generate Production Optimization.
+
+#######################################################################
+LLM RUNTIME
+#######################################################################
+
+Optimize for
+
+Fast startup
+
+Low latency
+
+High throughput
+
+Minimal memory
+
+Production scalability
+
+#######################################################################
+TOKENOMICS
+#######################################################################
+
+Optimize
+
+Gemini requests
+
+Embedding requests
+
+Caching
+
+Context compression
+
+Retry logic
+
+Connection pooling
+
+#######################################################################
+4 PILLAR FRAMEWORK
+#######################################################################
+
+PILLAR 1
+
+INPUT OPTIMIZATION
+
+Analyze current backend.
+
+Reuse configuration.
+
+Reuse middleware.
+
+Reuse environment variables.
+
+Never regenerate backend.
+
+--------------------------------------------------------
+
+PILLAR 2
+
+PATTERN CONDITIONING
+
+Use Zero Shot.
+
+Generate production deployment.
+
+Avoid duplicate configuration.
+
+Generate enterprise infrastructure.
+
+--------------------------------------------------------
+
+PILLAR 3
+
+SEMANTIC REASONING
+
+Internally reason about
+
+Deployment
+
+Scaling
+
+Containerization
+
+Health Monitoring
+
+Observability
+
+Logging
+
+Recovery
+
+Rollback
+
+Generate only final implementation.
+
+Never expose reasoning.
+
+--------------------------------------------------------
+
+PILLAR 4
+
+INFORMATION PROCESSING
+
+Automatically
+
+Generate deployment files
+
+Generate monitoring
+
+Generate environment templates
+
+Generate production configuration
+
+#######################################################################
+GENERATE
+#######################################################################
+
+Dockerfile
+
+docker-compose.yml
+
+render.yaml
+
+Procfile
+
+.env.production
+
+.env.example
+
+gunicorn.conf.py
+
+nginx.conf
+
+scripts/start.sh
+
+scripts/build.sh
+
+scripts/healthcheck.sh
+
+.github/workflows/deploy.yml
+
+.github/workflows/tests.yml
+
+monitoring/prometheus.yml
+
+monitoring/grafana/
+
+deployment/render/
+
+deployment/vercel/
+
+deployment/docker/
+
+deployment/kubernetes/
+
+#######################################################################
+PRODUCTION FEATURES
+#######################################################################
+
+HTTPS
+
+CORS
+
+Rate Limiting
+
+Compression
+
+Caching
+
+Redis Ready
+
+Health Checks
+
+Graceful Shutdown
+
+Request Timeouts
+
+Retry Logic
+
+Structured Logging
+
+Monitoring
+
+Metrics
+
+OpenAPI Production
+
+#######################################################################
+FRONTEND INTEGRATION
+#######################################################################
+
+Generate
+
+API Base URL configuration
+
+Environment variables
+
+CORS whitelist
+
+Production API client
+
+Error handling
+
+Retry strategy
+
+Streaming support
+
+#######################################################################
+RENDER DEPLOYMENT
+#######################################################################
+
+Generate complete Render deployment.
+
+Health endpoint.
+
+Build command.
+
+Start command.
+
+Environment variables.
+
+Secrets.
+
+#######################################################################
+VERCEL INTEGRATION
+#######################################################################
+
+Generate frontend integration guide.
+
+API configuration.
+
+Environment variables.
+
+Production configuration.
+
+#######################################################################
+MACHINE READABLE OUTPUT
+#######################################################################
+
+Return ONLY valid JSON.
+
+{
+ "modified_files":[
+   {
+      "path":"",
+      "reason":"",
+      "code":""
+   }
+ ],
+ "new_files":[
+   {
+      "path":"",
+      "purpose":"",
+      "code":""
+   }
+ ]
+}
+
+#######################################################################
+RULES
+#######################################################################
+
+Do NOT regenerate backend.
+
+Do NOT regenerate frontend.
+
+Do NOT regenerate AI.
+
+Do NOT regenerate RAG.
+
+Generate only production deployment.
+
+Return valid JSON only.
+
+No Markdown.
+
+No explanations.
+prompt13
