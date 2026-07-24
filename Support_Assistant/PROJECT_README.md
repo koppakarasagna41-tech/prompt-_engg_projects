@@ -1,4 +1,4 @@
-# AI Customer Support Assistant
+# AI Customer Support Assistant #
 
 An AI-powered Customer Support Assistant designed to streamline customer interactions through an intuitive web interface. The application enables users to manage customer chats, support tickets, conversations, and dashboard functionalities efficiently.
 
