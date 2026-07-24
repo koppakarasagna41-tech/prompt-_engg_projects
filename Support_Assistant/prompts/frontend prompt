@@ -1,103 +1,154 @@
-spark
-AI Customer Assistant
 You are a senior React frontend developer and UI/UX designer.
+
 Create the frontend foundation for a modern AI Customer Assistant web application.
-Project Purpose
+
+## Project Purpose
+
 The application is an AI-powered customer support platform where customers can communicate with an AI assistant and support agents can manage customer issues.
+
 The complete system will later support:
-AI Chat Interface
-Ticket Classification
-Intent Detection
-Knowledge Retrieval
-AI Response Generation
-Escalation Detection
-Sentiment Analysis
-Conversation History
-Analytics Dashboard
-Report Export
+
+* AI Chat Interface
+* Ticket Classification
+* Intent Detection
+* Knowledge Retrieval
+* AI Response Generation
+* Escalation Detection
+* Sentiment Analysis
+* Conversation History
+* Analytics Dashboard
+* Report Export
+
 For this step, build ONLY the frontend application foundation, layout, page structure, and navigation.
+
 Do not implement advanced feature functionality yet.
-Technology
+
+## Technology
+
 Use:
-React
-TypeScript
-Tailwind CSS
-React Router
-Lucide React icons
+
+* React
+* TypeScript
+* Tailwind CSS
+* React Router
+* Lucide React icons
+
 Use the existing project environment and dependencies when possible.
-Application Layout
+
+## Application Layout
+
 Create a professional SaaS-style admin dashboard layout.
+
 The application must contain:
-Sidebar
+
+### Sidebar
+
 Create a responsive left sidebar.
+
 Navigation items:
-Dashboard
-AI Chat
-Tickets
-Conversations
-Knowledge Base
-Analytics
-Reports
-Settings
+
+* Dashboard
+* AI Chat
+* Tickets
+* Conversations
+* Knowledge Base
+* Analytics
+* Reports
+* Settings
+
 Add a suitable Lucide React icon for every navigation item.
+
 The currently active navigation item must be clearly highlighted.
+
 Add the application name:
+
 "AI Customer Assistant"
+
 At the bottom of the sidebar, display a user profile section with:
-Profile avatar
-User name
-Role: Support Admin
-Header
+
+* Profile avatar
+* User name
+* Role: Support Admin
+
+### Header
+
 Create a reusable top header.
+
 Include:
-Current page title
-Search icon
-Notification icon
-Dark mode toggle
-User profile avatar
-Pages
+
+* Current page title
+* Search icon
+* Notification icon
+* Dark mode toggle
+* User profile avatar
+
+### Pages
+
 Create separate pages for:
-Dashboard
-AI Chat
-Tickets
-Conversations
-Knowledge Base
-Analytics
-Reports
-Settings
+
+1. Dashboard
+2. AI Chat
+3. Tickets
+4. Conversations
+5. Knowledge Base
+6. Analytics
+7. Reports
+8. Settings
+
 Each page must display a clear page title and a simple placeholder section describing the page.
+
 Do not leave any page blank.
-Navigation
+
+### Navigation
+
 Configure React Router correctly.
+
 Clicking each sidebar navigation item must open its correct page.
+
 Browser navigation must work correctly.
+
 The application must not refresh when moving between pages.
-Responsive Design
+
+### Responsive Design
+
 The interface must work on:
-Desktop
-Tablet
-Mobile
+
+* Desktop
+* Tablet
+* Mobile
+
 On mobile devices:
-Hide the sidebar by default.
-Add a menu button.
-Clicking the menu button must open the sidebar.
-Allow the user to close the sidebar.
-Design Style
+
+* Hide the sidebar by default.
+* Add a menu button.
+* Clicking the menu button must open the sidebar.
+* Allow the user to close the sidebar.
+
+### Design Style
+
 Use a modern AI SaaS customer-support design.
+
 Use:
-Clean light theme
-White and soft neutral backgrounds
-Blue and purple accent direction
-Rounded cards
-Subtle shadows
-Professional spacing
-Modern typography
-Smooth hover states
+
+* Clean light theme
+* White and soft neutral backgrounds
+* Blue and purple accent direction
+* Rounded cards
+* Subtle shadows
+* Professional spacing
+* Modern typography
+* Smooth hover states
+
 Avoid excessive gradients.
+
 Maintain good text contrast and accessibility.
-Code Structure
+
+### Code Structure
+
 Use reusable components.
+
 Create a clean structure similar to:
+
 src/
 components/
 Sidebar
@@ -115,25 +166,9211 @@ Settings
 data/
 hooks/
 utils/
+
 Do not put the complete application inside one React component.
+
 Keep the code modular, readable, and maintainable.
-Important Constraints
-Build only the frontend foundation.
-Do not connect a backend.
-Do not connect Gemini API.
-Do not implement machine learning.
-Do not implement ticket classification logic.
-Do not implement sentiment analysis logic.
-Do not implement knowledge retrieval.
-Do not add unnecessary features.
-Use mock placeholder content where required.
-Final Verification
+
+## Important Constraints
+
+* Build only the frontend foundation.
+* Do not connect a backend.
+* Do not connect Gemini API.
+* Do not implement machine learning.
+* Do not implement ticket classification logic.
+* Do not implement sentiment analysis logic.
+* Do not implement knowledge retrieval.
+* Do not add unnecessary features.
+* Use mock placeholder content where required.
+
+## Final Verification
+
 Before finishing:
-Verify every sidebar navigation item.
-Verify every page opens correctly.
-Verify there are no blank pages.
-Verify there are no broken routes.
-Verify there are no visible frontend errors.
-Verify the mobile sidebar works.
+
+* Verify every sidebar navigation item.
+* Verify every page opens correctly.
+* Verify there are no blank pages.
+* Verify there are no broken routes.
+* Verify there are no visible frontend errors.
+* Verify the mobile sidebar works.
+
 Do not proceed to advanced features.
+
 Stop after completing the frontend foundation.
+
+prompt1
+
+
+
+Continue working on the existing AI Customer Assistant frontend application.
+
+The current application foundation and Operational Dashboard are already designed and working.
+
+Now implement ONLY the AI Chat page.
+
+IMPORTANT:
+
+* Preserve the existing design system.
+* Preserve the existing blue and purple visual direction.
+* Preserve the current header, typography, spacing, cards, and overall SaaS style.
+* Do not redesign the Operational Dashboard.
+* Do not modify the Tickets, Conversations, Knowledge Base, Analytics, Reports, or Settings pages.
+* Do not connect a backend or Gemini API yet.
+
+## AI Chat Page Purpose
+
+Create a professional customer support AI chat workspace where a support admin can test and interact with the AI Customer Assistant.
+
+The page should feel like a real enterprise AI customer-support product.
+
+## Page Layout
+
+Create a three-section chat workspace:
+
+LEFT SIDEBAR → MAIN CHAT AREA → AI INSIGHTS PANEL
+
+The layout must be responsive.
+
+## 1. Left Conversation Sidebar
+
+Create a conversation sidebar inside the AI Chat page.
+
+At the top add:
+
+* "+ New Chat" button
+* Search conversations input
+
+Add a "Recent Conversations" section.
+
+Display realistic mock conversations such as:
+
+* Refund for damaged product
+* Order delivery delay
+* Payment failed
+* Wrong product received
+* Subscription cancellation
+
+For each conversation display:
+
+* Conversation title
+* Short last-message preview
+* Time
+* Active conversation highlight
+
+Allow the user to click a conversation.
+
+When clicked:
+
+* Highlight the selected conversation.
+* Display its mock messages in the main chat area.
+
+Add a three-dot action icon for conversation options.
+
+## 2. Main AI Chat Area
+
+At the top create a chat header.
+
+Display:
+
+AI Customer Assistant
+
+Status:
+"Online & Active"
+
+Use a green status indicator.
+
+Also display:
+
+"Powered by AI Support Engine"
+
+Add header actions:
+
+* Clear Chat
+* More Options
+
+## Empty Chat Welcome State
+
+When starting a new chat, display a clean AI welcome state.
+
+Show an AI assistant icon.
+
+Display:
+
+"Hello! I'm your AI Customer Assistant."
+
+Subtitle:
+
+"How can I help you today?"
+
+Add four suggested question cards:
+
+* Track my order
+* I need a refund
+* Payment issue
+* Product not received
+
+Each suggested question must be clickable.
+
+When clicked:
+
+* Add the question as a user message.
+* Show the AI typing indicator.
+* Display a relevant mock AI response.
+
+## Chat Messages
+
+Create modern message bubbles.
+
+Customer messages:
+
+* Align to the right.
+* Use the existing blue/purple primary design direction.
+* Display timestamp.
+
+AI messages:
+
+* Align to the left.
+* Display AI assistant avatar.
+* Use a clean neutral card style.
+* Display timestamp.
+
+For every AI response add:
+
+* Copy response button
+* Thumbs up button
+* Thumbs down button
+
+The feedback buttons must have visible selected states.
+
+## Mock AI Conversation Behaviour
+
+The user must be able to type a message and click Send.
+
+After sending:
+
+1. Immediately display the customer message.
+2. Clear the input.
+3. Display an animated AI typing indicator.
+4. Wait approximately 1 to 1.5 seconds.
+5. Remove the typing indicator.
+6. Display a realistic customer-support AI response.
+
+Create keyword-based mock responses.
+
+If the message contains:
+
+"refund"
+
+Respond with a helpful refund-support response and ask for an order ID.
+
+If the message contains:
+
+"order" or "track"
+
+Respond with order-tracking assistance.
+
+If the message contains:
+
+"payment"
+
+Respond with payment troubleshooting guidance.
+
+If the message contains:
+
+"not received" or "delivery"
+
+Respond with delivery support.
+
+For other messages display a helpful general support response.
+
+Do not call any external API.
+
+Keep the mock response logic easy to replace with a FastAPI API call later.
+
+## Message Input Area
+
+Create a fixed/sticky message composer at the bottom of the main chat area.
+
+Include:
+
+* Attachment icon button
+* Expandable text input
+* Send button
+
+Placeholder:
+
+"Describe your issue or ask a question..."
+
+Allow message sending using:
+
+* Send button
+* Enter key
+
+Use Shift + Enter for a new line.
+
+Disable the Send button when the message input is empty.
+
+Display helper text:
+
+"AI responses may require agent verification."
+
+## 3. AI Insights Panel
+
+Create a right-side AI Insights panel.
+
+This panel represents the output that will later come from our AI and machine learning backend.
+
+Display:
+
+### Detected Intent
+
+Example:
+
+Refund Request
+
+Confidence:
+
+96%
+
+Show a visual confidence progress bar.
+
+### Ticket Classification
+
+Example:
+
+Billing & Refunds
+
+### Sentiment Analysis
+
+Display:
+
+Negative
+
+Sentiment Score:
+
+0.87
+
+Use a clear sentiment badge.
+
+Supported sentiment states:
+
+* Positive
+* Neutral
+* Negative
+
+### Escalation Risk
+
+Display:
+
+Medium Risk
+
+Supported states:
+
+* Low Risk
+* Medium Risk
+* High Risk
+
+Use clear visual badges.
+
+### Knowledge Retrieval
+
+Display:
+
+"3 relevant knowledge sources found"
+
+Show mock sources:
+
+* Refund Policy
+* Return Guidelines
+* Payment & Refund FAQ
+
+Add a small "View Sources" action.
+
+### AI Recommendation
+
+Display a recommendation card:
+
+"AI can handle this conversation. Human escalation is not currently required."
+
+Add an action button:
+
+"Escalate to Human"
+
+When clicked:
+
+* Change escalation status to "Escalated".
+* Show a success toast notification.
+* Update the button state.
+
+## Dynamic AI Insights
+
+Update the AI Insights panel based on the user's latest message.
+
+Example:
+
+Refund message:
+
+Intent: Refund Request
+Classification: Billing & Refunds
+Sentiment: Negative
+Escalation Risk: Medium Risk
+
+Order tracking message:
+
+Intent: Order Tracking
+Classification: Delivery & Orders
+Sentiment: Neutral
+Escalation Risk: Low Risk
+
+Payment message:
+
+Intent: Payment Issue
+Classification: Billing & Payments
+Sentiment: Negative
+Escalation Risk: Medium Risk
+
+General support message:
+
+Intent: General Support
+Classification: General Inquiry
+Sentiment: Neutral
+Escalation Risk: Low Risk
+
+This is mock frontend logic only.
+
+## Loading and UI States
+
+Add:
+
+* AI typing animation
+* Empty chat state
+* Selected conversation state
+* Button hover states
+* Feedback selected states
+* Escalation success toast
+* Disabled Send button state
+
+Do not leave non-functional UI controls.
+
+## Responsive Behaviour
+
+Desktop:
+Show conversation sidebar, chat area, and AI Insights panel.
+
+Tablet:
+Allow the AI Insights panel to collapse.
+
+Mobile:
+Show the main chat area by default.
+
+Provide buttons to open:
+
+* Conversations
+* AI Insights
+
+Use drawer or slide-over panels on mobile.
+
+Ensure the message input remains easy to use.
+
+## Code Quality
+
+Create reusable components such as:
+
+* ConversationSidebar
+* ChatHeader
+* ChatWindow
+* MessageBubble
+* TypingIndicator
+* MessageComposer
+* SuggestedQuestions
+* AIInsightsPanel
+* SentimentBadge
+* RiskBadge
+
+Keep mock data separate from UI components where possible.
+
+Keep mock AI response logic in a separate utility or service file.
+
+Do not place all AI Chat code in one component.
+
+## Future Backend Integration
+
+Structure the frontend so the mock response function can later be replaced by:
+
+POST /api/chat
+
+Expected future request:
+
+{
+"message": "I need a refund"
+}
+
+Expected future backend response:
+
+{
+"response": "I can help you with your refund request.",
+"intent": "refund_request",
+"intent_confidence": 0.96,
+"category": "billing_refunds",
+"sentiment": "negative",
+"sentiment_score": 0.87,
+"escalation_risk": "medium",
+"knowledge_sources": [
+"Refund Policy",
+"Return Guidelines",
+"Payment & Refund FAQ"
+]
+}
+
+Do not implement this API call now.
+
+Only structure the frontend so backend integration is easy later.
+
+## Final Verification
+
+Before finishing verify:
+
+* AI Chat page opens correctly.
+* Existing dashboard is unchanged.
+* New Chat works.
+* Conversation selection works.
+* Suggested questions work.
+* User can type and send messages.
+* Enter key sends messages.
+* Shift + Enter creates a new line.
+* AI typing indicator appears.
+* Mock AI responses appear.
+* AI Insights update based on the message.
+* Feedback buttons work.
+* Copy response works.
+* Escalate to Human works.
+* Toast notification appears.
+* Mobile layout is responsive.
+* No visible frontend errors exist.
+
+Implement ONLY the AI Chat page and stop after completing it.
+
+
+prompt2
+
+Continue working on the existing AI Customer Assistant frontend application.
+
+The Operational Dashboard and AI Support Sandbox / AI Chat page are already implemented and working.
+
+Now implement ONLY the Ticket Management page.
+
+IMPORTANT:
+
+* Preserve the existing application design system.
+* Preserve the existing blue and purple visual direction.
+* Preserve the current typography, spacing, header, cards, buttons, badges, and SaaS styling.
+* Do not redesign the Dashboard.
+* Do not modify the AI Support Sandbox / AI Chat page.
+* Do not modify Conversations, Knowledge Base, Analytics, Reports, or Settings.
+* Do not connect a backend.
+* Use realistic mock ticket data only.
+
+## Ticket Management Page Purpose
+
+Create a professional enterprise customer-support ticket management workspace.
+
+The page is used by support admins and agents to:
+
+* View customer support tickets.
+* Search customer issues.
+* Filter tickets.
+* Identify customer intent.
+* Check sentiment.
+* Review ticket priority.
+* Detect escalated issues.
+* Open ticket details.
+* Manage ticket status.
+
+The page should feel like a real AI-powered customer support platform.
+
+## Page Header
+
+Set the page title to:
+
+"Ticket Management"
+
+Add subtitle:
+
+"Monitor, classify, and manage customer support incidents."
+
+On the right side add:
+
+* Refresh button
+* Export Tickets button
+* "+ Create Ticket" button
+
+The buttons must have working mock interactions.
+
+Refresh:
+Show a short loading state and then a success toast.
+
+Export Tickets:
+Show a success toast:
+"Ticket report prepared successfully."
+
+Create Ticket:
+Open a modal for creating a mock support ticket.
+
+## KPI Summary Cards
+
+At the top of the Ticket Management page create five compact KPI cards.
+
+Display:
+
+### Total Tickets
+
+Value:
+248
+
+Subtitle:
+"All support tickets"
+
+### Open Tickets
+
+Value:
+42
+
+Subtitle:
+"Require attention"
+
+### In Progress
+
+Value:
+31
+
+Subtitle:
+"Currently handled"
+
+### Escalated
+
+Value:
+12
+
+Subtitle:
+"Human intervention"
+
+### Resolved
+
+Value:
+163
+
+Subtitle:
+"Successfully closed"
+
+Use suitable Lucide icons.
+
+Use the existing visual design system.
+
+Do not use excessive gradients.
+
+## Ticket Search and Filters
+
+Create a professional filter toolbar.
+
+Add a search input.
+
+Placeholder:
+
+"Search by ticket ID, customer, or issue..."
+
+Search must work with mock data.
+
+Add dropdown filters for:
+
+* Category
+* Intent
+* Sentiment
+* Priority
+* Status
+
+Category options:
+
+* All Categories
+* Billing
+* Technical Support
+* Orders & Delivery
+* Returns & Refunds
+* Account
+* API & Integrations
+
+Intent options:
+
+* All Intents
+* Refund Request
+* Order Tracking
+* Payment Issue
+* Technical Issue
+* Account Access
+* Subscription Cancellation
+* API Support
+* General Inquiry
+
+Sentiment options:
+
+* All Sentiments
+* Positive
+* Neutral
+* Negative
+
+Priority options:
+
+* All Priorities
+* Low
+* Medium
+* High
+* Critical
+
+Status options:
+
+* All Status
+* Open
+* In Progress
+* Pending
+* Resolved
+* Escalated
+
+Add a:
+
+"Clear Filters"
+
+button.
+
+The Clear Filters button must reset search and all filters.
+
+## Ticket Table
+
+Create a responsive professional support ticket table.
+
+Columns:
+
+* Ticket ID
+* Customer
+* Issue
+* Category
+* Detected Intent
+* Sentiment
+* Priority
+* Status
+* Created
+* Action
+
+Create at least 12 realistic mock support tickets.
+
+Use realistic customer names and customer-support issues.
+
+Example tickets:
+
+TIC-1024
+
+Customer:
+Sarah Connor
+
+Issue:
+Billing discrepancy on annual premium subscription
+
+Category:
+Billing
+
+Intent:
+Payment Issue
+
+Sentiment:
+Negative
+
+Priority:
+High
+
+Status:
+Open
+
+Created:
+Jul 14, 2026 09:30 AM
+
+---
+
+TIC-1025
+
+Customer:
+Marcus Wright
+
+Issue:
+Unable to integrate custom webhook events
+
+Category:
+Technical Support
+
+Intent:
+Technical Issue
+
+Sentiment:
+Neutral
+
+Priority:
+Critical
+
+Status:
+Escalated
+
+Created:
+Jul 14, 2026 10:15 AM
+
+---
+
+TIC-1026
+
+Customer:
+John Connor
+
+Issue:
+Request for API token rate-limit extension
+
+Category:
+API & Integrations
+
+Intent:
+API Support
+
+Sentiment:
+Positive
+
+Priority:
+Medium
+
+Status:
+Pending
+
+Created:
+Jul 13, 2026 04:45 PM
+
+Also add tickets for:
+
+* Damaged product refund.
+* Order delivery delay.
+* Failed payment.
+* Wrong product received.
+* Subscription cancellation.
+* Password reset problem.
+* Duplicate payment.
+* Product not delivered.
+* Account access issue.
+
+## Customer Column
+
+Display:
+
+* Small customer avatar or initials.
+* Customer name.
+* Customer email as secondary text.
+
+Use realistic mock emails.
+
+## Issue Column
+
+Display the ticket issue title.
+
+Long issue titles should be visually truncated.
+
+On hover, make the complete issue understandable using a tooltip or title.
+
+## Sentiment Badges
+
+Create reusable sentiment badges.
+
+Positive:
+Green visual state.
+
+Neutral:
+Neutral blue or gray visual state.
+
+Negative:
+Red visual state.
+
+Display a small suitable icon where appropriate.
+
+## Priority Badges
+
+Create reusable priority badges.
+
+Low:
+Subtle neutral state.
+
+Medium:
+Blue or yellow state.
+
+High:
+Orange state.
+
+Critical:
+Red state.
+
+Make Critical visually prominent without making the UI distracting.
+
+## Status Badges
+
+Create reusable ticket status badges.
+
+Open
+
+In Progress
+
+Pending
+
+Resolved
+
+Escalated
+
+Use distinct and accessible visual states.
+
+## Ticket Action
+
+In the Action column add:
+
+* View ticket button or eye icon.
+* Three-dot menu.
+
+Three-dot menu options:
+
+* View Details
+* Assign Agent
+* Change Priority
+* Escalate
+* Mark Resolved
+
+These options must have mock frontend interactions.
+
+## Ticket Selection
+
+When the user clicks:
+
+* A ticket row.
+* Ticket ID.
+* View ticket action.
+
+Open a Ticket Details slide-over panel from the right side.
+
+Do not navigate to a new page yet.
+
+## Ticket Details Slide-Over Panel
+
+Create a professional right-side ticket details panel.
+
+The panel should use approximately 40% to 45% of desktop screen width.
+
+Display:
+
+### Ticket Header
+
+* Ticket ID
+* Status badge
+* Priority badge
+* Close button
+
+### Customer Information
+
+Display:
+
+* Customer avatar.
+* Customer name.
+* Customer email.
+
+### Issue
+
+Display the complete ticket issue.
+
+### AI Analysis
+
+Create an "AI Analysis" card.
+
+Display:
+
+Detected Intent
+
+Example:
+Refund Request
+
+Intent Confidence
+
+Example:
+96%
+
+Show a visual confidence progress bar.
+
+Ticket Classification
+
+Example:
+Returns & Refunds
+
+Sentiment
+
+Example:
+Negative
+
+Sentiment Score
+
+Example:
+0.87
+
+Escalation Risk
+
+Example:
+Medium Risk
+
+### Conversation Preview
+
+Display a short customer and AI conversation.
+
+Example:
+
+Customer:
+"I received my order today, but the screen is completely cracked. I need a refund."
+
+AI Assistant:
+"I'm sorry your order arrived damaged. I can help you begin the refund process."
+
+Use the same visual language as the AI Support Sandbox chat messages.
+
+### Knowledge Sources
+
+Display mock knowledge sources used by AI.
+
+Example:
+
+* Refund Policy
+* Damaged Product Guidelines
+* Return & Replacement FAQ
+
+Add a "View Sources" action.
+
+### Assigned Agent
+
+Display:
+
+Agent name.
+
+Agent avatar.
+
+Agent role.
+
+Example:
+
+Alex Chen
+
+Senior Support Agent
+
+If the ticket is handled by AI display:
+
+Support AI
+
+AI Assistant
+
+### Agent Actions
+
+Add buttons:
+
+* Assign Agent
+* Change Priority
+* Escalate Ticket
+* Mark as Resolved
+
+Buttons must have working mock frontend state changes.
+
+When "Escalate Ticket" is clicked:
+
+* Change status to Escalated.
+* Update the ticket table.
+* Update the ticket details panel.
+* Show toast:
+  "Ticket escalated successfully."
+
+When "Mark as Resolved" is clicked:
+
+* Change status to Resolved.
+* Update the ticket table.
+* Update the ticket details panel.
+* Show toast:
+  "Ticket marked as resolved."
+
+## Create Ticket Modal
+
+When "+ Create Ticket" is clicked open a modal.
+
+Fields:
+
+* Customer Name
+* Customer Email
+* Issue Title
+* Issue Description
+* Category
+* Priority
+
+Buttons:
+
+* Cancel
+* Create Ticket
+
+Validate required fields.
+
+When a ticket is created:
+
+* Add the new ticket to the ticket table.
+* Generate a mock ticket ID.
+* Set status to Open.
+* Set sentiment to Neutral.
+* Show toast:
+  "Ticket created successfully."
+
+## Pagination
+
+Add pagination below the ticket table.
+
+Display:
+
+"Showing 1-10 of 248 tickets"
+
+Add:
+
+* Previous
+* Page numbers
+* Next
+
+Pagination controls must have visible working states.
+
+Mock frontend pagination is acceptable.
+
+## Empty State
+
+If search or filters return no tickets display:
+
+"No tickets found"
+
+Subtitle:
+
+"Try adjusting your search or filters."
+
+Add button:
+
+"Clear Filters"
+
+## Responsive Design
+
+Desktop:
+
+Display the complete ticket table.
+
+Tablet:
+
+Allow horizontal table scrolling where necessary.
+
+Mobile:
+
+Convert tickets into responsive ticket cards.
+
+Each ticket card should display:
+
+* Ticket ID
+* Issue
+* Customer
+* Sentiment
+* Priority
+* Status
+
+Clicking a card opens Ticket Details.
+
+The Ticket Details panel should become a full-screen drawer on mobile.
+
+## Reusable Components
+
+Create reusable components such as:
+
+* TicketKPICard
+* TicketFilterBar
+* TicketTable
+* TicketRow
+* TicketCard
+* TicketDetailsPanel
+* SentimentBadge
+* PriorityBadge
+* StatusBadge
+* CreateTicketModal
+* EmptyTicketState
+
+Reuse existing components where appropriate.
+
+Do not duplicate components unnecessarily.
+
+## Data Structure
+
+Keep mock ticket data separate from UI components.
+
+Use a structure similar to:
+
+{
+id: "TIC-1024",
+customer: {
+name: "Sarah Connor",
+email: "[sarah@example.com](mailto:sarah@example.com)"
+},
+issue: "Billing discrepancy on annual premium subscription",
+description: "Customer reports an unexpected billing charge.",
+category: "Billing",
+intent: "Payment Issue",
+intentConfidence: 0.94,
+sentiment: "Negative",
+sentimentScore: 0.87,
+priority: "High",
+status: "Open",
+escalationRisk: "Medium",
+createdAt: "2026-07-14T09:30:00",
+assignedAgent: {
+name: "Support AI",
+role: "AI Assistant"
+},
+knowledgeSources: [
+"Billing Policy",
+"Payment FAQ"
+]
+}
+
+Structure the code so mock ticket data can later be replaced by a FastAPI endpoint:
+
+GET /api/tickets
+
+Do not implement the API call now.
+
+## Important Constraints
+
+* Implement ONLY Ticket Management.
+* Do not redesign existing pages.
+* Do not modify AI Chat functionality.
+* Do not connect any backend.
+* Do not connect Gemini API.
+* Do not implement real sentiment analysis.
+* Do not implement real intent detection.
+* Do not implement real ticket classification.
+* All AI analysis values are mock frontend data.
+* Do not add unnecessary features.
+
+## Final Verification
+
+Before finishing verify:
+
+* Ticket Management page opens correctly.
+* Existing Dashboard is unchanged.
+* Existing AI Support Sandbox is unchanged.
+* Search works.
+* Category filter works.
+* Intent filter works.
+* Sentiment filter works.
+* Priority filter works.
+* Status filter works.
+* Clear Filters works.
+* Ticket rows open details.
+* Ticket IDs open details.
+* View action opens details.
+* Ticket Details panel closes correctly.
+* Escalate Ticket updates the ticket.
+* Mark as Resolved updates the ticket.
+* Create Ticket modal works.
+* New ticket appears in the table.
+* Toast notifications appear.
+* Empty state works.
+* Responsive ticket cards work on mobile.
+* No visible frontend errors exist.
+
+Implement ONLY the Ticket Management page and stop after completing it.
+prompt3
+
+
+
+Continue working on the existing AI Customer Assistant frontend application.
+
+The following features are already implemented:
+
+* Operational Dashboard
+* AI Support Sandbox / AI Chat
+* Ticket Management / Tickets Registry
+
+Now implement ONLY the advanced Ticket Details and Agent Response Workspace.
+
+IMPORTANT:
+
+* Preserve the existing application design system.
+* Preserve the current blue and purple visual direction.
+* Preserve existing typography, spacing, buttons, cards, badges, and header.
+* Do not redesign the Dashboard.
+* Do not modify AI Support Sandbox functionality.
+* Do not redesign the Tickets Registry table.
+* Reuse the existing ticket mock data.
+* Do not connect a backend.
+* Do not connect Gemini API.
+* Do not implement real machine learning.
+
+## Feature Purpose
+
+Create an advanced support-agent workspace for reviewing and resolving an individual customer support ticket.
+
+The workspace should allow an agent to:
+
+* Understand the customer issue.
+* Review the complete conversation.
+* View AI-generated analysis.
+* Review retrieved knowledge sources.
+* Review and edit an AI-generated response.
+* Send a response.
+* Assign an agent.
+* Change priority.
+* Escalate the ticket.
+* Resolve the ticket.
+
+The interface should feel like a real enterprise AI customer-support agent workspace.
+
+## Opening Ticket Details
+
+From the existing Tickets Registry page:
+
+When the user clicks:
+
+* Ticket row
+* Ticket ID
+* Issue title
+* View Details action
+
+Open the Ticket Details workspace.
+
+Use a dedicated route:
+
+/tickets/:ticketId
+
+Example:
+
+/tickets/TIC-1028
+
+Do not use a small slide-over panel for this advanced workspace.
+
+The browser back button must return to the Tickets Registry.
+
+## Page Header
+
+At the top display a breadcrumb:
+
+Tickets / TIC-1028
+
+Add a back button:
+
+"Back to Tickets"
+
+Display the complete ticket issue title.
+
+Example:
+
+"Damaged product refund - Glass Screen Cracked"
+
+Below the title display:
+
+* Ticket ID
+* Status badge
+* Priority badge
+* Created date
+
+On the right display:
+
+* Assign Agent
+* Escalate
+* Mark Resolved
+* More Options
+
+Use the existing button design.
+
+## Main Workspace Layout
+
+Create a responsive three-column support workspace.
+
+LEFT COLUMN:
+Customer and Ticket Context
+
+CENTER COLUMN:
+Conversation and Agent Response Workspace
+
+RIGHT COLUMN:
+AI Intelligence Panel
+
+Recommended desktop width:
+
+Left:
+22%
+
+Center:
+50%
+
+Right:
+28%
+
+The center conversation workspace should receive the most visual focus.
+
+## LEFT COLUMN — Customer & Ticket Context
+
+Create a Customer Information card.
+
+Display:
+
+* Customer avatar or initials
+* Customer name
+* Customer email
+* Customer ID
+* Customer type
+
+Example:
+
+Sarah Connor
+
+[sarah@cyberdyne.com](mailto:sarah@cyberdyne.com)
+
+CUS-2048
+
+Premium Customer
+
+Add a:
+
+"View Customer Profile"
+
+button.
+
+The button should show a mock customer profile modal or panel.
+
+## Customer Profile Information
+
+Display mock customer information:
+
+Customer Since:
+March 2024
+
+Subscription:
+Premium Annual
+
+Total Tickets:
+8
+
+Resolved Tickets:
+6
+
+Open Tickets:
+2
+
+Customer Satisfaction:
+4.3 / 5
+
+Display a short recent support history.
+
+Example:
+
+TIC-0982
+Payment verification issue
+Resolved
+
+TIC-1005
+Subscription invoice request
+Resolved
+
+## Ticket Context Card
+
+Display:
+
+Category
+
+Detected Intent
+
+Current Priority
+
+Current Status
+
+Assigned Agent
+
+Created Date
+
+Last Updated
+
+Use the selected ticket data.
+
+## Ticket Tags
+
+Display relevant tags.
+
+Example:
+
+refund
+
+damaged-product
+
+premium-customer
+
+negative-sentiment
+
+Allow the agent to remove mock tags.
+
+Add:
+
+"+ Add Tag"
+
+Allow adding a new frontend-only tag.
+
+## CENTER COLUMN — Conversation Workspace
+
+Create a large Conversation card.
+
+Header:
+
+"Customer Conversation"
+
+Display the complete ticket conversation timeline.
+
+Use message styles consistent with the AI Support Sandbox.
+
+Support three message types:
+
+* Customer
+* AI Assistant
+* Human Agent
+
+## Customer Messages
+
+Align customer messages appropriately.
+
+Display:
+
+* Customer avatar
+* Customer name
+* Message
+* Timestamp
+
+Example:
+
+Customer:
+
+"I received my order today, but the screen is completely cracked. I need a refund."
+
+## AI Assistant Messages
+
+Display AI assistant icon.
+
+Example:
+
+"I'm sorry your order arrived damaged. I can help you begin the refund process. Could you provide your Order ID?"
+
+Display a small label:
+
+"AI Generated"
+
+For every AI message add:
+
+* Copy
+* Thumbs Up
+* Thumbs Down
+
+## Human Agent Messages
+
+Display the assigned agent avatar.
+
+Add label:
+
+"Support Agent"
+
+Use a visually distinct but consistent message style.
+
+## Conversation Timeline Events
+
+Support system events inside the conversation.
+
+Examples:
+
+"Ticket automatically classified as Returns & Refunds"
+
+"Negative sentiment detected"
+
+"AI retrieved 3 knowledge sources"
+
+"Ticket priority changed from Medium to High"
+
+Display events as subtle centered timeline indicators.
+
+## AI RESPONSE REVIEW WORKSPACE
+
+Below the conversation create a major section:
+
+"AI Response Review"
+
+This is an important feature of the project.
+
+Display a badge:
+
+"AI Generated Draft"
+
+Add subtitle:
+
+"Review and verify the AI-generated response before sending it to the customer."
+
+Create an editable response textarea.
+
+Example AI draft:
+
+"Hi Sarah,
+
+I'm sorry that your order arrived with a damaged screen. Based on our damaged product policy, your order may qualify for a full refund or free replacement.
+
+I can begin the refund process for Order #ORD-49201. Please confirm whether you prefer a refund to your original payment method or a replacement product.
+
+Best,
+Customer Support"
+
+The agent must be able to edit this response.
+
+## AI Response Actions
+
+Add:
+
+* Regenerate Draft
+* Copy Draft
+* Discard Draft
+
+Regenerate Draft:
+
+Display AI loading state for approximately 1 second.
+
+Then replace the draft with another realistic mock response.
+
+Show toast:
+
+"AI response regenerated."
+
+Copy Draft:
+
+Copy the draft text.
+
+Show toast:
+
+"Response copied."
+
+Discard Draft:
+
+Clear the textarea.
+
+## Send Response
+
+Add a primary button:
+
+"Send Response"
+
+Add a secondary button:
+
+"Save as Internal Note"
+
+Send Response behaviour:
+
+* Validate that the response is not empty.
+* Add the response to the conversation as a Human Agent message.
+* Clear the response editor.
+* Update ticket status to "In Progress" if currently Open.
+* Show toast:
+
+"Response sent to customer."
+
+Save as Internal Note:
+
+Add a visible internal note to the timeline.
+
+Internal notes must display:
+
+"Internal Note"
+
+Internal notes must not look like customer messages.
+
+Show toast:
+
+"Internal note saved."
+
+## RIGHT COLUMN — AI INTELLIGENCE PANEL
+
+Create a panel titled:
+
+"AI Intelligence"
+
+Add a small AI active indicator.
+
+Subtitle:
+
+"Real-time ticket analysis"
+
+## Intent Detection Card
+
+Display:
+
+Detected Intent
+
+Example:
+
+Refund Request
+
+Confidence:
+
+96%
+
+Show a confidence progress bar.
+
+Add:
+
+"High Confidence"
+
+badge.
+
+## Ticket Classification Card
+
+Display:
+
+Category:
+
+Returns & Refunds
+
+Subcategory:
+
+Damaged Product
+
+## Sentiment Analysis Card
+
+Display:
+
+Current Sentiment:
+
+Negative
+
+Sentiment Score:
+
+0.87
+
+Show a sentiment badge.
+
+Also display:
+
+"Sentiment Trend"
+
+Example:
+
+Negative → Negative → Neutral
+
+Create a simple visual sentiment trend.
+
+Do not use a complex chart library for this small visualization.
+
+## Escalation Detection Card
+
+Display:
+
+Escalation Risk:
+
+Medium Risk
+
+Show a visual risk badge.
+
+Display mock reasons:
+
+* Negative customer sentiment
+* Damaged product complaint
+* Premium customer
+
+Add:
+
+"AI Recommendation"
+
+Example:
+
+"Monitor the next customer response. Escalate if refund policy exceptions are requested."
+
+## Knowledge Retrieval Card
+
+Display:
+
+"3 Knowledge Sources Retrieved"
+
+Sources:
+
+Refund Policy
+
+Match:
+98%
+
+Damaged Product Guidelines
+
+Match:
+94%
+
+Return & Replacement FAQ
+
+Match:
+89%
+
+Display a relevance progress indicator.
+
+Each source must be clickable.
+
+When clicked open a Knowledge Source Preview modal.
+
+## Knowledge Source Preview
+
+Display:
+
+* Source title
+* Document type
+* Last updated
+* Relevance score
+* Short mock document excerpt
+
+Example excerpt:
+
+"Customers receiving products damaged during delivery are eligible for a full refund or free replacement when reported within 14 days."
+
+Add button:
+
+"Use in Response"
+
+When clicked:
+
+Insert a short relevant sentence into the AI Response Review textarea.
+
+Show toast:
+
+"Knowledge source added to response."
+
+## AI Validation Card
+
+Create a card titled:
+
+"Response Validation"
+
+Display checks:
+
+Policy Compliance:
+Passed
+
+Tone:
+Professional
+
+PII Risk:
+No Risk Detected
+
+Hallucination Risk:
+Low
+
+Knowledge Grounding:
+Verified
+
+Use clear success and warning indicators.
+
+Add:
+
+"Validation Score"
+
+Example:
+
+94 / 100
+
+Explain:
+
+"AI response is safe to review and send."
+
+This represents the Validator stage in the project architecture:
+
+Customer → Chat UI → API → Retrieval Layer → LLM → Validator → Response
+
+## Assign Agent Functionality
+
+When "Assign Agent" is clicked open a modal.
+
+Display mock agents:
+
+Alex Chen
+Senior Support Agent
+
+Maya Patel
+Billing Specialist
+
+Daniel Kim
+Technical Support
+
+Sophia Williams
+Customer Success
+
+Allow selecting an agent.
+
+Click:
+
+"Assign"
+
+Update the selected ticket.
+
+Update the Assigned Agent display.
+
+Show toast:
+
+"Ticket assigned successfully."
+
+## Change Priority
+
+Allow the priority badge or More Options menu to open a priority selector.
+
+Options:
+
+Low
+
+Medium
+
+High
+
+Critical
+
+When changed:
+
+* Update ticket priority.
+* Add a timeline event.
+
+Example:
+
+"Ticket priority changed from Medium to High"
+
+Show toast:
+
+"Ticket priority updated."
+
+## Escalate Ticket
+
+When Escalate is clicked:
+
+Open a confirmation modal.
+
+Title:
+
+"Escalate Ticket?"
+
+Display:
+
+"This ticket will be transferred for human priority review."
+
+Add escalation reason dropdown.
+
+Reasons:
+
+* Customer requested human agent
+* Negative sentiment
+* Policy exception
+* High-value customer
+* Technical complexity
+* Other
+
+Buttons:
+
+Cancel
+
+Confirm Escalation
+
+After confirmation:
+
+* Change status to Escalated.
+* Add timeline event.
+* Update the ticket.
+* Show toast:
+
+"Ticket escalated successfully."
+
+## Mark as Resolved
+
+When "Mark Resolved" is clicked:
+
+Open a confirmation modal.
+
+Display:
+
+"Confirm that the customer's issue has been resolved."
+
+Add optional resolution note.
+
+Buttons:
+
+Cancel
+
+Resolve Ticket
+
+After confirmation:
+
+* Change ticket status to Resolved.
+* Add timeline event.
+* Disable unnecessary escalation actions.
+* Show toast:
+
+"Ticket resolved successfully."
+
+## More Options Menu
+
+Add:
+
+* Change Priority
+* Add Tag
+* Copy Ticket ID
+* View Customer Profile
+
+All options must have working mock frontend interactions.
+
+## Responsive Behaviour
+
+Desktop:
+
+Display the three-column workspace.
+
+Tablet:
+
+Keep conversation in the main area.
+
+Allow Customer Context and AI Intelligence panels to collapse.
+
+Mobile:
+
+Display Conversation first.
+
+Add top buttons:
+
+"Ticket Info"
+
+"AI Intelligence"
+
+Open these sections as mobile drawers.
+
+AI Response Review must remain easy to use on mobile.
+
+## Reusable Components
+
+Create reusable components such as:
+
+TicketWorkspaceHeader
+
+CustomerContextPanel
+
+CustomerProfileModal
+
+TicketContextCard
+
+TicketTags
+
+ConversationTimeline
+
+ConversationMessage
+
+TimelineEvent
+
+AIResponseReview
+
+AIIntelligencePanel
+
+IntentAnalysisCard
+
+SentimentAnalysisCard
+
+EscalationRiskCard
+
+KnowledgeRetrievalCard
+
+KnowledgeSourceModal
+
+ResponseValidationCard
+
+AssignAgentModal
+
+EscalationModal
+
+ResolveTicketModal
+
+Reuse existing:
+
+SentimentBadge
+
+PriorityBadge
+
+StatusBadge
+
+Toast system
+
+Do not unnecessarily duplicate components.
+
+## Data and State
+
+Use the existing mock ticket dataset.
+
+Create additional conversation data for each ticket.
+
+The selected ticket ID must come from the route parameter.
+
+Example:
+
+/tickets/TIC-1028
+
+Find the correct ticket using the ticket ID.
+
+If the ticket ID does not exist display:
+
+"Ticket not found"
+
+Add:
+
+"Return to Tickets"
+
+button.
+
+Keep state logic clean.
+
+Structure the application so this page can later use:
+
+GET /api/tickets/{ticket_id}
+
+POST /api/tickets/{ticket_id}/response
+
+PATCH /api/tickets/{ticket_id}
+
+POST /api/tickets/{ticket_id}/escalate
+
+POST /api/tickets/{ticket_id}/resolve
+
+Do not implement these API calls now.
+
+## Important Constraints
+
+Implement ONLY the Ticket Details and Agent Response Workspace.
+
+Do not redesign existing pages.
+
+Do not change the Tickets Registry table design.
+
+Do not modify AI Support Sandbox functionality.
+
+Do not connect a backend.
+
+Do not connect Gemini API.
+
+Do not implement real AI analysis.
+
+All AI intelligence data is mock frontend data.
+
+Keep future FastAPI integration easy.
+
+## Final Verification
+
+Before finishing verify:
+
+* Clicking a ticket opens the correct ticket route.
+* Correct ticket information is displayed.
+* Browser back returns to Tickets Registry.
+* Customer profile opens.
+* Tags can be added and removed.
+* Conversation timeline displays.
+* AI messages display AI Generated label.
+* AI feedback buttons work.
+* AI draft is editable.
+* Regenerate Draft works.
+* Copy Draft works.
+* Discard Draft works.
+* Send Response adds a Human Agent message.
+* Internal Note works.
+* Intent analysis displays.
+* Sentiment analysis displays.
+* Escalation risk displays.
+* Knowledge sources open.
+* Use in Response works.
+* Response Validation displays.
+* Assign Agent works.
+* Change Priority works.
+* Escalation confirmation works.
+* Resolve Ticket works.
+* More Options menu works.
+* Invalid ticket ID displays Ticket not found.
+* Mobile layout is responsive.
+* No visible frontend errors exist.
+
+Implement ONLY this feature and stop after completion.
+prompt4
+
+
+
+
+Continue working on the existing AI Customer Assistant frontend application.
+
+The following features are already implemented:
+
+* Operational Dashboard
+* AI Support Sandbox / AI Chat
+* Tickets Registry
+* Create Support Ticket Manual Override
+* Ticket Details and Agent Response Workspace
+
+Now improve and implement ONLY the Sentiment Analysis and Escalation Intelligence frontend experience.
+
+IMPORTANT:
+
+* Preserve the existing application design system.
+* Preserve the current blue and purple SaaS visual direction.
+* Preserve existing typography, cards, buttons, tables, modals, and spacing.
+* Do not redesign existing pages.
+* Do not remove existing features.
+* Do not connect a backend.
+* Do not connect Gemini API.
+* Do not implement a real machine learning model.
+* Use realistic mock frontend analysis logic only.
+
+## Feature Purpose
+
+Create an intelligent sentiment and escalation analysis experience for the AI Customer Assistant platform.
+
+The system should visually analyze customer messages and display:
+
+* Current customer sentiment
+* Sentiment score
+* Sentiment confidence
+* Sentiment trend
+* Customer emotion indicators
+* Escalation risk
+* Escalation score
+* Escalation reasons
+* AI escalation recommendation
+
+This frontend represents future machine learning outputs.
+
+## SENTIMENT ANALYSIS MODEL OUTPUT STRUCTURE
+
+Structure mock sentiment analysis data so it can later receive a backend response similar to:
+
+{
+"sentiment": "negative",
+"sentiment_score": -0.87,
+"confidence": 0.96,
+"emotion": "frustrated",
+"emotion_confidence": 0.91
+}
+
+Do not implement the API call now.
+
+## SUPPORTED SENTIMENT STATES
+
+Support:
+
+Positive
+
+Neutral
+
+Negative
+
+Use reusable visual badges.
+
+Positive:
+Green visual state.
+
+Neutral:
+Blue or neutral gray state.
+
+Negative:
+Red visual state.
+
+Maintain accessible text contrast.
+
+## CUSTOMER EMOTION STATES
+
+Support the following mock emotion states:
+
+* Satisfied
+* Happy
+* Calm
+* Confused
+* Concerned
+* Frustrated
+* Angry
+* Urgent
+
+Create a reusable EmotionBadge component.
+
+Use suitable Lucide icons where appropriate.
+
+Do not use excessive emojis.
+
+## MOCK SENTIMENT DETECTION
+
+Create a separate frontend utility for mock sentiment analysis.
+
+Do not place keyword logic directly inside UI components.
+
+Example behaviour:
+
+If a customer message contains words or phrases such as:
+
+"thank you"
+"great"
+"helpful"
+"solved"
+"perfect"
+"happy"
+
+Return:
+
+Sentiment:
+Positive
+
+Emotion:
+Satisfied
+
+If a message contains:
+
+"angry"
+"terrible"
+"worst"
+"unacceptable"
+"ridiculous"
+"fraud"
+
+Return:
+
+Sentiment:
+Negative
+
+Emotion:
+Angry
+
+If a message contains:
+
+"broken"
+"damaged"
+"failed"
+"not received"
+"still waiting"
+"problem"
+"issue"
+
+Return:
+
+Sentiment:
+Negative
+
+Emotion:
+Frustrated
+
+If a message contains:
+
+"urgent"
+"immediately"
+"right now"
+"as soon as possible"
+
+Return:
+
+Sentiment:
+Negative
+
+Emotion:
+Urgent
+
+For other messages return:
+
+Sentiment:
+Neutral
+
+Emotion:
+Calm
+
+Generate realistic mock sentiment scores and confidence values.
+
+Keep this logic easy to replace with a FastAPI sentiment endpoint later.
+
+## AI SUPPORT SANDBOX INTEGRATION
+
+Enhance the existing AI Support Sandbox.
+
+Do not redesign the chat interface.
+
+When the customer sends a new message:
+
+1. Analyze the message using mock sentiment logic.
+2. Update the AI Insights panel.
+3. Display current sentiment.
+4. Display sentiment score.
+5. Display confidence.
+6. Display detected emotion.
+7. Recalculate escalation risk.
+
+Example:
+
+Customer message:
+
+"This is the third time my payment has failed. This is absolutely ridiculous and I need this fixed immediately."
+
+Expected frontend analysis:
+
+Sentiment:
+Negative
+
+Sentiment Score:
+-0.94
+
+Confidence:
+98%
+
+Emotion:
+Angry / Urgent
+
+Escalation Risk:
+High Risk
+
+Escalation Score:
+91%
+
+## SENTIMENT ANALYSIS CARD
+
+Enhance the existing Sentiment Analysis card.
+
+Display:
+
+Current Sentiment
+
+Example:
+Negative
+
+Sentiment Score
+
+Example:
+-0.87
+
+Confidence
+
+Example:
+96%
+
+Detected Emotion
+
+Example:
+Frustrated
+
+Add a sentiment intensity visualization.
+
+Use a horizontal sentiment scale:
+
+Negative -------- Neutral -------- Positive
+
+Range:
+
+-1.0 to +1.0
+
+Display the current sentiment position using a marker.
+
+Example:
+
+-0.87
+
+The marker should appear toward the negative side.
+
+Do not use a large chart library for this component.
+
+## SENTIMENT TREND
+
+Create a Sentiment Trend section.
+
+Track the sentiment of customer messages in the current conversation.
+
+Example:
+
+Message 1:
+Neutral
+
+Message 2:
+Negative
+
+Message 3:
+Negative
+
+Message 4:
+Positive
+
+Display:
+
+Neutral → Negative → Negative → Positive
+
+Also create a compact trend visualization.
+
+Use a simple line visualization or connected sentiment points.
+
+If using a chart library, reuse the existing chart dependency.
+
+Do not install an unnecessary chart library.
+
+Add text:
+
+"Customer sentiment is improving"
+
+or
+
+"Customer sentiment is declining"
+
+or
+
+"Customer sentiment remains stable"
+
+Calculate this using mock frontend logic.
+
+## MESSAGE-LEVEL SENTIMENT
+
+For customer messages only, add a subtle sentiment indicator.
+
+Do not add large badges inside every message.
+
+On hover or click display:
+
+Sentiment:
+Negative
+
+Score:
+-0.87
+
+Emotion:
+Frustrated
+
+Confidence:
+96%
+
+Keep the chat UI clean.
+
+## ESCALATION INTELLIGENCE
+
+Create a reusable escalation analysis utility.
+
+The escalation risk should use mock frontend logic based on:
+
+* Negative sentiment
+* Angry emotion
+* Urgent emotion
+* Repeated negative customer messages
+* Critical ticket priority
+* Premium customer
+* Customer request for a human agent
+* Words such as "manager", "human", "agent", or "supervisor"
+* Multiple failed attempts
+* Refund policy exceptions
+
+## ESCALATION RISK LEVELS
+
+Support:
+
+Low Risk
+
+Medium Risk
+
+High Risk
+
+Critical Risk
+
+Create a reusable EscalationRiskBadge.
+
+Suggested mock score ranges:
+
+0 to 29:
+Low Risk
+
+30 to 59:
+Medium Risk
+
+60 to 84:
+High Risk
+
+85 to 100:
+Critical Risk
+
+## ESCALATION SCORE CARD
+
+Display:
+
+Escalation Risk
+
+Example:
+High Risk
+
+Escalation Score:
+
+82 / 100
+
+Add a progress bar.
+
+Display:
+
+"Risk increased by 18 points after the latest customer message."
+
+This value can use mock frontend calculations.
+
+## ESCALATION REASONS
+
+Display a section:
+
+"Risk Factors Detected"
+
+Example factors:
+
+* Strong negative sentiment
+* Angry customer emotion
+* Urgent language detected
+* Repeated unresolved issue
+* Premium customer
+
+Each factor should display:
+
+* Small icon
+* Risk factor name
+* Risk contribution
+
+Example:
+
+Strong Negative Sentiment
++25
+
+Urgent Language
++15
+
+Repeated Issue
++20
+
+## AI ESCALATION RECOMMENDATION
+
+Create a recommendation card.
+
+For Low Risk:
+
+"AI can continue handling this conversation."
+
+For Medium Risk:
+
+"Monitor the next customer response before escalating."
+
+For High Risk:
+
+"Human agent review is recommended."
+
+For Critical Risk:
+
+"Immediate human escalation is strongly recommended."
+
+Add appropriate action buttons.
+
+Low Risk:
+
+"Continue with AI"
+
+Medium Risk:
+
+"Monitor Conversation"
+
+High Risk:
+
+"Review Escalation"
+
+Critical Risk:
+
+"Escalate Immediately"
+
+## AUTOMATIC ESCALATION ALERT
+
+If escalation score reaches 85 or higher:
+
+Display a prominent but professional alert.
+
+Title:
+
+"Critical Escalation Risk Detected"
+
+Message:
+
+"The latest customer message indicates a high probability that human intervention is required."
+
+Display detected reasons.
+
+Add buttons:
+
+"Continue with AI"
+
+"Escalate to Human"
+
+Do not automatically escalate without user action.
+
+## ESCALATE TO HUMAN FLOW
+
+When the agent clicks:
+
+"Escalate to Human"
+
+Open the existing escalation confirmation flow if available.
+
+Display:
+
+Current Escalation Score
+
+Detected Risk Level
+
+Risk Factors
+
+Add escalation reason:
+
+"AI Escalation Intelligence Recommendation"
+
+After confirmation:
+
+* Update ticket status to Escalated.
+* Update the AI Insights panel.
+* Add a conversation timeline event.
+
+Timeline event:
+
+"Ticket escalated based on AI escalation intelligence."
+
+Show toast:
+
+"Conversation escalated to human support."
+
+## TICKET DETAILS INTEGRATION
+
+Enhance the existing Ticket Details Agent Workspace.
+
+Do not redesign the page.
+
+Update the AI Intelligence panel with:
+
+* Sentiment Analysis
+* Detected Emotion
+* Sentiment Trend
+* Escalation Risk
+* Escalation Score
+* Risk Factors
+* AI Recommendation
+
+Use ticket conversation history to create mock analysis.
+
+## SENTIMENT HISTORY
+
+Create mock sentiment history for each ticket.
+
+Example:
+
+[
+{
+messageId: "MSG-001",
+sentiment: "neutral",
+score: 0.05,
+emotion: "calm",
+confidence: 0.91
+},
+{
+messageId: "MSG-002",
+sentiment: "negative",
+score: -0.62,
+emotion: "concerned",
+confidence: 0.94
+},
+{
+messageId: "MSG-003",
+sentiment: "negative",
+score: -0.87,
+emotion: "frustrated",
+confidence: 0.96
+}
+]
+
+Keep this data separate from UI components.
+
+## DASHBOARD INTEGRATION
+
+Make only minimal additions to the existing Operational Dashboard.
+
+Do not redesign the dashboard.
+
+Add a compact section:
+
+"Sentiment & Escalation Overview"
+
+Display:
+
+Negative Sentiment Tickets:
+34
+
+High Risk Conversations:
+12
+
+Critical Escalation Alerts:
+4
+
+Average Sentiment Score:
+-0.18
+
+Add a small sentiment distribution visualization:
+
+Positive:
+38%
+
+Neutral:
+35%
+
+Negative:
+27%
+
+Add:
+
+"View Analysis"
+
+The button can navigate to the existing Analytics page placeholder for now.
+
+Do not build the full Analytics page in this step.
+
+## TICKET REGISTRY INTEGRATION
+
+Preserve the existing Tickets Registry design.
+
+Improve the Sentiment column if necessary.
+
+Display:
+
+* Sentiment badge
+* Detected emotion as subtle secondary text
+
+Example:
+
+Negative
+Frustrated
+
+For High or Critical escalation risk add a small risk indicator near the ticket status or priority.
+
+Do not add a large new table column if it damages the current table layout.
+
+## REUSABLE COMPONENTS
+
+Create reusable components such as:
+
+SentimentBadge
+
+EmotionBadge
+
+SentimentAnalysisCard
+
+SentimentScale
+
+SentimentTrend
+
+MessageSentimentIndicator
+
+EscalationRiskBadge
+
+EscalationScoreCard
+
+RiskFactorList
+
+EscalationRecommendation
+
+CriticalEscalationAlert
+
+Reuse the existing:
+
+Toast system
+
+Escalation modal
+
+Ticket badges
+
+Chat components
+
+Do not duplicate components unnecessarily.
+
+## UTILITY STRUCTURE
+
+Create separate utilities or services such as:
+
+sentimentAnalyzer
+
+escalationAnalyzer
+
+Example conceptual functions:
+
+analyzeSentiment(message)
+
+calculateSentimentTrend(history)
+
+calculateEscalationRisk(context)
+
+getEscalationRecommendation(score)
+
+Do not place all analysis logic inside React components.
+
+## FUTURE FASTAPI INTEGRATION
+
+Structure the frontend so mock analysis can later be replaced with:
+
+POST /api/analyze/sentiment
+
+Request:
+
+{
+"message": "This is absolutely ridiculous and I need help immediately."
+}
+
+Response:
+
+{
+"sentiment": "negative",
+"sentiment_score": -0.94,
+"confidence": 0.98,
+"emotion": "angry"
+}
+
+And:
+
+POST /api/analyze/escalation
+
+Request:
+
+{
+"ticket_id": "TIC-1028",
+"sentiment": "negative",
+"sentiment_score": -0.94,
+"emotion": "angry",
+"conversation_history": []
+}
+
+Response:
+
+{
+"risk_level": "critical",
+"risk_score": 91,
+"risk_factors": [
+"strong_negative_sentiment",
+"angry_emotion",
+"urgent_language",
+"repeated_issue"
+],
+"recommendation": "immediate_human_escalation"
+}
+
+Do not implement these API calls now.
+
+## IMPORTANT CONSTRAINTS
+
+Implement ONLY Sentiment Analysis and Escalation Intelligence enhancements.
+
+Do not redesign existing pages.
+
+Do not remove existing functionality.
+
+Do not connect a backend.
+
+Do not connect Gemini API.
+
+Do not implement a real ML model.
+
+All analysis is frontend mock logic.
+
+Keep future FastAPI and ML model integration easy.
+
+## FINAL VERIFICATION
+
+Before finishing verify:
+
+* Existing pages still work.
+* AI Chat design is preserved.
+* Customer messages trigger sentiment analysis.
+* Sentiment updates after every customer message.
+* Sentiment score displays correctly.
+* Confidence displays.
+* Emotion displays.
+* Sentiment scale marker updates.
+* Sentiment history updates.
+* Sentiment trend updates.
+* Message-level sentiment indicators work.
+* Escalation score recalculates.
+* Risk factors display.
+* AI recommendation changes based on risk.
+* Critical alert appears at score 85 or higher.
+* Escalation is never automatic.
+* Escalate to Human flow works.
+* Ticket status updates after escalation.
+* Ticket Details displays enhanced analysis.
+* Tickets Registry design remains preserved.
+* Dashboard receives only the compact overview section.
+* Mobile layout remains responsive.
+* No visible frontend errors exist.
+
+Implement ONLY these enhancements and stop after completion.
+
+prompt5
+
+
+
+Continue working on the existing AI Customer Assistant frontend application.
+
+The following features are already implemented:
+
+* Operational Dashboard
+* AI Support Sandbox / AI Chat
+* Tickets Registry
+* Ticket Details and Agent Response Workspace
+* Sentiment Analysis
+* Escalation Intelligence
+
+Now implement ONLY the Knowledge Retrieval and Knowledge Base frontend experience.
+
+IMPORTANT:
+
+* Preserve the existing design system.
+* Preserve the blue and purple SaaS visual direction.
+* Preserve existing typography, cards, tables, buttons, badges, modals, and spacing.
+* Do not redesign existing pages.
+* Do not remove existing functionality.
+* Do not connect a real backend.
+* Do not connect Gemini API.
+* Do not implement real vector search or embeddings.
+* Use realistic mock frontend retrieval logic only.
+
+## FEATURE PURPOSE
+
+Create a professional Knowledge Base and Knowledge Retrieval interface for the AI Customer Assistant platform.
+
+This feature represents the Retrieval Layer in the system architecture:
+
+Customer
+→ Chat UI
+→ API
+→ Retrieval Layer
+→ LLM
+→ Validator
+→ Response
+→ Ticket Database
+
+The Knowledge Base stores customer-support information.
+
+The Retrieval Layer finds relevant knowledge sources based on the customer's question.
+
+## KNOWLEDGE BASE PAGE
+
+Replace the existing Knowledge Base placeholder page with a complete Knowledge Management workspace.
+
+Page title:
+
+"Knowledge Base"
+
+Subtitle:
+
+"Manage, index, and retrieve trusted support knowledge."
+
+Add top-right actions:
+
+* Upload Document
+* Add FAQ
+* Refresh Index
+
+All buttons must have working mock frontend interactions.
+
+## KNOWLEDGE KPI CARDS
+
+Create four compact KPI cards.
+
+Total Knowledge Sources
+
+Value:
+128
+
+Subtitle:
+"Available sources"
+
+Indexed Sources
+
+Value:
+119
+
+Subtitle:
+"Ready for retrieval"
+
+Processing
+
+Value:
+6
+
+Subtitle:
+"Currently indexing"
+
+Failed
+
+Value:
+3
+
+Subtitle:
+"Require attention"
+
+Use suitable Lucide icons.
+
+Preserve the existing dashboard card style.
+
+## KNOWLEDGE SEARCH
+
+Create a large search input.
+
+Placeholder:
+
+"Search policies, FAQs, product guides, and support documents..."
+
+Add a search button.
+
+Search must filter mock knowledge data.
+
+Add filter dropdowns:
+
+* Source Type
+* Category
+* Index Status
+
+Source Type:
+
+All Sources
+
+Policy
+
+FAQ
+
+Product Guide
+
+Technical Document
+
+Support Procedure
+
+Category:
+
+All Categories
+
+Billing
+
+Returns & Refunds
+
+Orders & Delivery
+
+Account
+
+Technical Support
+
+API & Integrations
+
+Index Status:
+
+All Status
+
+Indexed
+
+Processing
+
+Failed
+
+Add:
+
+"Clear Filters"
+
+The button must reset all filters.
+
+## KNOWLEDGE SOURCE LIST
+
+Create a professional knowledge source table or card list.
+
+Display:
+
+* Source Name
+* Source Type
+* Category
+* Version
+* Last Updated
+* Index Status
+* Knowledge Chunks
+* Action
+
+Create at least 12 realistic mock knowledge sources.
+
+Include:
+
+Refund Policy
+
+Damaged Product Guidelines
+
+Return & Replacement FAQ
+
+Payment Troubleshooting Guide
+
+Order Tracking FAQ
+
+Delivery Delay Support Procedure
+
+Account Recovery Guide
+
+Subscription Cancellation Policy
+
+API Authentication Documentation
+
+Webhook Integration Guide
+
+Rate Limit Policy
+
+Customer Escalation Procedure
+
+## INDEX STATUS BADGES
+
+Support:
+
+Indexed
+
+Processing
+
+Failed
+
+Indexed:
+Green state.
+
+Processing:
+Blue or yellow state.
+
+Failed:
+Red state.
+
+Create a reusable IndexStatusBadge.
+
+## KNOWLEDGE SOURCE ACTIONS
+
+Add an action menu for every source.
+
+Options:
+
+* View Source
+* Edit Metadata
+* Test Retrieval
+* Reindex
+* Delete
+
+All actions must have mock frontend interactions.
+
+## KNOWLEDGE SOURCE DETAILS
+
+When the user clicks a source row, source name, or View Source:
+
+Open a Knowledge Source Details panel or modal.
+
+Display:
+
+Source Name
+
+Example:
+Refund Policy
+
+Document Type:
+Policy
+
+Category:
+Returns & Refunds
+
+Version:
+v2.4
+
+Last Updated:
+July 10, 2026
+
+Index Status:
+Indexed
+
+Knowledge Chunks:
+24
+
+## DOCUMENT CONTENT PREVIEW
+
+Display realistic mock document content.
+
+Example:
+
+"Customers may request a refund for products damaged during delivery when the issue is reported within 14 days of receiving the product."
+
+"Refunds are returned to the original payment method within 5-7 business days after approval."
+
+"Customers may select a free replacement instead of a refund when inventory is available."
+
+Display document sections.
+
+Example:
+
+1. Refund Eligibility
+
+2. Damaged Products
+
+3. Refund Processing
+
+4. Replacement Options
+
+5. Policy Exceptions
+
+## KNOWLEDGE CHUNKS
+
+Create a section:
+
+"Indexed Knowledge Chunks"
+
+Display mock chunks.
+
+Example:
+
+CHUNK-001
+
+Section:
+Damaged Products
+
+Content:
+
+"Products damaged during delivery qualify for a full refund or free replacement when reported within 14 days."
+
+Token Count:
+48
+
+Add relevance metadata.
+
+Display at least 4 mock chunks for a selected document.
+
+This visually represents document chunking for future RAG implementation.
+
+## UPLOAD DOCUMENT MODAL
+
+When "Upload Document" is clicked open a modal.
+
+Fields:
+
+Document File
+
+Allow mock file selection.
+
+Supported file labels:
+
+PDF
+
+TXT
+
+DOCX
+
+Do not implement real file processing.
+
+Category
+
+Source Type
+
+Document Name
+
+Description
+
+Add buttons:
+
+Cancel
+
+Upload & Index
+
+When submitted:
+
+Add a new mock knowledge source.
+
+Set status:
+
+Processing
+
+Show toast:
+
+"Document uploaded. Knowledge indexing started."
+
+After approximately 2 seconds change mock status to:
+
+Indexed
+
+Show toast:
+
+"Knowledge source indexed successfully."
+
+## ADD FAQ MODAL
+
+When "Add FAQ" is clicked open a modal.
+
+Fields:
+
+Question
+
+Answer
+
+Category
+
+Keywords
+
+Example:
+
+Question:
+
+"How long does a refund take?"
+
+Answer:
+
+"Approved refunds are returned to the original payment method within 5-7 business days."
+
+Keywords:
+
+refund, processing time, payment
+
+Buttons:
+
+Cancel
+
+Add FAQ
+
+Validate required fields.
+
+After creation:
+
+Add the FAQ to the knowledge source list.
+
+Set status:
+
+Indexed
+
+Show toast:
+
+"FAQ added to knowledge base."
+
+## EDIT METADATA
+
+Create an Edit Metadata modal.
+
+Allow editing:
+
+Source Name
+
+Category
+
+Source Type
+
+Description
+
+Version
+
+Save changes in frontend state.
+
+Show toast:
+
+"Knowledge metadata updated."
+
+## DELETE KNOWLEDGE SOURCE
+
+When Delete is selected:
+
+Open a confirmation modal.
+
+Title:
+
+"Delete Knowledge Source?"
+
+Message:
+
+"This source will no longer be available for AI knowledge retrieval."
+
+Buttons:
+
+Cancel
+
+Delete Source
+
+After confirmation:
+
+Remove the source from mock frontend data.
+
+Show toast:
+
+"Knowledge source deleted."
+
+## REINDEX FUNCTIONALITY
+
+When Reindex is clicked:
+
+Change status to:
+
+Processing
+
+Show toast:
+
+"Knowledge reindexing started."
+
+After approximately 2 seconds:
+
+Change status to:
+
+Indexed
+
+Show toast:
+
+"Knowledge source reindexed successfully."
+
+## REFRESH INDEX
+
+When "Refresh Index" is clicked:
+
+Display a loading state.
+
+Simulate checking the knowledge index.
+
+Show toast:
+
+"Knowledge index refreshed."
+
+Do not change unrelated data.
+
+## RETRIEVAL TESTING WORKSPACE
+
+Create an important feature:
+
+"Test Knowledge Retrieval"
+
+Open this workspace when:
+
+* Test Retrieval is selected from a source.
+* A dedicated "Test Retrieval" action is used.
+
+Create a modal or large panel.
+
+Title:
+
+"Knowledge Retrieval Test"
+
+Subtitle:
+
+"Test how the AI retrieval layer finds relevant support knowledge."
+
+## RETRIEVAL QUERY INPUT
+
+Add a large input.
+
+Placeholder:
+
+"Enter a customer support question..."
+
+Example query:
+
+"My product arrived with a cracked screen. Can I get my money back?"
+
+Add button:
+
+"Run Retrieval"
+
+## MOCK RETRIEVAL LOGIC
+
+Create a separate mock retrieval utility.
+
+Do not place keyword matching directly inside React UI components.
+
+Example behaviour:
+
+If query contains:
+
+refund
+money back
+damaged
+broken
+cracked
+
+Return:
+
+Refund Policy
+
+Damaged Product Guidelines
+
+Return & Replacement FAQ
+
+If query contains:
+
+payment
+card
+checkout
+charged
+
+Return:
+
+Payment Troubleshooting Guide
+
+Billing FAQ
+
+Refund Policy
+
+If query contains:
+
+delivery
+order
+tracking
+not received
+
+Return:
+
+Order Tracking FAQ
+
+Delivery Delay Support Procedure
+
+Shipping Policy
+
+If query contains:
+
+password
+login
+account
+access
+
+Return:
+
+Account Recovery Guide
+
+Account Security FAQ
+
+If query contains:
+
+API
+webhook
+token
+rate limit
+
+Return:
+
+API Authentication Documentation
+
+Webhook Integration Guide
+
+Rate Limit Policy
+
+For other queries:
+
+Return general support knowledge sources.
+
+Keep this logic easy to replace with a vector database later.
+
+## RETRIEVAL RESULTS
+
+After clicking "Run Retrieval":
+
+Display a short loading state.
+
+Text:
+
+"Searching knowledge index..."
+
+Then display:
+
+"3 Relevant Sources Retrieved"
+
+For every source display:
+
+Source Name
+
+Category
+
+Relevance Score
+
+Matched Section
+
+Short Content Excerpt
+
+Example:
+
+Refund Policy
+
+Returns & Refunds
+
+Relevance:
+98%
+
+Matched Section:
+Damaged Products
+
+Excerpt:
+
+"Products damaged during delivery qualify for a full refund or free replacement when reported within 14 days."
+
+## RELEVANCE SCORE
+
+Display relevance as:
+
+98%
+
+94%
+
+89%
+
+Add a progress indicator.
+
+Sort sources from highest relevance to lowest relevance.
+
+## RETRIEVAL PIPELINE VISUALIZATION
+
+Inside the Retrieval Test workspace create a simple visual pipeline:
+
+Customer Query
+
+↓
+
+Query Processing
+
+↓
+
+Knowledge Search
+
+↓
+
+Relevant Chunks
+
+↓
+
+Context Ready for AI
+
+Highlight each stage during mock retrieval.
+
+Example:
+
+Customer Query:
+Completed
+
+Query Processing:
+Completed
+
+Knowledge Search:
+Completed
+
+Relevant Chunks:
+3 Found
+
+Context Ready for AI:
+Ready
+
+Keep the visualization clean and professional.
+
+Do not use a complex diagram library.
+
+## RETRIEVED CONTEXT PREVIEW
+
+Create a section:
+
+"Context Prepared for AI"
+
+Display a formatted mock context block.
+
+Example:
+
+SOURCE: Refund Policy
+
+SECTION: Damaged Products
+
+CONTENT:
+Products damaged during delivery qualify for a full refund or free replacement when reported within 14 days.
+
+SOURCE: Damaged Product Guidelines
+
+SECTION: Customer Resolution
+
+CONTENT:
+Agents should offer refund or replacement options after validating the order.
+
+Add:
+
+"Copy Context"
+
+Show toast:
+
+"Retrieved context copied."
+
+## AI SUPPORT SANDBOX INTEGRATION
+
+Enhance the existing AI Support Sandbox.
+
+Do not redesign it.
+
+When a customer sends a message:
+
+1. Analyze the message.
+2. Run mock knowledge retrieval.
+3. Display retrieved knowledge sources in the existing AI Insights panel.
+4. Display relevance scores.
+5. Use the highest matching source to create a more relevant mock AI response.
+
+Example:
+
+Customer:
+
+"My screen arrived cracked. I want a refund."
+
+Retrieved:
+
+Refund Policy — 98%
+
+Damaged Product Guidelines — 94%
+
+Return & Replacement FAQ — 89%
+
+AI response should reference policy information naturally.
+
+Example:
+
+"I'm sorry your product arrived damaged. Products damaged during delivery may qualify for a full refund or free replacement when reported within 14 days."
+
+Do not show fake citations to the customer.
+
+## KNOWLEDGE SOURCE VIEW FROM AI CHAT
+
+In the AI Insights panel:
+
+Display:
+
+"3 Knowledge Sources Retrieved"
+
+For each source show:
+
+Source name
+
+Relevance score
+
+Add:
+
+"View Source"
+
+Clicking View Source must open the Knowledge Source Preview.
+
+## TICKET DETAILS INTEGRATION
+
+Preserve the existing Ticket Details design.
+
+Enhance the Knowledge Retrieval card.
+
+Display:
+
+Retrieved Sources
+
+Source relevance
+
+Matched section
+
+Knowledge chunk used
+
+Example:
+
+Refund Policy
+
+98% Match
+
+Section:
+Damaged Products
+
+Chunk:
+CHUNK-001
+
+Clicking the source must open Knowledge Source Preview.
+
+The existing "Use in Response" action must continue working.
+
+## RETRIEVAL METRICS
+
+Add a small section to the Knowledge Base page:
+
+"Retrieval Performance"
+
+Display:
+
+Average Retrieval Time:
+84 ms
+
+Average Sources Retrieved:
+3.2
+
+Average Top Match Score:
+94%
+
+Knowledge Coverage:
+91%
+
+These are mock frontend metrics.
+
+## EMPTY STATES
+
+If no knowledge sources match search filters display:
+
+"No knowledge sources found"
+
+Subtitle:
+
+"Try adjusting your search or filters."
+
+Add:
+
+"Clear Filters"
+
+If retrieval returns no strong result display:
+
+"No highly relevant knowledge found."
+
+Subtitle:
+
+"Human agent review may be required."
+
+## REUSABLE COMPONENTS
+
+Create reusable components such as:
+
+KnowledgeKPICard
+
+KnowledgeFilterBar
+
+KnowledgeSourceList
+
+KnowledgeSourceCard
+
+IndexStatusBadge
+
+KnowledgeSourceDetails
+
+KnowledgeChunkList
+
+UploadDocumentModal
+
+AddFAQModal
+
+EditKnowledgeModal
+
+DeleteKnowledgeModal
+
+RetrievalTestPanel
+
+RetrievalPipeline
+
+RetrievalResultCard
+
+RelevanceIndicator
+
+RetrievedContextPreview
+
+KnowledgeSourcePreview
+
+Reuse existing:
+
+Toast system
+
+Modal components
+
+Buttons
+
+Cards
+
+Do not duplicate existing components unnecessarily.
+
+## UTILITY STRUCTURE
+
+Create a separate mock retrieval utility.
+
+Example conceptual functions:
+
+retrieveKnowledge(query)
+
+calculateRelevance(query, source)
+
+getMatchedSection(source, query)
+
+prepareAIContext(results)
+
+Do not place all retrieval logic inside React components.
+
+## FUTURE FASTAPI AND RAG INTEGRATION
+
+Structure the frontend so mock retrieval can later be replaced by:
+
+POST /api/retrieval/search
+
+Request:
+
+{
+"query": "My product arrived with a cracked screen. Can I get a refund?",
+"top_k": 3
+}
+
+Future response:
+
+{
+"query": "My product arrived with a cracked screen. Can I get a refund?",
+"results": [
+{
+"source_id": "KB-001",
+"source_name": "Refund Policy",
+"chunk_id": "CHUNK-001",
+"section": "Damaged Products",
+"content": "Products damaged during delivery qualify for a full refund or free replacement when reported within 14 days.",
+"relevance_score": 0.98
+}
+],
+"retrieval_time_ms": 84
+}
+
+Do not implement this API call now.
+
+## IMPORTANT CONSTRAINTS
+
+Implement ONLY Knowledge Retrieval and Knowledge Base functionality.
+
+Do not redesign existing pages.
+
+Do not remove existing functionality.
+
+Do not connect a real backend.
+
+Do not connect Gemini API.
+
+Do not implement real embeddings.
+
+Do not implement a vector database.
+
+Do not implement real document processing.
+
+All retrieval logic is frontend mock logic.
+
+Keep future FastAPI, embeddings, and vector database integration easy.
+
+## FINAL VERIFICATION
+
+Before finishing verify:
+
+* Knowledge Base page opens.
+* KPI cards display.
+* Knowledge search works.
+* Source Type filter works.
+* Category filter works.
+* Index Status filter works.
+* Clear Filters works.
+* Knowledge source details open.
+* Document content preview displays.
+* Knowledge chunks display.
+* Upload Document modal works.
+* Processing status changes to Indexed.
+* Add FAQ works.
+* Edit Metadata works.
+* Delete Source works.
+* Reindex works.
+* Refresh Index works.
+* Retrieval Test opens.
+* Retrieval query works.
+* Retrieval loading state displays.
+* Relevant sources display.
+* Relevance scores display.
+* Retrieval pipeline updates.
+* Context Prepared for AI displays.
+* Copy Context works.
+* AI Support Sandbox displays retrieved sources.
+* AI responses use mock retrieved knowledge.
+* Ticket Details displays retrieval information.
+* Use in Response continues working.
+* Empty states work.
+* Mobile layout is responsive.
+* Existing pages remain unchanged.
+* No visible frontend errors exist.
+
+Implement ONLY this feature and stop after completion.
+
+prompt6
+
+
+Continue working on the existing AI Customer Assistant frontend application.
+
+The following features are already implemented:
+
+* Operational Dashboard
+* AI Support Sandbox / AI Chat
+* Tickets Registry
+* Ticket Details and Agent Response Workspace
+* Sentiment Analysis
+* Escalation Intelligence
+* Knowledge Base
+* Knowledge Retrieval
+
+Now implement ONLY the Conversation History and Customer Interaction Timeline frontend experience.
+
+IMPORTANT:
+
+* Preserve the existing blue and purple enterprise SaaS design system.
+* Preserve existing typography, spacing, cards, buttons, badges, tables, modals, and header.
+* Do not redesign existing pages.
+* Do not remove existing functionality.
+* Do not connect a backend.
+* Do not connect Gemini API.
+* Use realistic mock conversation data only.
+
+## FEATURE PURPOSE
+
+Create a professional Conversation History workspace.
+
+Support admins and agents must be able to:
+
+* View previous customer conversations.
+* Search conversations.
+* Filter conversations.
+* Review customer messages.
+* Review AI responses.
+* Review human agent responses.
+* View sentiment changes.
+* View detected intent.
+* View ticket relationships.
+* Review escalation events.
+* Review the complete customer interaction timeline.
+
+This feature represents stored conversation history in the AI Customer Assistant architecture.
+
+## CONVERSATIONS PAGE
+
+Replace the current Conversations placeholder page.
+
+Page title:
+
+"Conversation History"
+
+Subtitle:
+
+"Review customer interactions, AI responses, and support activity."
+
+Top-right actions:
+
+* Refresh
+* Export History
+
+Refresh:
+
+Display a short loading state.
+
+Show toast:
+
+"Conversation history refreshed."
+
+Export History:
+
+Show toast:
+
+"Conversation history export prepared."
+
+Do not implement real file export yet.
+
+## CONVERSATION KPI CARDS
+
+Create four compact KPI cards.
+
+Total Conversations
+
+Value:
+1,284
+
+Subtitle:
+"All customer interactions"
+
+Active Conversations
+
+Value:
+48
+
+Subtitle:
+"Currently active"
+
+AI Resolved
+
+Value:
+936
+
+Subtitle:
+"Resolved without escalation"
+
+Human Escalated
+
+Value:
+127
+
+Subtitle:
+"Transferred to agents"
+
+Use suitable Lucide icons.
+
+Follow the existing Operational Dashboard card style.
+
+## PAGE LAYOUT
+
+Create a three-section conversation workspace.
+
+LEFT PANEL:
+Conversation Registry
+
+CENTER PANEL:
+Conversation History
+
+RIGHT PANEL:
+Conversation Intelligence
+
+Recommended desktop layout:
+
+Left:
+28%
+
+Center:
+47%
+
+Right:
+25%
+
+The center conversation history should receive the most visual focus.
+
+## LEFT PANEL — CONVERSATION REGISTRY
+
+At the top create a search input.
+
+Placeholder:
+
+"Search conversations, customers, or ticket IDs..."
+
+Search must work with mock data.
+
+Add filter button.
+
+Filters:
+
+Conversation Status
+
+* All Status
+* Active
+* Resolved
+* Escalated
+* Closed
+
+Sentiment
+
+* All Sentiments
+* Positive
+* Neutral
+* Negative
+
+Handler
+
+* All Handlers
+* Support AI
+* Human Agent
+
+Date
+
+* Today
+* Last 7 Days
+* Last 30 Days
+* All Time
+
+Add:
+
+"Clear Filters"
+
+All filters must work using frontend state.
+
+## CONVERSATION LIST
+
+Create at least 12 realistic mock conversations.
+
+Include conversations related to:
+
+* Damaged product refund
+* Order delivery delay
+* Failed payment
+* Wrong product received
+* Subscription cancellation
+* Password reset
+* Duplicate payment
+* API authentication issue
+* Webhook integration problem
+* Account access
+* Refund processing delay
+* Rate limit extension
+
+Each conversation item must display:
+
+* Customer avatar or initials
+* Customer name
+* Conversation title
+* Last message preview
+* Time or date
+* Sentiment indicator
+* Status indicator
+
+If linked to a ticket display:
+
+TIC-1028
+
+Highlight the selected conversation.
+
+Clicking a conversation must update the center and right panels.
+
+## MOCK CONVERSATION DATA STRUCTURE
+
+Keep conversation data separate from UI components.
+
+Use a structure similar to:
+
+{
+id: "CONV-1001",
+title: "Damaged product refund",
+customer: {
+id: "CUS-2048",
+name: "Kyle Reese",
+email: "[reese.k@techcom.com](mailto:reese.k@techcom.com)"
+},
+ticketId: "TIC-1028",
+status: "Escalated",
+handler: "Human Agent",
+currentSentiment: "Negative",
+createdAt: "2026-07-12T13:35:00",
+updatedAt: "2026-07-14T10:24:00",
+messages: [],
+timeline: []
+}
+
+## CENTER PANEL — CONVERSATION HISTORY
+
+Create a header.
+
+Display:
+
+Conversation title
+
+Customer name
+
+Conversation ID
+
+Linked Ticket ID
+
+Conversation status
+
+Handler
+
+Example:
+
+Damaged Product Refund
+
+Kyle Reese
+
+CONV-1001
+
+TIC-1028
+
+Escalated
+
+Human Agent
+
+The Ticket ID must be clickable.
+
+Clicking it should navigate to:
+
+/tickets/TIC-1028
+
+## MESSAGE TIMELINE
+
+Display the complete conversation history.
+
+Support message types:
+
+* Customer
+* AI Assistant
+* Human Agent
+* Internal Note
+* System Event
+
+Use existing chat components where possible.
+
+Do not unnecessarily create a completely separate message design.
+
+## CUSTOMER MESSAGE
+
+Display:
+
+Customer avatar
+
+Customer name
+
+Message content
+
+Timestamp
+
+Add a subtle sentiment indicator.
+
+Example:
+
+Kyle Reese
+
+"My order arrived today and the screen is completely cracked."
+
+10:20 AM
+
+Sentiment:
+Negative
+
+Emotion:
+Frustrated
+
+## AI ASSISTANT MESSAGE
+
+Display:
+
+AI assistant icon
+
+AI Customer Assistant
+
+Badge:
+
+"AI Generated"
+
+Message content
+
+Timestamp
+
+Actions:
+
+* Copy
+* Thumbs Up
+* Thumbs Down
+
+Reuse existing feedback behaviour.
+
+## HUMAN AGENT MESSAGE
+
+Display:
+
+Agent avatar
+
+Agent name
+
+Badge:
+
+"Support Agent"
+
+Message content
+
+Timestamp
+
+Example:
+
+Alex Chen
+
+"Hi Kyle, I've reviewed your damaged product request. Your order qualifies for our damaged product resolution process."
+
+## INTERNAL NOTE
+
+Display a visually distinct card.
+
+Label:
+
+"Internal Note"
+
+Example:
+
+"Customer is a premium subscriber. Prioritize resolution."
+
+Display:
+
+Agent name
+
+Timestamp
+
+Internal notes must not look like customer-visible messages.
+
+## SYSTEM EVENTS
+
+Display centered timeline events.
+
+Examples:
+
+"Conversation started with Support AI"
+
+"Intent detected: Refund Request"
+
+"Negative sentiment detected"
+
+"3 knowledge sources retrieved"
+
+"Escalation risk increased to High"
+
+"Ticket TIC-1028 created"
+
+"Conversation transferred to Alex Chen"
+
+"Ticket marked as resolved"
+
+Use subtle icons and timeline styling.
+
+## CONVERSATION DATE SEPARATORS
+
+For conversations spanning multiple days display date separators.
+
+Examples:
+
+July 12, 2026
+
+July 13, 2026
+
+Today
+
+## CONVERSATION SEARCH
+
+Add a search icon or "Search Messages" action in the conversation header.
+
+When clicked display a message search input.
+
+Placeholder:
+
+"Search messages in this conversation..."
+
+Highlight or filter matching messages.
+
+Add a result count.
+
+Example:
+
+"3 messages found"
+
+## CONVERSATION INTELLIGENCE PANEL
+
+Create a right panel titled:
+
+"Conversation Intelligence"
+
+Subtitle:
+
+"AI analysis of the customer interaction"
+
+Display an AI active indicator.
+
+## CURRENT SENTIMENT
+
+Display:
+
+Current Sentiment
+
+Example:
+Negative
+
+Sentiment Score:
+-0.87
+
+Confidence:
+96%
+
+Detected Emotion:
+Frustrated
+
+Reuse existing sentiment components.
+
+## SENTIMENT JOURNEY
+
+Create a section:
+
+"Sentiment Journey"
+
+Display customer sentiment changes across the conversation.
+
+Example:
+
+Neutral
+↓
+Negative
+↓
+Negative
+↓
+Positive
+
+Display message timestamps.
+
+Example:
+
+09:42 AM
+Neutral
+
+10:05 AM
+Negative
+
+10:20 AM
+Negative
+
+11:15 AM
+Positive
+
+Add summary text:
+
+"Customer sentiment improved after human agent intervention."
+
+Possible summaries:
+
+"Customer sentiment is improving."
+
+"Customer sentiment is declining."
+
+"Customer sentiment remains negative."
+
+"Customer sentiment remains stable."
+
+Use existing sentiment trend logic where possible.
+
+## INTENT HISTORY
+
+Create a section:
+
+"Intent History"
+
+Display detected intents.
+
+Example:
+
+Initial Intent:
+Damaged Product
+
+Updated Intent:
+Refund Request
+
+Current Intent:
+Refund Request
+
+Confidence:
+96%
+
+Display intent changes as a small timeline.
+
+## ESCALATION HISTORY
+
+Create a section:
+
+"Escalation History"
+
+Display:
+
+Initial Risk:
+Low Risk
+
+Highest Risk:
+High Risk
+
+Current Risk:
+Medium Risk
+
+Peak Escalation Score:
+82 / 100
+
+Display risk factors:
+
+* Negative sentiment
+* Repeated unresolved issue
+* Premium customer
+
+If the conversation was escalated display:
+
+Escalated:
+Yes
+
+Escalated At:
+July 14, 2026 10:30 AM
+
+Escalation Reason:
+AI Escalation Intelligence Recommendation
+
+## KNOWLEDGE USED
+
+Create a section:
+
+"Knowledge Used"
+
+Display retrieved sources used during the conversation.
+
+Example:
+
+Refund Policy
+
+98% Match
+
+Damaged Product Guidelines
+
+94% Match
+
+Return & Replacement FAQ
+
+89% Match
+
+Clicking a source should open the existing Knowledge Source Preview.
+
+Reuse existing Knowledge Base data.
+
+## AI AND HUMAN HANDOFF
+
+Create a section:
+
+"Support Handoff"
+
+Display a visual support flow:
+
+Support AI
+
+↓
+
+Escalation Triggered
+
+↓
+
+Alex Chen
+
+Display:
+
+AI Handling Time:
+4m 32s
+
+Human Handling Time:
+8m 14s
+
+Handoff Reason:
+High escalation risk
+
+Do not use a complex diagram library.
+
+## CUSTOMER INTERACTION TIMELINE
+
+Add a separate tab or section:
+
+"Customer Timeline"
+
+This should show support activity across multiple tickets and conversations for the selected customer.
+
+Example:
+
+March 12, 2026
+
+Subscription Started
+
+Premium Annual Plan
+
+April 04, 2026
+
+TIC-0982
+
+Payment Verification Issue
+
+Resolved
+
+June 18, 2026
+
+TIC-1005
+
+Subscription Invoice Request
+
+Resolved
+
+July 12, 2026
+
+CONV-1001
+
+Damaged Product Refund
+
+Escalated
+
+Display the timeline chronologically.
+
+## CUSTOMER SUMMARY
+
+At the top of Customer Timeline display:
+
+Customer Name
+
+Customer ID
+
+Customer Since
+
+Subscription
+
+Total Conversations
+
+Total Tickets
+
+Resolved Issues
+
+Escalated Issues
+
+Average Sentiment
+
+Customer Satisfaction
+
+Example:
+
+Kyle Reese
+
+CUS-2048
+
+Customer Since:
+March 2024
+
+Subscription:
+Premium Annual
+
+Total Conversations:
+14
+
+Total Tickets:
+8
+
+Resolved Issues:
+6
+
+Escalated Issues:
+2
+
+Average Sentiment:
+Neutral
+
+Customer Satisfaction:
+4.3 / 5
+
+## CONVERSATION ACTIONS
+
+Add actions in the conversation header:
+
+* Open Ticket
+* Copy Conversation ID
+* Add Internal Note
+* More Options
+
+Open Ticket:
+
+Navigate to the linked Ticket Details workspace.
+
+Copy Conversation ID:
+
+Copy the ID.
+
+Show toast:
+
+"Conversation ID copied."
+
+Add Internal Note:
+
+Open a small modal.
+
+Field:
+
+Internal Note
+
+Buttons:
+
+Cancel
+
+Save Note
+
+After saving:
+
+Add the note to the conversation timeline.
+
+Show toast:
+
+"Internal note added."
+
+## MORE OPTIONS
+
+Add:
+
+* Mark Resolved
+* Reopen Conversation
+* Export Conversation
+* View Customer Timeline
+
+Use mock frontend interactions.
+
+Mark Resolved:
+
+Change status to Resolved.
+
+Add system timeline event.
+
+Show toast:
+
+"Conversation marked as resolved."
+
+Reopen Conversation:
+
+Change status to Active.
+
+Show toast:
+
+"Conversation reopened."
+
+Export Conversation:
+
+Show toast:
+
+"Conversation export prepared."
+
+View Customer Timeline:
+
+Open the Customer Timeline section.
+
+## EMPTY STATE
+
+If no conversation matches search or filters display:
+
+"No conversations found"
+
+Subtitle:
+
+"Try adjusting your search or filters."
+
+Add:
+
+"Clear Filters"
+
+If no conversation is selected display:
+
+"Select a conversation"
+
+Subtitle:
+
+"Choose a customer conversation to review the complete interaction history."
+
+## RESPONSIVE DESIGN
+
+Desktop:
+
+Display three panels.
+
+Tablet:
+
+Display conversation list and history.
+
+Allow Conversation Intelligence to open as a drawer.
+
+Mobile:
+
+Display Conversation Registry first.
+
+After selecting a conversation display Conversation History.
+
+Add buttons:
+
+"Back to Conversations"
+
+"AI Intelligence"
+
+"Customer Timeline"
+
+Use full-screen drawers where appropriate.
+
+## REUSABLE COMPONENTS
+
+Create reusable components such as:
+
+ConversationKPICard
+
+ConversationRegistry
+
+ConversationListItem
+
+ConversationHeader
+
+ConversationTimeline
+
+ConversationMessage
+
+InternalNote
+
+SystemTimelineEvent
+
+DateSeparator
+
+MessageSearch
+
+ConversationIntelligencePanel
+
+SentimentJourney
+
+IntentHistory
+
+EscalationHistory
+
+KnowledgeUsed
+
+SupportHandoff
+
+CustomerInteractionTimeline
+
+CustomerSummary
+
+AddInternalNoteModal
+
+Reuse existing:
+
+SentimentBadge
+
+EmotionBadge
+
+EscalationRiskBadge
+
+KnowledgeSourcePreview
+
+Chat message components
+
+Toast system
+
+Modal components
+
+Do not duplicate components unnecessarily.
+
+## FUTURE FASTAPI INTEGRATION
+
+Structure the frontend so mock conversation data can later be replaced with:
+
+GET /api/conversations
+
+GET /api/conversations/{conversation_id}
+
+GET /api/customers/{customer_id}/timeline
+
+POST /api/conversations/{conversation_id}/notes
+
+PATCH /api/conversations/{conversation_id}
+
+Do not implement these API calls now.
+
+Example future conversation response:
+
+{
+"conversation_id": "CONV-1001",
+"ticket_id": "TIC-1028",
+"customer": {
+"id": "CUS-2048",
+"name": "Kyle Reese"
+},
+"status": "escalated",
+"handler": "human_agent",
+"current_sentiment": "negative",
+"messages": [],
+"sentiment_history": [],
+"intent_history": [],
+"escalation_history": [],
+"knowledge_sources": []
+}
+
+## IMPORTANT CONSTRAINTS
+
+Implement ONLY Conversation History and Customer Interaction Timeline.
+
+Do not redesign existing pages.
+
+Do not remove existing functionality.
+
+Do not connect a backend.
+
+Do not connect Gemini API.
+
+Do not implement real AI analysis.
+
+Use existing frontend mock analysis where possible.
+
+Keep future FastAPI and database integration easy.
+
+## FINAL VERIFICATION
+
+Before finishing verify:
+
+* Conversations page opens.
+* KPI cards display.
+* Search works.
+* Status filter works.
+* Sentiment filter works.
+* Handler filter works.
+* Date filter works.
+* Clear Filters works.
+* Conversation selection works.
+* Correct conversation messages display.
+* Customer messages display sentiment indicators.
+* AI messages display AI Generated.
+* AI feedback actions work.
+* Human Agent messages display correctly.
+* Internal Notes display correctly.
+* System Events display correctly.
+* Date separators display.
+* Message search works.
+* Sentiment Journey displays.
+* Intent History displays.
+* Escalation History displays.
+* Knowledge Used displays.
+* Knowledge sources open.
+* Support Handoff displays.
+* Customer Timeline displays.
+* Open Ticket navigation works.
+* Copy Conversation ID works.
+* Add Internal Note works.
+* Mark Resolved works.
+* Reopen Conversation works.
+* Empty states work.
+* Mobile layout is responsive.
+* Existing pages remain unchanged.
+* No visible frontend errors exist.
+
+Implement ONLY this feature and stop after completion.
+prompt7
+
+
+
+Continue working on the existing AI Customer Assistant frontend application.
+
+The following features are already implemented:
+
+* Operational Dashboard
+* AI Support Sandbox / AI Chat
+* Tickets Registry
+* Ticket Details and Agent Response Workspace
+* Sentiment Analysis
+* Escalation Intelligence
+* Knowledge Base and Knowledge Retrieval
+* Conversation History and Customer Interaction Timeline
+
+Now implement ONLY the Analytics Dashboard and AI Performance Monitoring frontend experience.
+
+IMPORTANT:
+
+* Preserve the existing enterprise SaaS design system.
+* Preserve the current blue and purple visual direction.
+* Preserve existing typography, spacing, cards, buttons, badges, tables, modals, and navigation.
+* Do not redesign existing pages.
+* Do not remove existing functionality.
+* Do not connect a backend.
+* Do not connect Gemini API.
+* Use realistic mock analytics data only.
+
+## FEATURE PURPOSE
+
+Create a professional analytics workspace for support administrators.
+
+The Analytics page must help administrators understand:
+
+* Ticket performance
+* AI support performance
+* Customer sentiment
+* Escalation patterns
+* Knowledge retrieval performance
+* Resolution performance
+* AI versus human support effectiveness
+* Customer satisfaction
+
+This page represents aggregated support analytics from the future Ticket Database and AI pipeline.
+
+## ANALYTICS PAGE
+
+Replace the existing Analytics placeholder page.
+
+Page title:
+
+"Support Analytics"
+
+Subtitle:
+
+"Monitor customer support performance and AI assistant effectiveness."
+
+Top-right actions:
+
+* Refresh Analytics
+* Date Range
+* Export Analytics
+
+Refresh Analytics:
+
+Display a short loading state.
+
+Show toast:
+
+"Analytics data refreshed."
+
+Date Range:
+
+Create a dropdown or date selector.
+
+Options:
+
+* Today
+* Last 7 Days
+* Last 30 Days
+* Last 90 Days
+* Custom Range
+
+Changing the date range must update mock analytics values.
+
+Export Analytics:
+
+Show toast:
+
+"Analytics export prepared successfully."
+
+Do not implement real file export yet.
+
+## PRIMARY KPI CARDS
+
+Create six KPI cards.
+
+### Total Tickets
+
+Value:
+1,284
+
+Change:
++12.4%
+
+Subtitle:
+"Compared with previous period"
+
+### AI Resolution Rate
+
+Value:
+76.4%
+
+Change:
++3.1%
+
+Subtitle:
+"Resolved without human escalation"
+
+### Average Resolution Time
+
+Value:
+12.5 min
+
+Change:
+-15.4%
+
+Subtitle:
+"Average ticket resolution time"
+
+### Customer Satisfaction
+
+Value:
+4.82 / 5
+
+Change:
++1.8%
+
+Subtitle:
+"Based on customer feedback"
+
+### Escalation Rate
+
+Value:
+9.9%
+
+Change:
+-2.3%
+
+Subtitle:
+"Transferred to human agents"
+
+### First Response Time
+
+Value:
+1.8 sec
+
+Change:
+-8.2%
+
+Subtitle:
+"Average initial response"
+
+Use suitable Lucide icons.
+
+Use positive and negative trend indicators correctly.
+
+For resolution time and escalation rate, a decrease can be displayed as a positive performance trend.
+
+## SUPPORT VOLUME ANALYSIS
+
+Create a large chart card titled:
+
+"Support Volume & Resolution"
+
+Subtitle:
+
+"Daily customer support activity"
+
+Display:
+
+* Total Conversations
+* AI Resolved
+* Human Resolved
+* Escalated
+
+Use realistic mock daily data.
+
+Example:
+
+Monday:
+Total 180
+AI Resolved 132
+Human Resolved 31
+Escalated 17
+
+Tuesday:
+Total 210
+AI Resolved 158
+Human Resolved 34
+Escalated 18
+
+Create at least seven days of data.
+
+Use the existing chart dependency.
+
+Do not install another chart library unless absolutely necessary.
+
+Add a chart legend.
+
+Add hover tooltips.
+
+## AI PERFORMANCE SECTION
+
+Create a section titled:
+
+"AI Assistant Performance"
+
+Display four performance cards.
+
+Intent Detection Accuracy:
+99.2%
+
+Sentiment Analysis Accuracy:
+98.7%
+
+Response Validation Pass Rate:
+94.6%
+
+Knowledge Grounding Rate:
+96.1%
+
+For each card display:
+
+* Metric name
+* Current value
+* Previous period value
+* Trend
+* Compact progress indicator
+
+Add text:
+
+"AI systems operational"
+
+Use a green system status indicator.
+
+## AI RESOLUTION VS HUMAN SUPPORT
+
+Create a chart titled:
+
+"AI vs Human Resolution"
+
+Display:
+
+AI Resolved:
+76.4%
+
+Human Resolved:
+13.7%
+
+Escalated:
+9.9%
+
+Use a donut or pie chart.
+
+Add a center label:
+
+"1,284 Tickets"
+
+Display a clear legend.
+
+## SENTIMENT ANALYTICS
+
+Create a section titled:
+
+"Customer Sentiment"
+
+Create a sentiment distribution chart.
+
+Display:
+
+Positive:
+38%
+
+Neutral:
+35%
+
+Negative:
+27%
+
+Add counts.
+
+Positive:
+488
+
+Neutral:
+449
+
+Negative:
+347
+
+Use existing sentiment visual states.
+
+## SENTIMENT TREND
+
+Create a chart:
+
+"Sentiment Trend"
+
+Display average daily sentiment score.
+
+Use a scale from:
+
+-1.0 to +1.0
+
+Example mock values:
+
+Mon:
+-0.18
+
+Tue:
+-0.12
+
+Wed:
+-0.25
+
+Thu:
+-0.08
+
+Fri:
+0.05
+
+Sat:
+0.14
+
+Sun:
+0.21
+
+Add a neutral reference line at:
+
+0
+
+Add summary:
+
+"Average customer sentiment improved by 0.39 points during this period."
+
+## ESCALATION ANALYTICS
+
+Create a section:
+
+"Escalation Intelligence"
+
+Display four cards.
+
+Total Escalations:
+127
+
+High Risk Conversations:
+42
+
+Critical Risk Alerts:
+18
+
+AI Recommended Escalations:
+103
+
+## ESCALATION REASONS CHART
+
+Create a horizontal bar chart.
+
+Title:
+
+"Top Escalation Risk Factors"
+
+Display:
+
+Strong Negative Sentiment:
+34%
+
+Repeated Unresolved Issue:
+24%
+
+Customer Requested Human:
+18%
+
+Technical Complexity:
+13%
+
+Policy Exception:
+7%
+
+Premium Customer:
+4%
+
+Add tooltips.
+
+## ESCALATION RISK DISTRIBUTION
+
+Create a chart or visual distribution.
+
+Low Risk:
+58%
+
+Medium Risk:
+27%
+
+High Risk:
+11%
+
+Critical Risk:
+4%
+
+Reuse existing escalation risk visual states.
+
+## KNOWLEDGE RETRIEVAL ANALYTICS
+
+Create a section:
+
+"Knowledge Retrieval Performance"
+
+Display KPI cards.
+
+Average Retrieval Time:
+84 ms
+
+Average Sources Retrieved:
+3.2
+
+Average Top Match Score:
+94%
+
+Knowledge Coverage:
+91%
+
+## TOP RETRIEVED KNOWLEDGE SOURCES
+
+Create a table.
+
+Columns:
+
+* Knowledge Source
+* Retrieval Count
+* Average Match Score
+* AI Responses Used
+* Success Rate
+
+Example data:
+
+Refund Policy
+
+Retrieval Count:
+342
+
+Average Match:
+98%
+
+AI Responses Used:
+318
+
+Success Rate:
+96%
+
+Payment Troubleshooting Guide
+
+Retrieval Count:
+287
+
+Average Match:
+95%
+
+AI Responses Used:
+265
+
+Success Rate:
+93%
+
+Order Tracking FAQ
+
+Retrieval Count:
+241
+
+Average Match:
+96%
+
+AI Responses Used:
+228
+
+Success Rate:
+95%
+
+Damaged Product Guidelines
+
+Retrieval Count:
+196
+
+Average Match:
+94%
+
+AI Responses Used:
+181
+
+Success Rate:
+92%
+
+Account Recovery Guide
+
+Retrieval Count:
+174
+
+Average Match:
+93%
+
+AI Responses Used:
+160
+
+Success Rate:
+91%
+
+Clicking a Knowledge Source must open the existing Knowledge Source Preview.
+
+## TICKET CATEGORY ANALYTICS
+
+Create a chart:
+
+"Tickets by Category"
+
+Display:
+
+Billing:
+24%
+
+Technical Support:
+21%
+
+Orders & Delivery:
+19%
+
+Returns & Refunds:
+16%
+
+Account:
+12%
+
+API & Integrations:
+8%
+
+Use a bar chart.
+
+## INTENT ANALYTICS
+
+Create a section:
+
+"Top Detected Customer Intents"
+
+Display:
+
+Refund Request:
+284
+
+Order Tracking:
+241
+
+Payment Issue:
+218
+
+Technical Issue:
+196
+
+Account Access:
+143
+
+Subscription Cancellation:
+112
+
+API Support:
+90
+
+Display:
+
+Intent name
+
+Detection count
+
+Average confidence
+
+Example:
+
+Refund Request:
+284
+96% confidence
+
+Order Tracking:
+241
+97% confidence
+
+## RESOLUTION PERFORMANCE
+
+Create a section:
+
+"Resolution Performance"
+
+Display:
+
+First Contact Resolution:
+71%
+
+Average Messages to Resolution:
+5.4
+
+Reopened Tickets:
+4.2%
+
+SLA Compliance:
+96.8%
+
+Add compact trend indicators.
+
+## AI RESPONSE VALIDATION ANALYTICS
+
+Create a section:
+
+"AI Response Validation"
+
+Display validation metrics:
+
+Policy Compliance Pass:
+98.2%
+
+Professional Tone Pass:
+97.6%
+
+PII Safety Pass:
+99.8%
+
+Low Hallucination Risk:
+94.1%
+
+Knowledge Grounding Verified:
+96.1%
+
+Overall Validation Score:
+96 / 100
+
+Create a compact visualization.
+
+This section represents the Validator stage:
+
+Retrieval Layer
+→ LLM
+→ Validator
+→ Response
+
+## RECENT CRITICAL ALERTS
+
+Create a section:
+
+"Recent Critical Escalation Alerts"
+
+Display at least five mock alerts.
+
+Each alert should display:
+
+* Ticket ID
+* Customer
+* Issue
+* Escalation Score
+* Risk Level
+* Detected Emotion
+* Time
+
+Example:
+
+TIC-1034
+
+Customer:
+Emily Stone
+
+Issue:
+Repeated payment failure
+
+Escalation Score:
+94
+
+Risk:
+Critical
+
+Emotion:
+Angry
+
+Time:
+10 minutes ago
+
+Ticket IDs must be clickable.
+
+Clicking must navigate to the existing Ticket Details workspace.
+
+Add:
+
+"View All Escalated Tickets"
+
+Navigate to Tickets Registry with mock Escalated status filtering if possible.
+
+## ANALYTICS INSIGHTS
+
+Create an AI-style insights card.
+
+Title:
+
+"AI Performance Insights"
+
+Display 3 to 5 automatically generated mock observations.
+
+Examples:
+
+"AI resolution rate increased by 3.1% compared with the previous period."
+
+"Payment-related tickets generated 18% more escalations this week."
+
+"Customer sentiment improved after average response time decreased."
+
+"Refund Policy achieved the highest knowledge retrieval success rate at 96%."
+
+"Strong negative sentiment remains the primary escalation risk factor."
+
+Use a subtle AI icon.
+
+Add:
+
+"Generate New Insights"
+
+When clicked:
+
+Display a short AI loading animation.
+
+After approximately 1 second replace the observations with another set of realistic mock insights.
+
+Show toast:
+
+"Analytics insights updated."
+
+Do not call Gemini API.
+
+## ANALYTICS DATA STRUCTURE
+
+Keep mock analytics data separate from React components.
+
+Create structured data for:
+
+* KPI metrics
+* Support volume
+* AI performance
+* Sentiment distribution
+* Sentiment trend
+* Escalation analytics
+* Knowledge retrieval metrics
+* Ticket categories
+* Intent analytics
+* Resolution metrics
+* Validation metrics
+* Critical alerts
+
+Do not hardcode all data directly inside chart components.
+
+## DATE RANGE MOCK BEHAVIOUR
+
+Changing the date range must update displayed mock values.
+
+For example:
+
+Today:
+Lower ticket counts.
+
+Last 7 Days:
+Weekly data.
+
+Last 30 Days:
+Higher aggregated totals.
+
+Last 90 Days:
+Long-term totals.
+
+The values do not need to come from a backend.
+
+Keep values internally consistent.
+
+## LOADING STATE
+
+When refreshing or changing date range:
+
+Display skeleton loading states for:
+
+* KPI cards
+* Charts
+* Tables
+
+Do not blank the entire page.
+
+## EMPTY AND ERROR STATES
+
+Create reusable analytics states.
+
+Empty state:
+
+"No analytics data available for this period."
+
+Error state:
+
+"Unable to load analytics data."
+
+Add:
+
+"Try Again"
+
+The Try Again button must restore mock data.
+
+## RESPONSIVE DESIGN
+
+Desktop:
+
+Use a professional analytics grid.
+
+Large charts may span two columns.
+
+Tablet:
+
+Use one or two columns depending on available width.
+
+Mobile:
+
+Display KPI cards in a single column or horizontal scroll section.
+
+Charts must remain readable.
+
+Tables may use responsive cards or horizontal scrolling.
+
+Do not allow charts to overflow the viewport.
+
+## REUSABLE COMPONENTS
+
+Create reusable components such as:
+
+AnalyticsKPICard
+
+AnalyticsHeader
+
+DateRangeSelector
+
+SupportVolumeChart
+
+AIPerformanceCard
+
+ResolutionDistributionChart
+
+SentimentDistributionChart
+
+SentimentTrendChart
+
+EscalationAnalyticsCard
+
+EscalationFactorsChart
+
+RiskDistribution
+
+RetrievalPerformanceCard
+
+KnowledgePerformanceTable
+
+TicketCategoryChart
+
+IntentAnalyticsList
+
+ResolutionPerformanceCard
+
+ValidationAnalytics
+
+CriticalAlertList
+
+AnalyticsInsightsCard
+
+AnalyticsSkeleton
+
+AnalyticsEmptyState
+
+AnalyticsErrorState
+
+Reuse existing:
+
+SentimentBadge
+
+EmotionBadge
+
+EscalationRiskBadge
+
+KnowledgeSourcePreview
+
+StatusBadge
+
+Toast system
+
+Card components
+
+Do not duplicate components unnecessarily.
+
+## FUTURE FASTAPI INTEGRATION
+
+Structure the frontend so mock analytics data can later be replaced by:
+
+GET /api/analytics/overview
+
+GET /api/analytics/tickets
+
+GET /api/analytics/ai-performance
+
+GET /api/analytics/sentiment
+
+GET /api/analytics/escalation
+
+GET /api/analytics/retrieval
+
+GET /api/analytics/validation
+
+Support a future query parameter:
+
+?range=7d
+
+Example future response:
+
+{
+"total_tickets": 1284,
+"ai_resolution_rate": 76.4,
+"average_resolution_time": 12.5,
+"customer_satisfaction": 4.82,
+"escalation_rate": 9.9,
+"first_response_time": 1.8
+}
+
+Do not implement API calls now.
+
+## IMPORTANT CONSTRAINTS
+
+Implement ONLY Analytics Dashboard and AI Performance Monitoring.
+
+Do not redesign existing pages.
+
+Do not remove existing functionality.
+
+Do not connect a backend.
+
+Do not connect Gemini API.
+
+Do not implement real analytics processing.
+
+Use realistic mock frontend analytics data only.
+
+Keep future FastAPI and database integration easy.
+
+## FINAL VERIFICATION
+
+Before finishing verify:
+
+* Analytics page opens.
+* Date range selection works.
+* Refresh Analytics works.
+* Export Analytics action works.
+* KPI cards display.
+* Support Volume chart displays.
+* AI performance metrics display.
+* AI vs Human chart displays.
+* Sentiment distribution displays.
+* Sentiment trend displays.
+* Escalation metrics display.
+* Escalation factors chart displays.
+* Risk distribution displays.
+* Knowledge retrieval metrics display.
+* Knowledge performance table displays.
+* Knowledge sources open correctly.
+* Ticket category chart displays.
+* Intent analytics display.
+* Resolution performance displays.
+* Validation analytics display.
+* Critical alerts display.
+* Ticket links navigate correctly.
+* Generate New Insights works.
+* Loading skeletons work.
+* Empty state works.
+* Error state and Try Again work.
+* Mobile layout is responsive.
+* Existing pages remain unchanged.
+* No visible frontend errors exist.
+
+Implement ONLY this feature and stop after completion.
+prompt8
+
+
+Continue working on the existing AI Customer Assistant frontend application.
+
+The following features are already implemented:
+
+* Operational Dashboard
+* AI Support Sandbox / AI Chat
+* Tickets Registry
+* Ticket Details and Agent Response Workspace
+* Sentiment Analysis
+* Escalation Intelligence
+* Knowledge Base and Knowledge Retrieval
+* Conversation History
+* Customer Interaction Timeline
+* Analytics Dashboard
+* AI Performance Monitoring
+
+Now implement ONLY the Reports and Report Export frontend experience.
+
+IMPORTANT:
+
+* Preserve the existing enterprise SaaS design system.
+* Preserve the existing blue and purple visual direction.
+* Preserve typography, spacing, cards, tables, badges, buttons, modals, and navigation.
+* Do not redesign existing pages.
+* Do not remove existing functionality.
+* Do not connect a backend.
+* Do not connect Gemini API.
+* Use realistic mock report data.
+* Implement frontend report preview and export behaviour only.
+
+## FEATURE PURPOSE
+
+Create a professional Reports workspace for support administrators.
+
+Administrators must be able to:
+
+* Select a report type.
+* Configure report filters.
+* Select a date range.
+* Preview report data.
+* Generate a mock report.
+* Export report data as CSV.
+* Export a printable PDF-style report.
+* Review previous report generation history.
+
+## REPORTS PAGE
+
+Replace the existing Reports placeholder page.
+
+Page title:
+
+"Reports & Export"
+
+Subtitle:
+
+"Generate, preview, and export customer support intelligence reports."
+
+Top-right action:
+
+"Generate Report"
+
+Use the existing primary button style.
+
+## REPORT SUMMARY KPI CARDS
+
+Create four compact KPI cards.
+
+Reports Generated
+
+Value:
+142
+
+Subtitle:
+"This month"
+
+Scheduled Reports
+
+Value:
+8
+
+Subtitle:
+"Active schedules"
+
+Last Export
+
+Value:
+"2h ago"
+
+Subtitle:
+"Ticket Summary Report"
+
+Data Coverage
+
+Value:
+"98.6%"
+
+Subtitle:
+"Available reporting data"
+
+Use suitable Lucide icons.
+
+## REPORT TYPE SELECTION
+
+Create a section:
+
+"Choose Report Type"
+
+Display report cards.
+
+Support the following report types:
+
+### Ticket Summary Report
+
+Description:
+
+"Overview of ticket volume, status, category, priority, and resolution performance."
+
+### Sentiment Analysis Report
+
+Description:
+
+"Customer sentiment distribution, emotion trends, and sentiment changes."
+
+### Escalation Intelligence Report
+
+Description:
+
+"Escalation risk levels, detected risk factors, and human handoff activity."
+
+### AI Performance Report
+
+Description:
+
+"Intent detection, response validation, AI resolution, and support automation performance."
+
+### Knowledge Retrieval Report
+
+Description:
+
+"Knowledge retrieval usage, relevance scores, source performance, and knowledge coverage."
+
+### Customer Satisfaction Report
+
+Description:
+
+"Customer satisfaction, feedback trends, resolution experience, and support quality."
+
+Each report card must display:
+
+* Suitable Lucide icon.
+* Report name.
+* Short description.
+* "Select Report" action.
+
+The selected report card must have a clear active state.
+
+## REPORT CONFIGURATION
+
+After selecting a report display:
+
+"Report Configuration"
+
+Fields:
+
+Report Name
+
+Default example:
+
+"July 2026 Ticket Summary Report"
+
+Date Range
+
+Options:
+
+* Today
+* Last 7 Days
+* Last 30 Days
+* Last 90 Days
+* Custom Range
+
+If Custom Range is selected display:
+
+Start Date
+
+End Date
+
+Add:
+
+Ticket Category
+
+Options:
+
+* All Categories
+* Billing
+* Technical Support
+* Orders & Delivery
+* Returns & Refunds
+* Account
+* API & Integrations
+
+Ticket Status
+
+Options:
+
+* All Status
+* Open
+* In Progress
+* Pending
+* Resolved
+* Escalated
+
+Priority
+
+Options:
+
+* All Priorities
+* Low
+* Medium
+* High
+* Critical
+
+Sentiment
+
+Options:
+
+* All Sentiments
+* Positive
+* Neutral
+* Negative
+
+## INCLUDE REPORT SECTIONS
+
+Create checkboxes:
+
+* Executive Summary
+* KPI Overview
+* Detailed Data
+* Charts and Visualizations
+* AI Performance Insights
+* Sentiment Analysis
+* Escalation Analysis
+* Knowledge Retrieval Metrics
+
+Select sensible default sections based on report type.
+
+Example:
+
+Ticket Summary Report:
+
+Executive Summary
+KPI Overview
+Detailed Data
+Charts and Visualizations
+
+Sentiment Analysis Report:
+
+Executive Summary
+Sentiment Analysis
+Charts and Visualizations
+Detailed Data
+
+AI Performance Report:
+
+Executive Summary
+KPI Overview
+AI Performance Insights
+Knowledge Retrieval Metrics
+
+## GENERATE REPORT
+
+Add primary button:
+
+"Generate Preview"
+
+When clicked:
+
+Validate required fields.
+
+Display a loading state.
+
+Text:
+
+"Generating report preview..."
+
+Simulate approximately 1 second.
+
+Then display the Report Preview workspace.
+
+Show toast:
+
+"Report generated successfully."
+
+## REPORT PREVIEW
+
+Create a professional printable report preview.
+
+The preview should look like a formal business report.
+
+Display a report header.
+
+Application:
+
+AI Customer Assistant
+
+Report Name
+
+Example:
+
+July 2026 Ticket Summary Report
+
+Generated Date
+
+Example:
+
+July 15, 2026
+
+Reporting Period
+
+Example:
+
+July 1, 2026 - July 15, 2026
+
+Add:
+
+"Generated by Support Intelligence Platform"
+
+## EXECUTIVE SUMMARY
+
+Display:
+
+"Executive Summary"
+
+Example content:
+
+"During the selected reporting period, the support platform processed 1,284 customer tickets. The AI Customer Assistant resolved 76.4% of support requests without human intervention. Customer satisfaction reached 4.82 out of 5, while the escalation rate decreased to 9.9%."
+
+Generate different mock summary text depending on report type.
+
+Do not call Gemini API.
+
+## KPI OVERVIEW
+
+For Ticket Summary Report display:
+
+Total Tickets:
+1,284
+
+Resolved:
+1,099
+
+Escalated:
+127
+
+Average Resolution Time:
+12.5 min
+
+SLA Compliance:
+96.8%
+
+Customer Satisfaction:
+4.82 / 5
+
+For AI Performance Report display:
+
+AI Resolution Rate:
+76.4%
+
+Intent Accuracy:
+99.2%
+
+Sentiment Accuracy:
+98.7%
+
+Validation Pass Rate:
+94.6%
+
+Knowledge Grounding:
+96.1%
+
+Average AI Response Time:
+1.8 sec
+
+Use reusable report metric cards.
+
+## REPORT CHARTS
+
+Reuse analytics data and chart components where possible.
+
+Do not duplicate analytics logic unnecessarily.
+
+Ticket Summary Report:
+
+* Ticket Status Distribution
+* Tickets by Category
+* Daily Ticket Volume
+
+Sentiment Analysis Report:
+
+* Sentiment Distribution
+* Sentiment Trend
+* Emotion Distribution
+
+Escalation Intelligence Report:
+
+* Escalation Risk Distribution
+* Top Risk Factors
+* Escalation Trend
+
+AI Performance Report:
+
+* AI vs Human Resolution
+* AI Accuracy Metrics
+* Validation Performance
+
+Knowledge Retrieval Report:
+
+* Top Retrieved Sources
+* Average Relevance Score
+* Retrieval Performance Trend
+
+Customer Satisfaction Report:
+
+* Satisfaction Trend
+* Feedback Distribution
+* Resolution Experience
+
+## DETAILED REPORT TABLE
+
+Create a detailed data section.
+
+For Ticket Summary Report display columns:
+
+* Ticket ID
+* Customer
+* Category
+* Intent
+* Sentiment
+* Priority
+* Status
+* Resolution Time
+
+Reuse existing ticket mock data where possible.
+
+For Knowledge Retrieval Report display:
+
+* Source
+* Retrieval Count
+* Average Match Score
+* Responses Used
+* Success Rate
+
+For AI Performance Report display:
+
+* AI Metric
+* Current Value
+* Previous Value
+* Change
+* Status
+
+## AI PERFORMANCE INSIGHTS
+
+If selected display:
+
+"AI Performance Insights"
+
+Use realistic mock observations.
+
+Example:
+
+"AI resolution rate increased by 3.1% compared with the previous reporting period."
+
+"Refund-related queries achieved a 96% knowledge retrieval success rate."
+
+"Strong negative sentiment caused 34% of escalation recommendations."
+
+"Average AI first response time improved by 8.2%."
+
+Do not call Gemini API.
+
+## REPORT PREVIEW ACTIONS
+
+At the top of the report preview add:
+
+* Back to Configuration
+* Print Preview
+* Export PDF
+* Export CSV
+
+## PRINT PREVIEW
+
+When Print Preview is clicked:
+
+Open a clean print-style preview.
+
+Hide:
+
+* Application sidebar.
+* Main navigation.
+* Interactive buttons.
+* Unnecessary UI elements.
+
+Display only the report.
+
+Use print-friendly CSS.
+
+Add support for:
+
+window.print()
+
+## PDF EXPORT
+
+Implement a frontend PDF-style export experience.
+
+If the existing project already has a reliable PDF generation dependency, reuse it.
+
+If not, use the browser print-to-PDF workflow.
+
+Do not install a large or unnecessary dependency only for PDF export.
+
+When Export PDF is clicked:
+
+Prepare the report in print layout.
+
+Show toast:
+
+"PDF report is ready for export."
+
+Open the print workflow or printable report view.
+
+The user can save the report as PDF using the browser.
+
+## CSV EXPORT
+
+Implement real frontend CSV generation using the current mock report data.
+
+Create a CSV string.
+
+Include correct column headers.
+
+Escape commas and quotation marks correctly.
+
+Create a Blob.
+
+Create a temporary object URL.
+
+Trigger browser file download.
+
+Use a meaningful filename.
+
+Example:
+
+ticket-summary-report-2026-07.csv
+
+After export show toast:
+
+"CSV report exported successfully."
+
+Do not require a backend.
+
+## REPORT HISTORY
+
+Below the report configuration or report selection display:
+
+"Recent Reports"
+
+Create at least eight mock report history records.
+
+Display:
+
+* Report Name
+* Report Type
+* Date Range
+* Generated Date
+* Generated By
+* Export Format
+* Status
+* Action
+
+Example:
+
+July 2026 Ticket Summary
+
+Ticket Summary Report
+
+Jul 1 - Jul 15
+
+Jul 15, 2026
+
+Support Admin
+
+PDF
+
+Ready
+
+Actions:
+
+* View
+* Export Again
+* Delete
+
+## REPORT STATUS
+
+Support:
+
+Generating
+
+Ready
+
+Failed
+
+Create a reusable ReportStatusBadge.
+
+Generating:
+Processing state.
+
+Ready:
+Success state.
+
+Failed:
+Error state.
+
+## VIEW PREVIOUS REPORT
+
+Clicking View should open the Report Preview using mock historical report data.
+
+## EXPORT AGAIN
+
+Clicking Export Again should display format options:
+
+* PDF
+* CSV
+
+Use the same frontend export behaviour.
+
+## DELETE REPORT
+
+Open confirmation modal.
+
+Title:
+
+"Delete Report?"
+
+Message:
+
+"This report will be removed from report history."
+
+Buttons:
+
+Cancel
+
+Delete Report
+
+After confirmation:
+
+Remove the report from frontend state.
+
+Show toast:
+
+"Report deleted."
+
+## MOCK REPORT GENERATION UTILITY
+
+Create report generation logic in a separate utility or service.
+
+Conceptual functions:
+
+generateReportData(reportType, filters)
+
+generateExecutiveSummary(reportType, data)
+
+prepareReportMetrics(reportType, data)
+
+prepareReportCharts(reportType, data)
+
+generateCSV(data, columns)
+
+Do not place all report logic directly inside React components.
+
+## REPORT DATA REUSE
+
+Reuse existing mock data from:
+
+* Tickets
+* Conversations
+* Analytics
+* Sentiment Analysis
+* Escalation Intelligence
+* Knowledge Base
+
+Do not create conflicting data.
+
+Example:
+
+If Analytics shows:
+
+AI Resolution Rate:
+76.4%
+
+The AI Performance Report should also display:
+
+76.4%
+
+Keep mock values consistent across the application.
+
+## LOADING STATE
+
+Display skeletons during report generation.
+
+Do not blank the complete page.
+
+## EMPTY STATE
+
+If no reports exist display:
+
+"No reports generated yet"
+
+Subtitle:
+
+"Generate your first support intelligence report."
+
+Add:
+
+"Generate Report"
+
+## ERROR STATE
+
+Create a mock report error state.
+
+Display:
+
+"Unable to generate report"
+
+Subtitle:
+
+"An error occurred while preparing the report."
+
+Add:
+
+"Try Again"
+
+Try Again must restart mock report generation.
+
+## RESPONSIVE DESIGN
+
+Desktop:
+
+Display report type cards in a professional grid.
+
+Report configuration may use two columns.
+
+Report preview should use a centered document layout.
+
+Tablet:
+
+Use responsive two-column or single-column layouts.
+
+Mobile:
+
+Use single-column report cards.
+
+Configuration fields must use full width.
+
+Report tables may horizontally scroll.
+
+Report preview must remain readable.
+
+## REUSABLE COMPONENTS
+
+Create reusable components such as:
+
+ReportsHeader
+
+ReportKPICard
+
+ReportTypeCard
+
+ReportConfiguration
+
+ReportSectionSelector
+
+ReportPreview
+
+ReportHeader
+
+ReportExecutiveSummary
+
+ReportMetricCard
+
+ReportCharts
+
+ReportDataTable
+
+ReportInsights
+
+ReportPreviewActions
+
+ReportHistoryTable
+
+ReportStatusBadge
+
+DeleteReportModal
+
+ReportSkeleton
+
+ReportEmptyState
+
+ReportErrorState
+
+Reuse existing:
+
+Analytics chart components
+
+Ticket data
+
+Knowledge data
+
+Sentiment components
+
+Escalation components
+
+Toast system
+
+Modal components
+
+Buttons
+
+Cards
+
+Do not duplicate existing functionality unnecessarily.
+
+## FUTURE FASTAPI INTEGRATION
+
+Structure the frontend so report functionality can later use:
+
+POST /api/reports/generate
+
+GET /api/reports
+
+GET /api/reports/{report_id}
+
+GET /api/reports/{report_id}/pdf
+
+GET /api/reports/{report_id}/csv
+
+DELETE /api/reports/{report_id}
+
+Example future request:
+
+{
+"report_type": "ticket_summary",
+"date_range": {
+"start": "2026-07-01",
+"end": "2026-07-15"
+},
+"filters": {
+"category": "all",
+"status": "all",
+"priority": "all",
+"sentiment": "all"
+},
+"sections": [
+"executive_summary",
+"kpi_overview",
+"detailed_data",
+"charts"
+]
+}
+
+Do not implement these API calls now.
+
+## IMPORTANT CONSTRAINTS
+
+Implement ONLY Reports and Report Export functionality.
+
+Do not redesign existing pages.
+
+Do not remove existing features.
+
+Do not connect a backend.
+
+Do not connect Gemini API.
+
+Do not implement server-side PDF generation.
+
+Use frontend mock report data.
+
+CSV export should work using frontend data.
+
+Use browser print functionality for PDF export if required.
+
+Keep future FastAPI report integration easy.
+
+## FINAL VERIFICATION
+
+Before finishing verify:
+
+* Reports page opens.
+* KPI cards display.
+* Report types display.
+* Report selection works.
+* Selected report state displays.
+* Date range works.
+* Custom date range works.
+* Filters work.
+* Report sections can be selected.
+* Generate Preview works.
+* Loading state displays.
+* Report Preview displays.
+* Executive Summary displays.
+* KPI Overview displays.
+* Charts display.
+* Detailed table displays.
+* AI insights display where selected.
+* Back to Configuration works.
+* Print Preview works.
+* PDF export workflow works.
+* CSV file generation works.
+* CSV headers are correct.
+* Recent Reports display.
+* View previous report works.
+* Export Again works.
+* Delete Report works.
+* Empty state works.
+* Error state works.
+* Mobile layout is responsive.
+* Existing pages remain unchanged.
+* No visible frontend errors exist.
+
+Implement ONLY this feature and stop after completion.
+prompt9
+
+
+
+
+Continue working on the existing AI Customer Assistant frontend application.
+
+The following major frontend features are already implemented:
+
+* Operational Dashboard
+* AI Support Sandbox / AI Chat
+* Tickets Registry
+* Ticket Details and Agent Response Workspace
+* Sentiment Analysis
+* Escalation Intelligence
+* Knowledge Base and Knowledge Retrieval
+* Conversation History
+* Customer Interaction Timeline
+* Analytics Dashboard
+* AI Performance Monitoring
+* Reports and Export
+
+Now implement ONLY the Settings, User Profile, Theme, and Application Configuration frontend experience.
+
+IMPORTANT:
+
+* Preserve the existing enterprise SaaS design system.
+* Preserve the current application layout and navigation.
+* Do not redesign existing pages.
+* Do not remove existing functionality.
+* Do not connect a backend.
+* Do not connect Gemini API.
+* Use frontend mock settings and local state only.
+* Persist appropriate user preferences using localStorage.
+
+## FEATURE PURPOSE
+
+Create a professional Settings workspace for the AI Customer Assistant platform.
+
+Support administrators must be able to configure:
+
+* User profile
+* Application appearance
+* AI assistant preferences
+* Ticket automation preferences
+* Escalation rules
+* Notification preferences
+* Knowledge retrieval preferences
+* Privacy and security preferences
+
+This is frontend configuration only.
+
+## SETTINGS PAGE
+
+Replace the existing Settings placeholder page.
+
+Page title:
+
+"Settings"
+
+Subtitle:
+
+"Manage your profile, AI preferences, automation rules, and application configuration."
+
+Create a professional settings layout.
+
+LEFT SETTINGS NAVIGATION:
+
+* Profile
+* Appearance
+* AI Assistant
+* Ticket Automation
+* Escalation Rules
+* Knowledge Retrieval
+* Notifications
+* Privacy & Security
+
+RIGHT CONTENT AREA:
+
+Display the selected settings section.
+
+The selected settings navigation item must have a clear active state.
+
+## PROFILE SETTINGS
+
+Create a section titled:
+
+"Profile Settings"
+
+Subtitle:
+
+"Manage your support administrator profile."
+
+Display a profile avatar.
+
+Add:
+
+"Change Photo"
+
+Use mock frontend image selection or avatar preview only.
+
+Fields:
+
+Full Name
+
+Default:
+Alex Morgan
+
+Email Address
+
+Default:
+[alex.morgan@supportai.com](mailto:alex.morgan@supportai.com)
+
+Role
+
+Default:
+Support Administrator
+
+Department
+
+Default:
+Customer Support Operations
+
+Timezone
+
+Default:
+Asia/Kolkata
+
+Language
+
+Default:
+English
+
+Add buttons:
+
+Cancel
+
+Save Changes
+
+Save Changes:
+
+Validate required fields.
+
+Save profile data in frontend state.
+
+Persist profile preferences using localStorage.
+
+Show toast:
+
+"Profile settings saved."
+
+Update the application header profile name and avatar where appropriate.
+
+## APPEARANCE SETTINGS
+
+Create a section:
+
+"Appearance"
+
+Subtitle:
+
+"Customize the visual experience of your workspace."
+
+Create Theme options:
+
+* Light
+* Dark
+* System
+
+Display theme selection cards.
+
+Each card must include a small visual preview.
+
+Theme changes must apply across the complete application.
+
+Persist the selected theme using localStorage.
+
+For System theme:
+
+Use the browser system preference.
+
+Dark mode must preserve:
+
+* Readable text
+* Accessible contrast
+* Chart readability
+* Table readability
+* Modal readability
+* Badge readability
+
+Do not simply invert colors.
+
+Use a proper dark theme.
+
+## ACCENT STYLE
+
+Add:
+
+"Interface Accent"
+
+Options:
+
+* Blue
+* Purple
+* Indigo
+
+Use a small visual selector.
+
+The default should preserve the current application accent direction.
+
+Do not redesign the application.
+
+Apply accent changes only to appropriate interactive UI elements.
+
+Persist the preference.
+
+## UI DENSITY
+
+Add:
+
+"Interface Density"
+
+Options:
+
+Comfortable
+
+Compact
+
+Comfortable:
+
+Use the existing spacing.
+
+Compact:
+
+Reduce table row height and card spacing slightly.
+
+Do not damage readability.
+
+Persist the preference.
+
+## AI ASSISTANT SETTINGS
+
+Create a section:
+
+"AI Assistant"
+
+Subtitle:
+
+"Configure AI response and support behaviour."
+
+Add toggle:
+
+Enable AI Responses
+
+Default:
+Enabled
+
+Add:
+
+AI Response Style
+
+Options:
+
+Professional
+
+Friendly
+
+Concise
+
+Detailed
+
+Default:
+Professional
+
+Add:
+
+Response Length
+
+Options:
+
+Short
+
+Balanced
+
+Detailed
+
+Default:
+Balanced
+
+Add slider:
+
+AI Confidence Threshold
+
+Range:
+
+50% to 100%
+
+Default:
+
+80%
+
+Helper text:
+
+"AI responses below this confidence threshold should require agent review."
+
+Add toggle:
+
+Require Agent Review for Low Confidence
+
+Default:
+Enabled
+
+Add toggle:
+
+Enable AI Response Feedback
+
+Default:
+Enabled
+
+Add toggle:
+
+Show AI Generated Labels
+
+Default:
+Enabled
+
+Add:
+
+AI Typing Delay
+
+Options:
+
+Instant
+
+Natural
+
+Slow
+
+Default:
+Natural
+
+Save settings using frontend state and localStorage.
+
+Show toast:
+
+"AI Assistant settings saved."
+
+## TICKET AUTOMATION SETTINGS
+
+Create section:
+
+"Ticket Automation"
+
+Subtitle:
+
+"Configure automatic ticket processing behaviour."
+
+Add toggle:
+
+Automatic Ticket Classification
+
+Default:
+Enabled
+
+Add toggle:
+
+Automatic Intent Detection
+
+Default:
+Enabled
+
+Add toggle:
+
+Automatic Sentiment Analysis
+
+Default:
+Enabled
+
+Add toggle:
+
+Automatic Priority Recommendation
+
+Default:
+Enabled
+
+Add toggle:
+
+Automatically Create Ticket from AI Conversation
+
+Default:
+Enabled
+
+Add:
+
+Default Ticket Priority
+
+Options:
+
+Low
+
+Medium
+
+High
+
+Default:
+Medium
+
+Add:
+
+Auto Resolve AI-Handled Tickets
+
+Toggle.
+
+Default:
+Disabled
+
+If enabled display:
+
+Auto Resolve Delay
+
+Options:
+
+5 minutes
+
+15 minutes
+
+30 minutes
+
+1 hour
+
+Default:
+30 minutes
+
+Add helper text:
+
+"Automatically resolve AI-handled tickets when no additional customer response is received."
+
+Add Save Automation Settings button.
+
+Show toast:
+
+"Ticket automation settings saved."
+
+## ESCALATION RULES SETTINGS
+
+Create section:
+
+"Escalation Rules"
+
+Subtitle:
+
+"Configure when AI should recommend human intervention."
+
+Display:
+
+Escalation Risk Threshold
+
+Slider:
+
+0 to 100
+
+Default:
+
+75
+
+Helper text:
+
+"Human escalation is recommended when the escalation score reaches this threshold."
+
+Add toggles:
+
+Escalate on Angry Emotion
+
+Default:
+Enabled
+
+Escalate on Urgent Emotion
+
+Default:
+Enabled
+
+Escalate on Human Agent Request
+
+Default:
+Enabled
+
+Escalate Critical Priority Tickets
+
+Default:
+Enabled
+
+Escalate Repeated Failed Attempts
+
+Default:
+Enabled
+
+Add:
+
+Repeated Attempt Threshold
+
+Number input.
+
+Default:
+3
+
+Add:
+
+Negative Sentiment Threshold
+
+Slider:
+
+-1.0 to 0
+
+Default:
+-0.75
+
+Add section:
+
+"Priority Customer Rules"
+
+Toggle:
+
+Prioritize Premium Customers
+
+Default:
+Enabled
+
+Toggle:
+
+Lower Escalation Threshold for Premium Customers
+
+Default:
+Enabled
+
+If enabled display:
+
+Premium Customer Threshold
+
+Default:
+65
+
+## ESCALATION RULE PREVIEW
+
+Create a card:
+
+"Escalation Rule Preview"
+
+Display example:
+
+Customer Message:
+
+"This is the third time my payment has failed. I need a human agent immediately."
+
+Detected:
+
+Sentiment:
+Negative (-0.94)
+
+Emotion:
+Angry
+
+Urgent Language:
+Detected
+
+Human Request:
+Detected
+
+Calculated Risk:
+91 / 100
+
+Result:
+
+"Human escalation recommended"
+
+Update this mock preview when escalation settings change.
+
+Add:
+
+"Reset to Recommended Defaults"
+
+Reset escalation settings.
+
+Show toast:
+
+"Recommended escalation rules restored."
+
+## KNOWLEDGE RETRIEVAL SETTINGS
+
+Create section:
+
+"Knowledge Retrieval"
+
+Subtitle:
+
+"Configure support knowledge search and context preparation."
+
+Add:
+
+Maximum Sources Retrieved
+
+Number or slider.
+
+Range:
+
+1 to 10
+
+Default:
+3
+
+Add:
+
+Minimum Relevance Score
+
+Slider:
+
+50% to 100%
+
+Default:
+75%
+
+Add:
+
+Knowledge Search Mode
+
+Options:
+
+Balanced
+
+High Precision
+
+Broad Retrieval
+
+Default:
+Balanced
+
+Add toggle:
+
+Include FAQ Sources
+
+Default:
+Enabled
+
+Add toggle:
+
+Include Policy Documents
+
+Default:
+Enabled
+
+Add toggle:
+
+Include Technical Documentation
+
+Default:
+Enabled
+
+Add toggle:
+
+Display Knowledge Sources to Agents
+
+Default:
+Enabled
+
+Add toggle:
+
+Allow Knowledge Source Insertion into Response
+
+Default:
+Enabled
+
+Add:
+
+Context Length Preference
+
+Options:
+
+Compact
+
+Balanced
+
+Extended
+
+Default:
+Balanced
+
+Create a small:
+
+"Retrieval Configuration Preview"
+
+Example:
+
+Query:
+
+"My product arrived damaged. Can I get a refund?"
+
+Configuration:
+
+Top K:
+3
+
+Minimum Match:
+75%
+
+Mode:
+Balanced
+
+Expected Sources:
+
+Refund Policy
+
+Damaged Product Guidelines
+
+Return & Replacement FAQ
+
+## NOTIFICATION SETTINGS
+
+Create section:
+
+"Notifications"
+
+Subtitle:
+
+"Choose which support events require your attention."
+
+Add notification toggles:
+
+Critical Escalation Alerts
+
+Default:
+Enabled
+
+High Risk Conversation Alerts
+
+Default:
+Enabled
+
+New Ticket Alerts
+
+Default:
+Enabled
+
+Ticket Assignment Alerts
+
+Default:
+Enabled
+
+Knowledge Index Failure Alerts
+
+Default:
+Enabled
+
+AI Validation Warning Alerts
+
+Default:
+Enabled
+
+Report Generation Alerts
+
+Default:
+Enabled
+
+Add:
+
+Notification Delivery
+
+Checkboxes:
+
+In-App
+
+Email
+
+Browser Notifications
+
+Default:
+
+In-App enabled.
+
+Email enabled.
+
+Browser Notifications disabled.
+
+If Browser Notifications is enabled:
+
+Use the browser Notification permission flow where supported.
+
+Handle denied permission gracefully.
+
+Do not repeatedly request permission.
+
+Add:
+
+Notification Sound
+
+Toggle.
+
+Default:
+Disabled
+
+## PRIVACY AND SECURITY SETTINGS
+
+Create section:
+
+"Privacy & Security"
+
+Subtitle:
+
+"Manage session, customer data visibility, and security preferences."
+
+Display:
+
+Current Session
+
+Browser:
+Chrome
+
+Device:
+Windows Desktop
+
+Session Status:
+Active
+
+Add:
+
+"Sign Out Other Sessions"
+
+Mock frontend action.
+
+Show confirmation modal.
+
+After confirmation show toast:
+
+"Other sessions signed out."
+
+Add toggle:
+
+Mask Customer Email Addresses
+
+Default:
+Disabled
+
+If enabled:
+
+Display emails in the application similar to:
+
+k***@techcom.com
+
+Apply this frontend display behaviour to:
+
+Tickets
+
+Conversation History
+
+Ticket Details
+
+Customer Profile
+
+Do not modify underlying mock data.
+
+Add toggle:
+
+Mask Customer IDs
+
+Default:
+Disabled
+
+Example:
+
+CUS-****
+
+Add toggle:
+
+Hide Sentiment Scores from General Agents
+
+Default:
+Disabled
+
+Add toggle:
+
+Require Confirmation Before Escalation
+
+Default:
+Enabled
+
+Add toggle:
+
+Require Confirmation Before Resolving Tickets
+
+Default:
+Enabled
+
+## DATA PREFERENCES
+
+Inside Privacy & Security add:
+
+"Local Application Data"
+
+Display:
+
+Mock Tickets
+
+Mock Conversations
+
+Knowledge Sources
+
+Report History
+
+User Preferences
+
+Add button:
+
+"Reset Local Application Data"
+
+Open a destructive confirmation modal.
+
+Title:
+
+"Reset Local Application Data?"
+
+Message:
+
+"This will restore frontend mock data and settings to their default values."
+
+Require the user to type:
+
+RESET
+
+Enable the final reset button only when RESET is entered correctly.
+
+After reset:
+
+Clear relevant localStorage data.
+
+Restore default frontend mock state.
+
+Show toast:
+
+"Local application data reset."
+
+## SETTINGS SAVE BEHAVIOUR
+
+Each settings section may have its own Save button.
+
+Do not require one global save button.
+
+Display unsaved changes state where appropriate.
+
+Example:
+
+"Unsaved changes"
+
+If the user changes settings and attempts to switch settings sections:
+
+Display a confirmation:
+
+"Discard unsaved changes?"
+
+Buttons:
+
+Stay
+
+Discard Changes
+
+## SETTINGS SEARCH
+
+At the top of the Settings page add:
+
+"Search settings..."
+
+Allow searching settings by keyword.
+
+Examples:
+
+Search:
+"sentiment"
+
+Show relevant settings sections.
+
+Search:
+"dark"
+
+Show Appearance settings.
+
+Search:
+"escalation"
+
+Show Escalation Rules.
+
+## HEADER PROFILE MENU
+
+Enhance the existing header profile avatar.
+
+Clicking the avatar should open a profile menu.
+
+Display:
+
+Profile avatar
+
+Alex Morgan
+
+Support Administrator
+
+Actions:
+
+* View Profile
+* Settings
+* Sign Out
+
+View Profile:
+
+Navigate to Settings → Profile.
+
+Settings:
+
+Navigate to the Settings page.
+
+Sign Out:
+
+Show a mock confirmation modal.
+
+Do not implement real authentication.
+
+## THEME TOGGLE IN HEADER
+
+Preserve the existing header theme toggle if available.
+
+Connect it to the new Appearance settings.
+
+If the user changes the theme from the header:
+
+Update Appearance settings.
+
+Persist the preference.
+
+If the user changes theme from Settings:
+
+Update the header theme toggle.
+
+Keep both synchronized.
+
+## REUSABLE COMPONENTS
+
+Create reusable components such as:
+
+SettingsNavigation
+
+SettingsSearch
+
+SettingsSection
+
+ProfileSettings
+
+AppearanceSettings
+
+ThemeSelector
+
+AccentSelector
+
+DensitySelector
+
+AIAssistantSettings
+
+TicketAutomationSettings
+
+EscalationRulesSettings
+
+EscalationRulePreview
+
+KnowledgeRetrievalSettings
+
+RetrievalConfigurationPreview
+
+NotificationSettings
+
+PrivacySecuritySettings
+
+ResetApplicationDataModal
+
+UnsavedChangesModal
+
+ProfileMenu
+
+Reuse existing:
+
+Toggle components
+
+Slider components
+
+Modal components
+
+Toast system
+
+Buttons
+
+Cards
+
+Badges
+
+Do not duplicate existing components unnecessarily.
+
+## SETTINGS DATA STRUCTURE
+
+Keep settings data separate from UI components.
+
+Use a structured settings object similar to:
+
+{
+profile: {
+name: "Alex Morgan",
+email: "[alex.morgan@supportai.com](mailto:alex.morgan@supportai.com)",
+role: "Support Administrator",
+department: "Customer Support Operations",
+timezone: "Asia/Kolkata",
+language: "English"
+},
+appearance: {
+theme: "light",
+accent: "blue",
+density: "comfortable"
+},
+aiAssistant: {
+enabled: true,
+responseStyle: "professional",
+responseLength: "balanced",
+confidenceThreshold: 80,
+requireReviewLowConfidence: true
+},
+escalation: {
+riskThreshold: 75,
+angryEmotion: true,
+urgentEmotion: true,
+humanRequest: true,
+repeatedAttemptThreshold: 3,
+negativeSentimentThreshold: -0.75
+},
+retrieval: {
+maxSources: 3,
+minimumRelevance: 75,
+searchMode: "balanced"
+}
+}
+
+## LOCAL STORAGE
+
+Create a clean settings persistence utility.
+
+Conceptual functions:
+
+loadSettings()
+
+saveSettings(settings)
+
+resetSettings()
+
+Do not directly use localStorage throughout many components.
+
+Keep persistence logic centralized.
+
+## FUTURE BACKEND INTEGRATION
+
+Structure the frontend so settings can later use:
+
+GET /api/settings
+
+PATCH /api/settings/profile
+
+PATCH /api/settings/appearance
+
+PATCH /api/settings/ai
+
+PATCH /api/settings/automation
+
+PATCH /api/settings/escalation
+
+PATCH /api/settings/retrieval
+
+PATCH /api/settings/notifications
+
+PATCH /api/settings/security
+
+Do not implement these API calls now.
+
+## IMPORTANT CONSTRAINTS
+
+Implement ONLY Settings, Profile, Appearance, and Application Configuration.
+
+Do not redesign existing pages.
+
+Do not remove existing functionality.
+
+Do not connect a backend.
+
+Do not connect Gemini API.
+
+Do not implement real authentication.
+
+Use frontend mock settings.
+
+Persist appropriate preferences with localStorage.
+
+Keep future FastAPI integration easy.
+
+## FINAL VERIFICATION
+
+Before finishing verify:
+
+* Settings page opens.
+* Settings navigation works.
+* Settings search works.
+* Profile settings save.
+* Header profile updates.
+* Theme selection works.
+* Dark theme works across all pages.
+* System theme works.
+* Accent selection works.
+* UI density works.
+* AI Assistant settings save.
+* Ticket Automation settings save.
+* Escalation Rules update.
+* Escalation Preview updates.
+* Reset Recommended Defaults works.
+* Knowledge Retrieval settings save.
+* Retrieval Preview updates.
+* Notification toggles work.
+* Browser notification permission is handled safely.
+* Privacy settings work.
+* Email masking works across relevant pages.
+* Customer ID masking works.
+* Sign Out Other Sessions works.
+* Reset Local Application Data confirmation works.
+* RESET text validation works.
+* Unsaved changes warning works.
+* Header profile menu works.
+* Header theme toggle and Appearance settings stay synchronized.
+* Preferences persist after page refresh.
+* Mobile layout is responsive.
+* Existing pages remain unchanged.
+* No visible frontend errors exist.
+
+Implement ONLY this feature and stop after completion.
+
+prompt10
+
+
+Act as a senior React frontend architect, QA engineer, UI/UX reviewer, and backend integration specialist.
+
+The AI Customer Assistant frontend application is now feature-complete.
+
+Existing features include:
+
+* Operational Dashboard
+* AI Support Sandbox / AI Chat
+* Ticket Management
+* Ticket Details and Agent Response Workspace
+* Intent Detection UI
+* Ticket Classification UI
+* Sentiment Analysis
+* Escalation Intelligence
+* Knowledge Base
+* Knowledge Retrieval
+* Conversation History
+* Customer Interaction Timeline
+* Analytics Dashboard
+* AI Performance Monitoring
+* Reports and Export
+* Settings
+* User Profile
+* Theme Configuration
+* Application Preferences
+
+Now perform a COMPLETE FRONTEND AUDIT.
+
+Do not add major new product features.
+
+Your task is to inspect, fix, refactor, standardize, test, and prepare the frontend for FastAPI backend integration.
+
+## PHASE 1 — APPLICATION ROUTE AUDIT
+
+Inspect every application route.
+
+Expected routes:
+
+/
+or
+/dashboard
+
+/chat
+
+/tickets
+
+/tickets/:ticketId
+
+/conversations
+
+/knowledge
+
+/analytics
+
+/reports
+
+/settings
+
+Verify:
+
+* Every sidebar item opens the correct page.
+* No route displays a blank page.
+* Browser back navigation works.
+* Browser forward navigation works.
+* Direct URL navigation works.
+* Invalid routes are handled.
+* Dynamic ticket routes work.
+
+Create a professional 404 page if one does not exist.
+
+Display:
+
+"Page Not Found"
+
+Subtitle:
+
+"The page you are looking for does not exist or may have been moved."
+
+Buttons:
+
+"Go to Dashboard"
+
+"Go Back"
+
+Do not redesign the application.
+
+## PHASE 2 — SIDEBAR AND HEADER AUDIT
+
+Inspect the existing sidebar.
+
+Verify:
+
+* Logo alignment.
+* Navigation icon alignment.
+* Navigation label spacing.
+* Active navigation state.
+* Hover states.
+* Sidebar width consistency.
+* Bottom user profile alignment.
+
+Fix visual inconsistencies.
+
+Inspect the application header.
+
+Verify:
+
+* Page title.
+* Search action.
+* Notification icon.
+* Theme toggle.
+* User avatar.
+* Profile menu.
+
+Ensure header height is consistent across every page.
+
+Do not create different header layouts for different pages unless necessary.
+
+## PHASE 3 — KPI CARD CONSISTENCY
+
+Audit all KPI cards across:
+
+* Dashboard
+* Tickets
+* Conversations
+* Knowledge Base
+* Analytics
+* Reports
+
+Fix inconsistent:
+
+* Card width.
+* Card height.
+* Internal padding.
+* Icon position.
+* Typography.
+* Value size.
+* Subtitle spacing.
+
+IMPORTANT:
+
+The Ticket Management Total Tickets card must not be significantly wider than the other KPI cards.
+
+Use a consistent responsive grid.
+
+Example:
+
+grid-cols-1
+
+md:grid-cols-2
+
+xl:grid-cols-4
+
+For five or six cards use an appropriate equal-width responsive grid.
+
+Do not allow one KPI card to stretch incorrectly.
+
+## PHASE 4 — BUTTON AUDIT
+
+Inspect every visible button.
+
+Verify every button has a functional frontend interaction.
+
+Check:
+
+* New Chat
+* Send
+* Attachment
+* Clear Chat
+* AI Insights
+* Create Ticket
+* Refresh
+* Export
+* View Ticket
+* Assign Agent
+* Change Priority
+* Escalate
+* Mark Resolved
+* Add Tag
+* Regenerate Draft
+* Copy Draft
+* Discard Draft
+* Send Response
+* Save Internal Note
+* View Knowledge Source
+* Use in Response
+* Upload Document
+* Add FAQ
+* Test Retrieval
+* Reindex
+* Delete Source
+* Refresh Index
+* Run Retrieval
+* Copy Context
+* Add Internal Note
+* Open Ticket
+* Generate New Insights
+* Generate Report
+* Generate Preview
+* Print Preview
+* Export PDF
+* Export CSV
+* Save Settings
+* Reset Settings
+
+If a visible button has no functionality:
+
+Either implement the expected mock frontend interaction or remove the button.
+
+Do not leave dead buttons.
+
+## PHASE 5 — FORM VALIDATION AUDIT
+
+Inspect all forms and modals.
+
+Verify:
+
+* Required fields are validated.
+* Empty required fields show clear errors.
+* Invalid email formats show errors.
+* Buttons are disabled when appropriate.
+* Error messages disappear after correction.
+* Modal forms reset after successful submission where appropriate.
+
+Audit:
+
+* Create Ticket
+* Assign Agent
+* Escalation
+* Resolve Ticket
+* Add Tag
+* Internal Note
+* Upload Document
+* Add FAQ
+* Edit Knowledge Metadata
+* Retrieval Query
+* Report Configuration
+* Profile Settings
+
+Use accessible inline validation messages.
+
+Do not use browser alert() for validation.
+
+## PHASE 6 — MODAL AND DRAWER AUDIT
+
+Inspect all:
+
+* Modals
+* Dialogs
+* Slide-over panels
+* Mobile drawers
+
+Verify:
+
+* Close button works.
+* Cancel button works.
+* Escape key closes the modal where appropriate.
+* Clicking the backdrop closes non-destructive modals.
+* Destructive confirmation modals require explicit action.
+* Background scrolling is prevented when a modal is open.
+* Modal content does not overflow the viewport.
+* Long content is scrollable.
+
+Ensure only one primary modal is active at a time.
+
+## PHASE 7 — CHAT EXPERIENCE AUDIT
+
+Inspect the AI Support Sandbox.
+
+Verify:
+
+* New Chat works.
+* Conversation selection works.
+* Suggested questions work.
+* User messages display immediately.
+* Input clears after sending.
+* Empty messages cannot be sent.
+* Enter sends.
+* Shift + Enter creates a new line.
+* AI typing indicator appears.
+* Mock AI response appears.
+* Chat scrolls to the latest message.
+* Copy AI response works.
+* Thumbs Up works.
+* Thumbs Down works.
+* Selected feedback state displays.
+* Sentiment analysis updates.
+* Intent updates.
+* Ticket classification updates.
+* Escalation risk updates.
+* Knowledge retrieval updates.
+
+Fix duplicated messages or race conditions.
+
+Disable Send while necessary to prevent accidental duplicate submission.
+
+## PHASE 8 — TICKET WORKFLOW AUDIT
+
+Test the complete frontend workflow:
+
+Customer message
+
+→ Intent Detection
+
+→ Sentiment Analysis
+
+→ Ticket Classification
+
+→ Escalation Analysis
+
+→ Knowledge Retrieval
+
+→ AI Response
+
+→ Ticket
+
+Verify ticket state consistency.
+
+Example:
+
+If TIC-1028 is escalated:
+
+The status should display Escalated in:
+
+* Tickets Registry
+* Ticket Details
+* Conversation History
+* Analytics mock state where dynamically connected
+
+Use shared frontend state where reasonable.
+
+Avoid maintaining conflicting copies of the same ticket state.
+
+## PHASE 9 — KNOWLEDGE RETRIEVAL AUDIT
+
+Test:
+
+"My product arrived with a cracked screen. Can I get my money back?"
+
+Expected mock retrieval:
+
+Refund Policy
+
+98%
+
+Damaged Product Guidelines
+
+94%
+
+Return & Replacement FAQ
+
+89%
+
+Verify:
+
+* Retrieval loading state.
+* Pipeline visualization.
+* Result ordering.
+* Relevance scores.
+* Knowledge source preview.
+* Copy Context.
+* Use in Response.
+
+Fix inconsistent retrieval data.
+
+Keep retrieval logic outside UI components.
+
+## PHASE 10 — SENTIMENT AND ESCALATION AUDIT
+
+Test this exact message:
+
+"This is the third time my payment has failed. This is absolutely ridiculous and I need this fixed immediately. I want to speak to a human agent."
+
+Expected:
+
+Sentiment:
+Negative
+
+Emotion:
+Angry or Urgent
+
+High negative sentiment score.
+
+High sentiment confidence.
+
+Escalation:
+High Risk or Critical Risk
+
+Risk factors should include:
+
+* Strong negative sentiment
+* Angry or urgent language
+* Repeated issue
+* Human agent request
+
+Verify the critical escalation alert appears when the configured threshold is reached.
+
+Do not automatically escalate without user confirmation.
+
+## PHASE 11 — TABLE AUDIT
+
+Inspect:
+
+* Tickets Registry
+* Knowledge Registry
+* Knowledge Performance Table
+* Report History
+* Detailed Report Tables
+
+Verify:
+
+* Header alignment.
+* Column spacing.
+* Row hover states.
+* Action menus.
+* Long text truncation.
+* Tooltips.
+* Badge alignment.
+* Horizontal scrolling.
+
+Tables must not break mobile layouts.
+
+Use responsive cards on mobile where already designed.
+
+## PHASE 12 — CHART AUDIT
+
+Inspect every analytics chart.
+
+Verify:
+
+* Charts render.
+* Chart containers have valid height.
+* Responsive width works.
+* Legends display correctly.
+* Tooltips work.
+* Text remains readable in dark mode.
+* Charts do not overflow mobile screens.
+
+Reuse the existing chart library.
+
+Do not install another chart library.
+
+Fix invalid or duplicated chart data.
+
+## PHASE 13 — DARK MODE AUDIT
+
+Inspect every page in dark mode.
+
+Test:
+
+* Dashboard
+* AI Chat
+* Tickets
+* Ticket Details
+* Conversations
+* Knowledge Base
+* Analytics
+* Reports
+* Settings
+
+Fix:
+
+* White text on white backgrounds.
+* Dark text on dark backgrounds.
+* Invisible borders.
+* Unreadable charts.
+* Incorrect modal backgrounds.
+* Badge contrast.
+* Input contrast.
+* Dropdown contrast.
+
+Do not simply invert colors.
+
+Preserve professional enterprise styling.
+
+## PHASE 14 — RESPONSIVE DESIGN AUDIT
+
+Test these approximate widths:
+
+Desktop:
+1440px
+
+Laptop:
+1024px
+
+Tablet:
+768px
+
+Mobile:
+390px
+
+At 390px verify:
+
+* No major horizontal page overflow.
+* Sidebar becomes mobile navigation.
+* Header actions remain usable.
+* KPI cards fit.
+* Chat input fits.
+* Conversation panels work.
+* Ticket cards display.
+* Ticket Details drawers work.
+* Knowledge list remains usable.
+* Charts remain readable.
+* Report preview remains readable.
+* Settings navigation remains usable.
+
+Fix responsive issues only.
+
+Do not redesign the product.
+
+## PHASE 15 — ACCESSIBILITY AUDIT
+
+Improve frontend accessibility.
+
+Verify:
+
+* Buttons have accessible names.
+* Icon-only buttons use aria-label.
+* Form fields have labels.
+* Modal focus behaviour is reasonable.
+* Keyboard navigation works.
+* Visible focus states exist.
+* Text contrast is readable.
+* Decorative icons are not incorrectly announced.
+* Status is not communicated using color alone.
+
+Do not remove the visual design.
+
+## PHASE 16 — LOADING, EMPTY, AND ERROR STATES
+
+Verify important pages have appropriate states.
+
+Loading:
+
+* Chat AI response.
+* Ticket refresh.
+* Knowledge indexing.
+* Knowledge retrieval.
+* Analytics refresh.
+* Report generation.
+
+Empty:
+
+* No tickets.
+* No conversations.
+* No knowledge sources.
+* No retrieval results.
+* No analytics data.
+* No reports.
+
+Error:
+
+* Analytics error.
+* Report generation error.
+* Invalid ticket ID.
+* Invalid route.
+
+Ensure Try Again actions work where present.
+
+## PHASE 17 — TOAST NOTIFICATION AUDIT
+
+Inspect toast notifications.
+
+Avoid duplicate toast systems.
+
+Use one reusable toast system.
+
+Verify toast messages for:
+
+* Ticket created.
+* Ticket escalated.
+* Ticket resolved.
+* Agent assigned.
+* Priority updated.
+* Response sent.
+* Internal note saved.
+* Knowledge uploaded.
+* Knowledge indexed.
+* Knowledge reindexed.
+* Knowledge deleted.
+* Retrieval context copied.
+* Analytics refreshed.
+* Insights updated.
+* Report generated.
+* CSV exported.
+* Settings saved.
+
+Toasts must disappear automatically after a reasonable duration.
+
+## PHASE 18 — CODE STRUCTURE AUDIT
+
+Inspect the complete React project.
+
+Do not rewrite the entire application.
+
+Refactor only where necessary.
+
+Use a clean structure similar to:
+
+src/
+components/
+common/
+layout/
+chat/
+tickets/
+conversations/
+knowledge/
+analytics/
+reports/
+settings/
+pages/
+data/
+hooks/
+services/
+utils/
+types/
+context/
+
+Move reusable components to appropriate folders.
+
+Move mock data out of large page components.
+
+Move mock analysis logic into utilities or services.
+
+Avoid one extremely large React component.
+
+Avoid duplicated interfaces and types.
+
+## PHASE 19 — CREATE SHARED TYPES
+
+Create clean TypeScript types or interfaces for:
+
+Ticket
+
+Customer
+
+Conversation
+
+Message
+
+SentimentAnalysis
+
+EscalationAnalysis
+
+KnowledgeSource
+
+KnowledgeChunk
+
+RetrievalResult
+
+AnalyticsMetric
+
+Report
+
+ApplicationSettings
+
+Reuse types throughout the application.
+
+Avoid unnecessary any types.
+
+## PHASE 20 — API SERVICE PREPARATION
+
+Prepare the frontend for FastAPI integration.
+
+Create a clean API service layer.
+
+Example structure:
+
+src/services/api/
+
+apiClient.ts
+
+chatService.ts
+
+ticketService.ts
+
+conversationService.ts
+
+knowledgeService.ts
+
+analyticsService.ts
+
+reportService.ts
+
+settingsService.ts
+
+IMPORTANT:
+
+Do not connect a real backend yet.
+
+Do not remove current mock functionality.
+
+Create clean service interfaces or placeholder functions so mock data can later be replaced.
+
+## API CLIENT CONFIGURATION
+
+Create centralized API configuration.
+
+Use an environment variable:
+
+VITE_API_BASE_URL
+
+Default development concept:
+
+http://localhost:8000
+
+Do not hardcode backend URLs throughout React components.
+
+Create a centralized API client.
+
+Prepare support for:
+
+* GET
+* POST
+* PATCH
+* DELETE
+
+Prepare clean JSON error handling.
+
+Do not expose secrets.
+
+## FUTURE API ENDPOINT MAP
+
+Prepare frontend service structure for:
+
+POST /api/chat
+
+GET /api/tickets
+
+GET /api/tickets/{ticket_id}
+
+POST /api/tickets
+
+PATCH /api/tickets/{ticket_id}
+
+POST /api/tickets/{ticket_id}/response
+
+POST /api/tickets/{ticket_id}/escalate
+
+POST /api/tickets/{ticket_id}/resolve
+
+GET /api/conversations
+
+GET /api/conversations/{conversation_id}
+
+POST /api/conversations/{conversation_id}/notes
+
+GET /api/knowledge
+
+POST /api/knowledge/upload
+
+POST /api/knowledge/faq
+
+POST /api/retrieval/search
+
+GET /api/analytics/overview
+
+GET /api/analytics/sentiment
+
+GET /api/analytics/escalation
+
+GET /api/analytics/retrieval
+
+POST /api/reports/generate
+
+GET /api/reports
+
+GET /api/settings
+
+PATCH /api/settings
+
+Do not call these endpoints yet.
+
+## PHASE 21 — MOCK SERVICE ABSTRACTION
+
+Current frontend mock functionality must continue working.
+
+Create a mock service abstraction.
+
+Conceptual example:
+
+Chat UI
+↓
+chatService
+↓
+mockChatService
+
+Later:
+
+Chat UI
+↓
+chatService
+↓
+FastAPI
+
+Do the same where reasonable for:
+
+* Chat
+* Tickets
+* Conversations
+* Knowledge Retrieval
+* Analytics
+* Reports
+
+React components should not need major rewriting when the backend is connected.
+
+## PHASE 22 — ENVIRONMENT FILE PREPARATION
+
+Prepare environment configuration.
+
+Create or document:
+
+.env.example
+
+Include:
+
+VITE_API_BASE_URL=http://localhost:8000
+
+Do not add API keys.
+
+Do not expose Gemini API keys.
+
+Add comments or documentation explaining that secrets must remain in the FastAPI backend.
+
+## PHASE 23 — CONSOLE ERROR AUDIT
+
+Inspect the application for:
+
+* React key warnings.
+* Undefined values.
+* Invalid DOM nesting.
+* Controlled/uncontrolled input warnings.
+* Chart size warnings.
+* Missing imports.
+* Dead routes.
+* Duplicate state updates.
+
+Fix visible and likely frontend errors.
+
+Do not suppress errors without fixing the cause.
+
+## PHASE 24 — PERFORMANCE CLEANUP
+
+Perform reasonable frontend performance cleanup.
+
+Use memoization only where useful.
+
+Avoid premature optimization.
+
+Check:
+
+* Large list rendering.
+* Repeated mock calculations.
+* Unnecessary rerenders.
+* Duplicate data transformation.
+
+Keep the code readable.
+
+## PHASE 25 — FINAL UI POLISH
+
+Perform small consistency improvements only.
+
+Fix:
+
+* Uneven spacing.
+* Misaligned icons.
+* Inconsistent border radius.
+* Inconsistent card padding.
+* Incorrect button heights.
+* Badge alignment.
+* Modal spacing.
+* Table header spacing.
+
+Do not introduce a completely new visual style.
+
+Do not change the application's identity.
+
+## PHASE 26 — CREATE FRONTEND README
+
+Create or update README.md.
+
+Include:
+
+# AI Customer Assistant Frontend
+
+## Project Overview
+
+Explain the purpose of the application.
+
+## Features
+
+List implemented frontend features.
+
+## Architecture
+
+Customer
+→ Chat UI
+→ API
+→ Retrieval Layer
+→ LLM
+→ Validator
+→ Response
+→ Ticket Database
+
+Explain that the current application uses frontend mock services.
+
+## Technology Stack
+
+Document the actual technologies currently used by the project.
+
+Do not claim a library is used if it is not installed.
+
+## Project Structure
+
+Explain the important frontend folders.
+
+## Installation
+
+Provide the correct commands based on the existing project package manager.
+
+## Run Development Server
+
+Provide the correct development command.
+
+## Environment Configuration
+
+Explain:
+
+VITE_API_BASE_URL
+
+## Mock Service Architecture
+
+Explain how mock services currently work.
+
+## Future FastAPI Integration
+
+Explain how the mock services can later be replaced by FastAPI services.
+
+## Security
+
+Clearly state:
+
+Never expose Gemini API keys or backend secrets in the React frontend.
+
+Secrets must remain in the backend environment configuration.
+
+## PHASE 27 — FINAL VERIFICATION
+
+Before completing the audit, verify:
+
+* Application starts successfully.
+* Dashboard works.
+* AI Chat works.
+* Tickets work.
+* Ticket Details works.
+* Conversations work.
+* Knowledge Base works.
+* Knowledge Retrieval works.
+* Analytics works.
+* Reports work.
+* Settings work.
+* Sidebar works.
+* Header works.
+* Dark mode works.
+* Mobile navigation works.
+* Forms validate.
+* Modals close.
+* Toasts work.
+* Tables are responsive.
+* Charts render.
+* No blank pages exist.
+* Invalid routes are handled.
+* Mock services continue working.
+* API service structure exists.
+* VITE_API_BASE_URL is centralized.
+* No frontend secrets exist.
+* README documentation is accurate.
+* No obvious visible frontend errors remain.
+
+Do not add major new features.
+
+Do not connect a real backend.
+
+Do not connect Gemini API directly from the frontend.
+
+Complete the frontend audit, fix identified problems, prepare the service architecture for FastAPI integration, and stop after completion.
+prompt11
+
+
+
+
