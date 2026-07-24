@@ -1,0 +1,139 @@
+spark
+AI Customer Assistant
+You are a senior React frontend developer and UI/UX designer.
+Create the frontend foundation for a modern AI Customer Assistant web application.
+Project Purpose
+The application is an AI-powered customer support platform where customers can communicate with an AI assistant and support agents can manage customer issues.
+The complete system will later support:
+AI Chat Interface
+Ticket Classification
+Intent Detection
+Knowledge Retrieval
+AI Response Generation
+Escalation Detection
+Sentiment Analysis
+Conversation History
+Analytics Dashboard
+Report Export
+For this step, build ONLY the frontend application foundation, layout, page structure, and navigation.
+Do not implement advanced feature functionality yet.
+Technology
+Use:
+React
+TypeScript
+Tailwind CSS
+React Router
+Lucide React icons
+Use the existing project environment and dependencies when possible.
+Application Layout
+Create a professional SaaS-style admin dashboard layout.
+The application must contain:
+Sidebar
+Create a responsive left sidebar.
+Navigation items:
+Dashboard
+AI Chat
+Tickets
+Conversations
+Knowledge Base
+Analytics
+Reports
+Settings
+Add a suitable Lucide React icon for every navigation item.
+The currently active navigation item must be clearly highlighted.
+Add the application name:
+"AI Customer Assistant"
+At the bottom of the sidebar, display a user profile section with:
+Profile avatar
+User name
+Role: Support Admin
+Header
+Create a reusable top header.
+Include:
+Current page title
+Search icon
+Notification icon
+Dark mode toggle
+User profile avatar
+Pages
+Create separate pages for:
+Dashboard
+AI Chat
+Tickets
+Conversations
+Knowledge Base
+Analytics
+Reports
+Settings
+Each page must display a clear page title and a simple placeholder section describing the page.
+Do not leave any page blank.
+Navigation
+Configure React Router correctly.
+Clicking each sidebar navigation item must open its correct page.
+Browser navigation must work correctly.
+The application must not refresh when moving between pages.
+Responsive Design
+The interface must work on:
+Desktop
+Tablet
+Mobile
+On mobile devices:
+Hide the sidebar by default.
+Add a menu button.
+Clicking the menu button must open the sidebar.
+Allow the user to close the sidebar.
+Design Style
+Use a modern AI SaaS customer-support design.
+Use:
+Clean light theme
+White and soft neutral backgrounds
+Blue and purple accent direction
+Rounded cards
+Subtle shadows
+Professional spacing
+Modern typography
+Smooth hover states
+Avoid excessive gradients.
+Maintain good text contrast and accessibility.
+Code Structure
+Use reusable components.
+Create a clean structure similar to:
+src/
+components/
+Sidebar
+Header
+Layout
+pages/
+Dashboard
+Chat
+Tickets
+Conversations
+KnowledgeBase
+Analytics
+Reports
+Settings
+data/
+hooks/
+utils/
+Do not put the complete application inside one React component.
+Keep the code modular, readable, and maintainable.
+Important Constraints
+Build only the frontend foundation.
+Do not connect a backend.
+Do not connect Gemini API.
+Do not implement machine learning.
+Do not implement ticket classification logic.
+Do not implement sentiment analysis logic.
+Do not implement knowledge retrieval.
+Do not add unnecessary features.
+Use mock placeholder content where required.
+Final Verification
+Before finishing:
+Verify every sidebar navigation item.
+Verify every page opens correctly.
+Verify there are no blank pages.
+Verify there are no broken routes.
+Verify there are no visible frontend errors.
+Verify the mobile sidebar works.
+Do not proceed to advanced features.
+Stop after completing the frontend foundation.
