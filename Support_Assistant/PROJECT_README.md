@@ -161,3 +161,6 @@ Special thanks to the technologies and platforms that made this project possible
 For any queries, suggestions, or feedback regarding this project, please refer to the GitHub repositories listed above.
 
 Thank you for visiting this repository!
+
+View your app in AI Studio: https://ai.studio/apps/9911dd59-b8ca-4ab9-b15b-efab7695444c(frontend in google ai studio)
+
