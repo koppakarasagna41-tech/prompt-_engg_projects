@@ -1,0 +1,2 @@
+Reserved for future AI prompt customization.
+The current system processes uploaded resumes and job descriptions through FastAPI-based backend logic.
