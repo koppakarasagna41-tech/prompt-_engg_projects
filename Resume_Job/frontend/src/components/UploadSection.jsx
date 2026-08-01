@@ -19,7 +19,7 @@ function UploadSection({ onAnalysisComplete }) {
       const resumeForm = new FormData();
       resumeForm.append("file", resume);
 
-      const resumeUpload = await fetch("https://prompt-engg-projects.onrender.com/upload-resume"), {
+      const resumeUpload = await fetch("https://prompt-engg-projects.onrender.com/upload-resume", {
         method: "POST",
         body: resumeForm,
       });
@@ -32,7 +32,7 @@ function UploadSection({ onAnalysisComplete }) {
       const jdForm = new FormData();
       jdForm.append("file", jobDescription);
 
-      const jdUpload = await fetch("https://prompt-engg-projects.onrender.com/upload-job-description"), {
+      const jdUpload = await fetch("https://prompt-engg-projects.onrender.com/upload-job-description", {
         method: "POST",
         body: jdForm,
       });
@@ -42,7 +42,7 @@ function UploadSection({ onAnalysisComplete }) {
       }
 
       // Analyze
-      const analyzeResponse = await fetch("https://prompt-engg-projects.onrender.com/analyze"), {
+      const analyzeResponse = await fetch("https://prompt-engg-projects.onrender.com/analyze", {
         method: "POST",
       });
 
