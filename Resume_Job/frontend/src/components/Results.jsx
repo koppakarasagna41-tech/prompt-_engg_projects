@@ -40,7 +40,7 @@ ${result.recommended_jobs.map(job => "- " + job).join("\n")}
   };
 
   return (
-    <section className="results">
+    <section id="about" className="results">
 
       <div className="card score-card">
         <h2>🎯 Candidate Fit Score</h2>

@@ -19,7 +19,7 @@ function UploadSection({ onAnalysisComplete }) {
       const resumeForm = new FormData();
       resumeForm.append("file", resume);
 
-      const resumeUpload = await fetch("http://127.0.0.1:8000/upload-resume", {
+      const resumeUpload = await fetch("https://prompt-engg-projects.onrender.com/upload-resume"), {
         method: "POST",
         body: resumeForm,
       });
@@ -32,7 +32,7 @@ function UploadSection({ onAnalysisComplete }) {
       const jdForm = new FormData();
       jdForm.append("file", jobDescription);
 
-      const jdUpload = await fetch("http://127.0.0.1:8000/upload-job-description", {
+      const jdUpload = await fetch("https://prompt-engg-projects.onrender.com/upload-job-description"), {
         method: "POST",
         body: jdForm,
       });
@@ -42,7 +42,7 @@ function UploadSection({ onAnalysisComplete }) {
       }
 
       // Analyze
-      const analyzeResponse = await fetch("http://127.0.0.1:8000/analyze", {
+      const analyzeResponse = await fetch("https://prompt-engg-projects.onrender.com/analyze"), {
         method: "POST",
       });
 
@@ -65,7 +65,7 @@ function UploadSection({ onAnalysisComplete }) {
   };
 
   return (
-    <section className="upload-section">
+    <section id="features" className="upload-section">
       <div className="upload-grid">
 
         <div className="upload-card">
@@ -123,7 +123,7 @@ function UploadSection({ onAnalysisComplete }) {
             Analyzing...
           </>
         ) : (
-          ""Analyze Compatibility""
+          "Analyze Compatibility"
         )}
       </button>
     </section>

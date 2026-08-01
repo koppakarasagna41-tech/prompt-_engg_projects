@@ -22,3 +22,18 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Python
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Environment
+.env
+
+# Uploads (optional, if generated at runtime)
+uploads/
+
+# Reports (optional, if generated automatically)
+reports/

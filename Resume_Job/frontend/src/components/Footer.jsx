@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="footer">
+    <footer id="contact" className="footer">
       <p>© 2026 AI Resume & Job Matching Platform</p>
     </footer>
   );

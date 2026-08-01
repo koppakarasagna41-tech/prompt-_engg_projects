@@ -1,16 +1,73 @@
-# React + Vite
+# AI Resume & Job Matching Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Project Overview
+The AI Resume & Job Matching Platform is a web application that analyzes a candidate's resume against a job description using Google Gemini AI. It calculates a compatibility score, identifies matching and missing skills, provides resume improvement suggestions, and recommends suitable job roles.
 
-Currently, two official plugins are available:
+## Features
+- Upload Resume
+- Upload Job Description
+- AI Compatibility Analysis
+- Match Score Generation
+- Skills Comparison
+- Resume Improvement Suggestions
+- Job Recommendations
+- Report Generation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Technologies Used
 
-## React Compiler
+### Frontend
+- React.js
+- Vite
+- HTML
+- CSS
+- JavaScript
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Backend
+- FastAPI
+- Python
 
-## Expanding the ESLint configuration
+### AI
+- Google Gemini AI
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Structure
+
+Resume_Job/
+- backend/
+- frontend/
+- parsers/
+- uploads/
+- reports/
+- requirements.txt
+
+## Installation
+
+### Backend
+
+```bash
+pip install -r requirements.txt
+uvicorn backend.main:app --reload
+```
+
+### Frontend
+
+```bash
+cd frontend
+npm install
+npm run dev
+```
+
+## Team Members
+
+- Reshma Shaik
+- <Teammate Name>
+
+## Future Scope
+
+- Multiple resume comparison
+- ATS compatibility analysis
+- Authentication system
+- Database integration
+
+## License
+
+Academic Project
